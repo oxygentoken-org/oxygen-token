@@ -140,7 +140,9 @@ flex-wrap: wrap;
     border-radius: 50px;
     background-color: var(--grey);
     margin: 2em;
-    width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
