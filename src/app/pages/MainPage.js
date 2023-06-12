@@ -1,6 +1,10 @@
 import Navbar from "../components/Navbar";
 import "../styles/mainpage.css"
+import imgServicio1 from "../../../public/assets/images/imgServicio1.png"
+import imgServicio2 from "../../../public/assets/images/imgServicio2.png"
+import imgServicio3 from "../../../public/assets/images/imgServicio3.png"
 
+import Image from "next/image";
 
 const MainPage = () => {
     return (<>
@@ -42,22 +46,37 @@ const MainPage = () => {
                 <div className="progressLine"></div>
                 <p> Objetivo final: <br/> 000 hectareas</p>
             </div>
+            <div className="line"></div>
+
         </section>
 
-        <div className="line"></div>
-
+        
         <section className="servicesHome">
             <div className="servicesText"><h3>SERVICIOS</h3>
             <h1>CONSERVÁ LOS <br/>TERRITORIOS NATIVOS</h1>
             <p>Los bosques nativos son uno de los principales  <br/> productores de oxígeno, son esenciales para nosotros y <br/> todos los seres vivos del planeta. Por esto, debemos <br/>proteger los territorios nativos de ser deforestados.</p></div>
             <div className="servicesContainer">
-                <div className="service"></div>
-                <div className="service"></div>
-                <div className="service"></div>
+                
+                <Image className="service" src={imgServicio1}/>
+                
+                <Image className="service" src={imgServicio2}/>
+                
+                <Image className="service" src={imgServicio3}/>
+                
             </div>
             
         </section>
 
+        <section className="videoPresentacion">
+            <div className="videoHome">
+
+            </div>
+            <div className="videoText">
+                <h3>NUESTRO MANIFIESTO</h3>
+                <h1>CONVERTITE EN CARBONO NEUTRAL, USA OXYGEN</h1>
+                <p>Queremos cambiar el esquema de donaciones convencional y así, poder salvar los bosques nativos. ¡Abrimos el mercado para una valoración internacional de terrenos de bosque nativo!</p>
+            </div>
+        </section>
         
         </>
      
