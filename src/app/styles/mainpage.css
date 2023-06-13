@@ -2,7 +2,7 @@
 
 .layoutHome{
     display: flex;
-    padding: 3em;
+    padding: 2em;
     justify-content: center;
     flex-direction: column;
     min-height: 500px;
@@ -112,7 +112,8 @@ flex-wrap: wrap;
 
 .tokensHome h1{
     font-size: 48px;
-    color: var(--white)
+    color: var(--white);
+    text-align: center;
 }
 
 .tokenContainer{
@@ -225,17 +226,70 @@ flex-wrap: wrap;
 
 
 /*Video*/
-.videoPresentacion{
+.videoPresentacion , .alianzasSeccion{
     display: flex;
     flex-direction: row;
     background-color: #276D70;
     padding: 4em;
-    gap: 1em;
+    gap: 2em;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .videoHome{
-    width: 300px;
-    height: 200px;
+    width: 600px;
+    height: 400px;
     background-color: var(--grey);
+    border-radius: 40px;
 }
+
+.videoText{
+    color: var(--white);
+}
+
+.videoText h3{
+    font-size: 22px;
+    font-family: var(--dm-sans);
+    color: #0B273A
+}
+
+.videoText h1{
+    font-size: 30px;
+    font-family: var(--montserrat);
+    font-weight: 700;
+
+}
+
+.videoText p{
+    font-size: 16px;
+    font-family: var(--montserrat);
+
+}
+
+/*Alianzas*/
+ .alianzasSeccion h3{
+    font-size: 22px;
+    font-family: var(--dm-sans);
+    color: var(--white);
+
+}
+
+.alianzasContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+
+}
+
+.alianzasSeccion{
+    flex-direction: column;
+}
+.alianza{
+    border-radius: 60px;
+    background-color:var(--white);
+    width: 50px;
+    height: 50px;
+}
+

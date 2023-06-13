@@ -73,8 +73,17 @@ const MainPage = () => {
             </div>
             <div className="videoText">
                 <h3>NUESTRO MANIFIESTO</h3>
-                <h1>CONVERTITE EN CARBONO NEUTRAL, USA OXYGEN</h1>
-                <p>Queremos cambiar el esquema de donaciones convencional y así, poder salvar los bosques nativos. ¡Abrimos el mercado para una valoración internacional de terrenos de bosque nativo!</p>
+                <h1>CONVERTITE EN CARBONO <br/> NEUTRAL, USA OXYGEN</h1>
+                <p>Queremos cambiar el esquema de donaciones convencional <br/>y así, poder salvar los bosques nativos. ¡Abrimos el mercado <br/> para una valoración internacional de terrenos de bosque nativo!</p>
+            </div>
+        </section>
+
+        <section className="alianzasSeccion">
+            <h3>ALIANZAS</h3>
+            <div className="alianzasContainer">
+                <div className="alianza"></div>
+                <div className="alianza"></div>
+                <div className="alianza"></div>
             </div>
         </section>
         
