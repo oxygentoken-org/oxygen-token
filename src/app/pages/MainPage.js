@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../styles/mainpage.css"
 import imgServicio1 from "../../../public/assets/images/imgServicio1.png"
 import imgServicio2 from "../../../public/assets/images/imgServicio2.png"
@@ -34,7 +35,7 @@ const MainPage = () => {
         </section>
 
         <section className="tokensHome">
-            <h1>Tokens Oxygen</h1>
+            <h1> Oxygen Token</h1>
             <div className="tokenContainer">
                 <div className="token"></div>
                 <div className="token"></div>
@@ -64,6 +65,9 @@ const MainPage = () => {
                 <Image className="service" src={imgServicio3}/>
                 
             </div>
+
+
+            
             
         </section>
 
@@ -86,6 +90,8 @@ const MainPage = () => {
                 <div className="alianza"></div>
             </div>
         </section>
+
+        <Footer/>
         
         </>
      

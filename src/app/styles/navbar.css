@@ -6,7 +6,7 @@
     position: fixed;
     padding: 0.5rem 0rem;
     background-color: rgba(255, 255, 255, 0.3);
-    color: #276D70;
+    color: var(--strong-green);
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
     font-family: var(--montserrat);
     font-weight: 700;
@@ -41,7 +41,7 @@
   }
   .navigation-menu li a {
     text-decoration: none;
-    color: #276D70;
+    color: var(--white);
     display: block;
     width: 100%;
   }
@@ -67,6 +67,11 @@
   @media screen and (max-width: 768px) {
     .hamburger {
       display: block;
+    }
+
+    .navigation{
+      background-color: transparent;
+      position: absolute;
     }
     .navigation-menu ul {
       display: none;
@@ -99,6 +104,10 @@
     }
 
     .brand-name{
-      max-width: 300px;
+      
+      max-width: 150px;
+      height: 40px;
+      
+
     }
 }
