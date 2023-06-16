@@ -206,7 +206,46 @@ flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.service{
+.card{
+    background-color: var(--white);
+    width: 220px;
+    height: 350px;
+    border-radius: 50px;
+    transition: transform 0.6s;
+
+
+}
+
+.card:hover{
+    cursor:pointer;
+}
+.flipped {
+    transform: rotateY(180deg);
+  }
+
+.serviceFront, .serviceBack{
+    backface-visibility: hidden;
+
+}
+
+.serviceBack{
+transform: rotateY(180deg); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+    width: 220px;
+    height: 350px;
+    border-radius: 50px;
+  color: red;
+  padding: 10px;
+
+}
+
+.serviceFront{
+    display: flex;
+  justify-content: center;
+  align-items: center;
     background-color: var(--white);
     width: 220px;
     height: 350px;
