@@ -1,13 +1,15 @@
 "use client"; // This is a client component 👈🏽
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import "../styles/mainpage.css"
-import imgServicio1 from "../../../public/assets/images/imgServicio1.png"
-import imgServicio2 from "../../../public/assets/images/imgServicio2.png"
-import imgServicio3 from "../../../public/assets/images/imgServicio3.png"
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import "../../src/app/styles/mainpage.css"
+import imgServicio1 from "../../public/assets/images/imgServicio1.png"
+import imgServicio2 from "../../public/assets/images/imgServicio2.png"
+import imgServicio3 from "../../public/assets/images/imgServicio3.png"
 import { useState } from "react";
 import Image from "next/image";
+import "../../src/app/globals.css";
+
 
 const MainPage = () => {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -20,7 +22,7 @@ const MainPage = () => {
         <section className="layoutHome">
             <h1>Invertí a favor del ambiente</h1>
             <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
-            <button >Comenzá</button>
+            <button><a href="#servicios"> Comenzá </a></button>
 
             <div className="dataBoard">
                 <div className="dataContent">
@@ -41,7 +43,7 @@ const MainPage = () => {
             </div>
         </section>
         
-        <section className="servicesHome">
+        <section className="servicesHome" id="servicios">
             <div className="servicesText"><h3>SERVICIOS</h3>
             <h1>CONSERVÁ LOS <br/>TERRITORIOS NATIVOS</h1>
             <p>Los bosques nativos son uno de los principales  <br/> productores de oxígeno, son esenciales para nosotros y <br/> todos los seres vivos del planeta. Por esto, debemos <br/>proteger los territorios nativos de ser deforestados.</p></div>
@@ -114,7 +116,8 @@ const MainPage = () => {
         </section>
 
         <section className="phrase">
-            <h2>"La crisis climática esta causada por nosotros y las soluciones deben venir <br/> de nosotros. Tenemos las herramientas:la tecnología está de nuestro <br/> lado</h2> <p>- Antonio Guterres, Secretario General de la ONU</p>
+            <h2>"La crisis climática esta causada por nosotros y las soluciones deben venir <br/> de nosotros. Tenemos las herramientas:la tecnología está de nuestro <br/> lado"</h2> <p>- Antonio Guterres, Secretario General de la ONU</p>
+            <button>Comenzar</button>
         </section>
 
         <Footer/>

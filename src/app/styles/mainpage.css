@@ -7,8 +7,11 @@
     flex-direction: column;
     min-height: 500px;
     background-image: url("../../../public/assets/images/ImgMainPage.png");
-
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 
 .layoutHome h1{
     font-family: var(--dm-sans);
@@ -17,6 +20,14 @@
     font-weight: 500;
     line-height: 1em;
     padding-top: 0.8em;
+}
+
+.layoutHome a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .layoutHome h3{
@@ -33,10 +44,7 @@
     border-radius: 40px;
     border:0;
     background-color: var(--strong-green);
-    color: var(--white);
-    font-family: var(--montserrat);
-    font-weight: 500;
-    font-size: 16px;
+   
 }
 
 .layoutHome button:hover{
@@ -332,3 +340,42 @@ transform: rotateY(180deg);
     height: 50px;
 }
 
+
+/*Phrase*/
+
+.phrase{
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url('../../../public/assets/images/imgTrees.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:var(--white);
+    
+}
+
+
+.phrase h2, .phrase p{
+    font-family: var(--montserrat);
+    
+}
+
+.phrase button{
+    max-width: 150px;
+    padding: 1em;
+    border-radius: 40px;
+    border:0;
+    background-color: var(--strong-green);
+    color: var(--white);
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.phrase button:hover{
+    cursor: pointer;
+    background-color: #276D70;
+
+}

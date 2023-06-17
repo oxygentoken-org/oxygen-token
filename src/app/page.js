@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import MainPage from './pages/MainPage'
+import MainPage from "../../pages/home/MainPage"
+
 
 export default function Home() {
   return (
