@@ -15,6 +15,11 @@
     font-size: 48px;
     font-family: var(--montserrat);
     color: var(--white);
+    align-self: left;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+   
     
 }
 
@@ -30,5 +35,24 @@
 .mision, .vision{
     align-items: center;
     justify-content: center;
-    background-color: beige;
+    background-color: #EBE0E0;
+    
+    max-width: 300px;
+    border-radius: 30px;
+    padding: 0.5em;
+    font-family: var(--montserrat);
+
+}
+
+.mision h2, .vision h2{
+    color: var(--strong-green);
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--montserrat);
+
+}
+
+.mision p, .vision p{
+    font-size: 16px;
+    padding: 0.5em;
 }
