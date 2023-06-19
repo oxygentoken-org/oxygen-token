@@ -1,0 +1,13 @@
+.proyectoMapa{
+    display:flex;
+    padding: 2em;
+    background-color: #56A49E;
+    align-items: flex-end;
+    min-height: 500px;
+}
+
+.proyectoMapa h1{
+    font-family: var(--montserrat);
+    font-size: 40px;
+    color: var(--white);
+}

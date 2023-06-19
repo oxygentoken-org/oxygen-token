@@ -1,0 +1,26 @@
+.comprarTokens{
+    display:flex;
+    padding: 5em;
+    background-color: #56A49E;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.comprarTokens h1{
+    font-size: 40px;
+    font-family: var(--montserrat);
+    color: var(--white);
+}
+.tokensContainer{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.token{
+    height: 400px;
+    width: 200px;
+    background-color: aliceblue;
+}
