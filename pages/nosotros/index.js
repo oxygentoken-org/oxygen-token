@@ -8,10 +8,15 @@ import ejemploTeam from "../../public/assets/images/ejemploTeam.png";
 import logoInstagram from "../../public/assets/logos/logoInstagram.png"
 import logoLinkedin from "../../public/assets/logos/logoLinkedin.png"
 import logoTwitter from "../../public/assets/logos/logoTwitter.png";
+import Head from "next/head";
 
 const Nosotros = () =>{
     return (
         <>
+        <Head>
+        <title>Oxygen Token</title>
+        <meta name="description" content="Oxygen-Token"/>
+      </Head>
         <Navbar/>
         <section className="thisIsOxygen">
             <h1>Esto es Oxygen</h1>

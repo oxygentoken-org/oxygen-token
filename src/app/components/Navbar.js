@@ -49,7 +49,7 @@ function Navbar() {
           </li>
           
           <li>
-            <a href="/comprar" style={{color: "black"}} >Comprar</a>
+            <a href="/comprar" style={{color: "var(--strong--green"}} >Comprar</a>
           </li>
         </ul>
       </div>

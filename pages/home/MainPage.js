@@ -9,6 +9,8 @@ import imgServicio3 from "../../public/assets/images/imgServicio3.png"
 import { useState } from "react";
 import Image from "next/image";
 import "../../src/app/globals.css";
+import CardService from "@/app/components/CardService";
+import Head from "next/head";
 
 
 const MainPage = () => {
@@ -18,6 +20,11 @@ const MainPage = () => {
       setIsFlipped(!isFlipped);
     };
     return (<>
+        <Head>
+        <title>JOLA</title>
+        <meta name="description" content="Oxygen-Token"/>
+      
+      </Head>
         <Navbar/>
         <section className="layoutHome">
             <h1>Invertí a favor del ambiente</h1>
@@ -48,6 +55,7 @@ const MainPage = () => {
             <h1>CONSERVÁ LOS <br/>TERRITORIOS NATIVOS</h1>
             <p>Los bosques nativos son uno de los principales  <br/> productores de oxígeno, son esenciales para nosotros y <br/> todos los seres vivos del planeta. Por esto, debemos <br/>proteger los territorios nativos de ser deforestados.</p></div>
             <div className="servicesContainer" >
+                {/*<CardService imagen= "../../public/assets/images/imgServicio1.png" texto="descripcion"/>*/}
                 <div className={`card ${isFlipped ? "flipped" : ""}`} onMouseEnter={handleFlip} onMouseLeave={handleFlip}>
                 <Image  className="serviceFront" src={imgServicio1}/>
                 <div className="serviceBack">
