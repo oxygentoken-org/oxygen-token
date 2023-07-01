@@ -1,4 +1,4 @@
-import "../styles/CardService.css";
+import "../styles/cardservice.css";
 import "../styles/mainpage.css"
 import { useState } from "react";
 
