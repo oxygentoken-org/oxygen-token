@@ -10,7 +10,10 @@ import { useState } from "react";
 import Image from "next/image";
 import "../../src/app/globals.css";
 import CardService from "@/app/components/CardService";
-import Head from "next/head";
+import bdbLogo from "../../public/assets/logos/BdBLogo.png";
+import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
+import finguruLogo from "../../public/assets/logos/finguruLogo.png"
+
 
 
 const MainPage = () => {
@@ -103,9 +106,10 @@ const MainPage = () => {
         <section className="alianzasSeccion">
             <h3>ALIANZAS</h3>
             <div className="alianzasContainer">
-                <div className="alianza"></div>
-                <div className="alianza"></div>
-                <div className="alianza"></div>
+                <Image className = "alianza" src={bdbLogo} alt = "Banco de Bosques"/>
+                <Image className = "alianza" src={chronosPayLogo} alt = "Chronos Pay"/>
+                <Image className = "alianza" src={finguruLogo} alt = "Finguro"/>
+                
             </div>
         </section>
 
