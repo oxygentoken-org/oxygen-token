@@ -33,13 +33,15 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     height: 40px;
-    width: 40px;
+    width: 42px;
+    padding-top: 0.3em;
     display: flex;
     align-items: center;
     align-self: center;
     justify-content: center;
-
 }
+
+
 
 .social:hover{
     cursor: pointer;
@@ -87,6 +89,11 @@
     border: none;
     border-radius: 25px;
     color: var(--white);
+}
+
+.footerNewsletter button:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 

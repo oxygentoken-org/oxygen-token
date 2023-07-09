@@ -27,7 +27,8 @@
 
   .navigation-menu li:hover{
 
-    background-color: #d9d9d9;
+    text-decoration: underline;
+    text-decoration-thickness: 2px ;
     cursor: pointer;
   }
   

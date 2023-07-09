@@ -16,12 +16,10 @@ function Footer() {
         <div className="footerSocials">
             <Image src={logoFooter} className="logoFooter"></Image>
             <div className="socialsContainer">
-                <div className="social"><a href="https://instagram.com/oxygen.token"
-            target="_blank"
-            rel="noreferrer"><Image src={logoInstagram} className="socialLogo"></Image></a></div>
-                <div className="social"><Image src={logoLinkedin} className="socialLogo"></Image></div>
-                <div className="social"><Image src={logoTwitter} className="socialLogo"></Image></div>
-                <div className="social"><Image src={logoYoutube} className="socialLogo"></Image></div>
+                <div className="social"><a href="https://instagram.com/oxygen.token" target="_blank" rel="noreferrer"><Image src={logoInstagram} className="socialLogo"></Image></a></div>
+                <div className="social"><a href="/" target="_blank" rel="noreferrer"><Image src={logoLinkedin} className="socialLogo"></Image></a></div>
+                <div className="social"><a href="/" target="_blank" rel="noreferrer"><Image src={logoTwitter} className="socialLogo"></Image></a></div>
+                <div className="social"><a href="/" target="_blank" rel="noreferrer"><Image src={logoYoutube} className="socialLogo"></Image></a></div>
 
 
 
