@@ -65,4 +65,21 @@
     
   }
 
+  .flip-card-back a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--white);
+    padding: 10px;
+    padding-right: 80px;
+    background: linear-gradient(to right,#0b273a, #ffffff00);   
+    border-radius: 20px;
+    
+
+  }
+
+  .flip-card-back a:hover{
+    cursor:pointer;
+    text-decoration: underline;
+  }
+
 

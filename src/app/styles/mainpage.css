@@ -109,7 +109,22 @@ flex-wrap: wrap;
 
 /*Tokens*/
 
-.tokensHome{
+.tokensEmitidos h2{
+    font-size: 20px;
+    color:#0B273A;
+    font-family: var(--dm-sans);
+    font-weight: 700;
+}
+
+.tokensEmitidos h1{
+    font-size: 30px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+.tokensHome, .tokensEmitidos{
     background-color: #56A49E;
     padding: 2em;
     display: flex;

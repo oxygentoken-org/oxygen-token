@@ -53,7 +53,7 @@
     width: 40px;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: #276D70;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     position: absolute;

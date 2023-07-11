@@ -3,7 +3,7 @@ import "../styles/mainpage.css"
 import { useState } from "react";
 import Image from "next/image";
 
-const CardService = ({ image, title, text, number }) => {
+const CardService = ({ image, title, text, number, link }) => {
   const [flipped, setFlipped] = useState(false);
 
   const handleClick = () => {
@@ -22,6 +22,7 @@ const CardService = ({ image, title, text, number }) => {
       <h1>{number}</h1>
       <h2>{title}</h2>
       <p>{text}</p>
+      <a href={link} target="_blank" rel="noreferrer">Ver más</a>
     </div>
   </div>
 </div>

@@ -1,0 +1,30 @@
+.tokenCard{
+    max-width: 250px;
+    height: 300px;
+    padding: 1.2em;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--grey), #ffffff00);  
+}
+
+.tokenCard h2{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.tokenCard p{
+    color: black;
+    font-size: 16px;
+}
+
+.tokenCard a{
+    color: #0b273a;
+
+}
+
+.tokenCard a:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}

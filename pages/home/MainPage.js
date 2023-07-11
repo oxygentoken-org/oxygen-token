@@ -2,6 +2,7 @@
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+import TokenEmitido from "@/app/components/TokenEmitido";
 import "../../src/app/styles/mainpage.css"
 import imgServicio1 from "../../public/assets/images/imgServicio1.png"
 import imgServicio2 from "../../public/assets/images/imgServicio2.png"
@@ -58,23 +59,48 @@ const MainPage = () => {
                 number= "1."
                 image={imgServicio1} 
                 title="Medí"
-                text="Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2"/>
+                text="Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2"
+                link = "https://www.mihuelladecarbono.app/quiz"
+                />
+                
             <CardService 
                 number="2."
                 image={imgServicio2} 
                 title="Compensá"
-                text="Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada"/>
+                text="Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada"
+                link= "/"/>
             <CardService 
                 number="3."
                 image={imgServicio3}
                 title="Monitoreá"
-                text="Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año."/>
+                text="Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año."
+                link = ""/>
                
             </div>
 
 
             
             
+        </section>
+
+        <section className="tokensEmitidos">
+            <h2>TOKENS EMITIDOS</h2>
+            <h1>LOS ÁRBOLES SON LA MEJOR TECNOLOGÍA <br/> PARA DETENER EL CAMBIO CLIMÁTICO</h1>
+            <div className="tokenContainer">
+                <TokenEmitido 
+                    title="¿Qué es un token?"
+                    text="Es una moneda virtual que representa un activo o una utilidad comercializable. Se almacena en una billetera digital y permite al titular usarlo para fines de inversión o económicos"/>
+                <TokenEmitido 
+                    title="Token OM"
+                    text="Éste token es una certificación digital de 1 m2 de bosque nativo. Con tu compra, estás protegiendo el bosque para siempre"/>
+                <TokenEmitido 
+                    title="Token OC"
+                    text="Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbone absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono"/>
+
+
+            </div>
+
+
         </section>
         <section className="tokensHome">
             <h1> Oxygen Token</h1>
