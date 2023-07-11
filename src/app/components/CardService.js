@@ -3,7 +3,7 @@ import "../styles/mainpage.css"
 import { useState } from "react";
 import Image from "next/image";
 
-const CardService = ({ image, title, text }) => {
+const CardService = ({ image, title, text, number }) => {
   const [flipped, setFlipped] = useState(false);
 
   const handleClick = () => {
@@ -19,7 +19,8 @@ const CardService = ({ image, title, text }) => {
          
     </div>
     <div class="flip-card-back">
-      <h1>{title}</h1>
+      <h1>{number}</h1>
+      <h2>{title}</h2>
       <p>{text}</p>
     </div>
   </div>

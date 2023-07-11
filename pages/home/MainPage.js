@@ -55,17 +55,20 @@ const MainPage = () => {
             <p>Los bosques nativos son uno de los principales  <br/> productores de oxígeno, son esenciales para nosotros y <br/> todos los seres vivos del planeta. Por esto, debemos <br/>proteger los territorios nativos de ser deforestados.</p></div>
             <div className="servicesContainer" >
             <CardService 
+                number= "1."
                 image={imgServicio1} 
-                title="Título del servicio"
-                text="Descripción del servicio"/>
+                title="Medí"
+                text="Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2"/>
             <CardService 
+                number="2."
                 image={imgServicio2} 
-                title="Título del servicio"
-                text="Descripción del servicio"/>
+                title="Compensá"
+                text="Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada"/>
             <CardService 
+                number="3."
                 image={imgServicio3}
-                title="Título del servicio"
-                text="Descripción del servicio"/>
+                title="Monitoreá"
+                text="Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año."/>
                
             </div>
 
