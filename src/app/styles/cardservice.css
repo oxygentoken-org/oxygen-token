@@ -37,6 +37,19 @@
     border: 0;
   }
   
+  .flip-card-front p{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-family: var(--montserrat);
+    
+    
+  }
   .flip-card-back {
     background-color: #006a6a;
     color: white;

@@ -14,6 +14,8 @@ import CardService from "@/app/components/CardService";
 import bdbLogo from "../../public/assets/logos/BdBLogo.png";
 import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
 import finguruLogo from "../../public/assets/logos/finguruLogo.png"
+import tokenIcon from "../../public/assets/logos/tokenIcon.png"
+
 
 
 
@@ -88,12 +90,15 @@ const MainPage = () => {
             <h1>LOS ÁRBOLES SON LA MEJOR TECNOLOGÍA <br/> PARA DETENER EL CAMBIO CLIMÁTICO</h1>
             <div className="tokenContainer">
                 <TokenEmitido 
+                    logo={tokenIcon}
                     title="¿Qué es un token?"
                     text="Es una moneda virtual que representa un activo o una utilidad comercializable. Se almacena en una billetera digital y permite al titular usarlo para fines de inversión o económicos"/>
                 <TokenEmitido 
+                    logo={tokenIcon}
                     title="Token OM"
                     text="Éste token es una certificación digital de 1 m2 de bosque nativo. Con tu compra, estás protegiendo el bosque para siempre"/>
                 <TokenEmitido 
+                    logo={tokenIcon}
                     title="Token OC"
                     text="Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbone absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono"/>
 

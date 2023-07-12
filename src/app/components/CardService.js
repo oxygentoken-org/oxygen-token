@@ -15,6 +15,7 @@ const CardService = ({ image, title, text, number, link }) => {
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <Image src={image} width={200} height={300} style={{borderRadius: "40px"}} />
+          <p>{title}</p>
 
          
     </div>
