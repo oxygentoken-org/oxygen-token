@@ -1,0 +1,42 @@
+.slider {
+    display: flex;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+  }
+
+.slider h2{
+    font-size: 18px;
+}
+.slider p{
+    font-size: 13px;
+}
+
+.slider a{
+    font-size: 14px;
+}
+  .prev,
+  .next {
+    background: var(--dark-green);
+    border: none;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
+  }
+  .prev:hover,
+  .next:hover {
+    cursor:pointer;
+    background-color: var(--grey);
+  }
+  
+  .prev {
+    margin-right: 1rem;
+  }
+  
+  .next {
+    margin-left: 1rem;
+  }
