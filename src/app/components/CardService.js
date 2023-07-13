@@ -11,15 +11,15 @@ const CardService = ({ image, title, text, number, link }) => {
   };
 
   return (
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
+    <div className="flip-card">
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
           <Image src={image} width={200} height={300} style={{borderRadius: "40px"}} />
           <p>{title}</p>
 
          
     </div>
-    <div class="flip-card-back">
+    <div className="flip-card-back">
       <h1>{number}</h1>
       <h2>{title}</h2>
       <p>{text}</p>

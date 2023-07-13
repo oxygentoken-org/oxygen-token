@@ -15,8 +15,10 @@ import bdbLogo from "../../public/assets/logos/BdBLogo.png";
 import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
 import finguruLogo from "../../public/assets/logos/finguruLogo.png"
 import tokenIcon from "../../public/assets/logos/tokenIcon.png"
+import logoTokenOM from "../../public/assets/logos/logoTokenOM.png";
+import logoTokenOC from "../../public/assets/logos/logoTokenOC.png";
 import Slider from "@/app/components/Slider";
-
+import ReactPlayer from "react-player";
 
 
 const MainPage = () => {
@@ -45,12 +47,12 @@ const tokensEmitidos = [
       text: "Es una moneda virtual que representa un activo o una utilidad comercializable. Se almacena en una billetera digital y permite al titular usarlo para fines de inversión o económicos",
     },
     {
-      logo: tokenIcon,
+      logo: logoTokenOM,
       title: "Token OM",
       text: "Éste token es una certificación digital de 1 m2 de bosque nativo. Con tu compra, estás protegiendo el bosque para siempre",
     },
     {
-      logo: tokenIcon,
+      logo: logoTokenOC,
       title: "Token OC",
       text: "Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbone absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono",
     },
@@ -166,9 +168,20 @@ const tokensEmitidos = [
 
 
         <section className="videoPresentacion">
-            <div className="videoHome">
+            
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=mQmOZX-8EZI&ab_channel=CarlosMart%C3%ADnez"
+                className="videoHome"
+                controls
+                playing
 
-            </div>
+
+
+
+
+              />
+
+            
             <div className="videoText">
                 <h3>NUESTRO MANIFIESTO</h3>
                 <h1>CONVERTITE EN CARBONO <br/> NEUTRAL, USA OXYGEN</h1>
