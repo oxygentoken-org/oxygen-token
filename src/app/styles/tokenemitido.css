@@ -11,8 +11,8 @@
   }
   
   .logoTokenCard {
-    width: 60px;
-    height: 55px;
+    width: 70px;
+    max-height: 65px;
   }
   
   .tokenCard h3 {

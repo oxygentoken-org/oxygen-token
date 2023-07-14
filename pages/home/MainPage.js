@@ -7,14 +7,14 @@ import "../../src/app/styles/mainpage.css"
 import imgServicio1 from "../../public/assets/images/imgServicio1.png"
 import imgServicio2 from "../../public/assets/images/imgServicio2.png"
 import imgServicio3 from "../../public/assets/images/imgServicio3.png"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import "../../src/app/globals.css";
 import CardService from "@/app/components/CardService";
 import bdbLogo from "../../public/assets/logos/BdBLogo.png";
 import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
 import finguruLogo from "../../public/assets/logos/finguruLogo.png"
-import tokenIcon from "../../public/assets/logos/tokenIcon.png"
+import tokenIcon from "../../public/assets/logos/logoQToken.png"
 import logoTokenOM from "../../public/assets/logos/logoTokenOM.png";
 import logoTokenOC from "../../public/assets/logos/logoTokenOC.png";
 import Slider from "@/app/components/Slider";
@@ -23,6 +23,7 @@ import ReactPlayer from "react-player";
 
 const MainPage = () => {
     
+  /*Mobile control para sliders*/
     const [isMobileView, setIsMobileView] = useState(false);
 
     useEffect(() => {
@@ -57,11 +58,32 @@ const tokensEmitidos = [
       text: "Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbone absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono",
     },
   ];
-    const [isFlipped, setIsFlipped] = useState(false);
+  
+  /*Para detectar cuando el usuario llega al video de presentación*/
+  const videoSectionRef = useRef(null);
 
-    const handleFlip = () => {
-      setIsFlipped(!isFlipped);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        videoSectionRef.current &&
+        window.scrollY + window.innerHeight >=
+          videoSectionRef.current.offsetTop
+      ) {
+        const videoPlayer = videoSectionRef.current.querySelector(
+          "video.react-player"
+        );
+        if (videoPlayer && videoPlayer.paused) {
+          videoPlayer.play();
+        }
+      }
     };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
     return (<>
         
         <Navbar/>
@@ -167,18 +189,13 @@ const tokensEmitidos = [
 
 
 
-        <section className="videoPresentacion">
+        <section className="videoPresentacion" ref={videoSectionRef}>
             
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=mQmOZX-8EZI&ab_channel=CarlosMart%C3%ADnez"
+                url="https://www.youtube.com/watch?v=ZLd7lNXcinI"
                 className="videoHome"
                 controls
-                playing
-
-
-
-
-
+              
               />
 
             
