@@ -251,6 +251,7 @@ flex-wrap: wrap;
 
 /*Video*/
 .videoPresentacion , .alianzasSeccion{
+    
     display: flex;
     flex-direction: row;
     background-color: #276D70;
@@ -261,12 +262,13 @@ flex-wrap: wrap;
     align-items: center;
 }
 
+
 .videoHome{
-    width: 600px;
-    height: 400px;
-    background-color: var(--grey);
-    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    
 }
+
 
 .videoText{
     color: var(--white);
@@ -290,6 +292,8 @@ flex-wrap: wrap;
     font-family: var(--montserrat);
 
 }
+
+
 
 /*Alianzas*/
  .alianzasSeccion h3{

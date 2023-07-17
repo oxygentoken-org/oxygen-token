@@ -22,7 +22,23 @@ import ReactPlayer from "react-player";
 
 
 const MainPage = () => {
-    
+  /*Resize video*/
+  useEffect(() => {
+    const handleResizeVideo = () => {
+      const videoElement = document.querySelector('.videoHome');
+      if (videoElement) {
+        const width = videoElement.offsetWidth;
+        const height = (width / 16) * 9; // Proporción 16:9, ajusta según tus necesidades
+        videoElement.style.height = `${height}px`;
+      }
+    };
+
+    window.addEventListener('resize', handleResizeVideo);
+    return () => {
+      window.removeEventListener('resize', handleResizeVideo);
+    };
+  }, []);
+
   /*Mobile control para sliders*/
     const [isMobileView, setIsMobileView] = useState(false);
 
@@ -198,7 +214,7 @@ const tokensEmitidos = [
               
               />
 
-            
+
             <div className="videoText">
                 <h3>NUESTRO MANIFIESTO</h3>
                 <h1>CONVERTITE EN CARBONO <br/> NEUTRAL, USA OXYGEN</h1>
