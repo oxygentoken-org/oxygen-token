@@ -106,6 +106,8 @@ flex-wrap: wrap;
         padding: 2px;
         font-size: 20px;
     }
+
+    
 }
 
 /*Tokens*/
@@ -291,6 +293,18 @@ flex-wrap: wrap;
     font-size: 16px;
     font-family: var(--montserrat);
 
+}
+
+@media screen and (max-width: 768px) {
+    .videoPresentacion{
+        padding: 0em;
+        gap: 1em;
+    }
+
+    .videoText{
+        padding: 1.5em;
+    }
+    
 }
 
 
