@@ -38,7 +38,7 @@
    line-height: 1.3em;
 }
 
-.layoutHome button{
+.buttonHome{
     max-width: 150px;
     padding: 1em;
     border-radius: 40px;
@@ -67,23 +67,6 @@ flex-wrap: wrap;
 
 }
 
-.dataContent{
-    display: flex;
-    flex-direction: row;
-}
-
-.dataContent p{
-    padding: 6px;
-    font-family: var(--montserrat);
-    
-}
-
-.dataNumber{
-    font-size: 24px;
-
-}
-
-
 .dataBoardLine{
     background-color: var(--white);
     width: 3px;
@@ -97,9 +80,9 @@ flex-wrap: wrap;
     }
 
     .dataBoard{
-        padding: 0.2em;
+        padding: 0em;
         margin: 2em;
-        gap: 0.5em;
+        gap: 0;
     }
 
     .dataContent p{

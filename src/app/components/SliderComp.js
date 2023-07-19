@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../styles/slider.css"
+import "../styles/sliderComp.css"
 
-function Slider(props) {
+function SliderComp(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const proyectos = props.proyectos;
@@ -19,12 +19,12 @@ function Slider(props) {
   };
 
   return proyectos.length > 0 ? (
-    <div className="slider">
-      <button className="prev" onClick={handlePrev}>
-        ←
-      </button>
+    <div className="sliderComp">
+      <button className={props.estilo ? "prev2" : "prev1"} onClick={handlePrev}>
+  ←
+</button>
       {proyectos[currentIndex]}
-      <button className="next" onClick={handleNext}>
+      <button className={props.estilo ? "next2" : "next1"}onClick={handleNext}>
         →
       </button>
     </div>
@@ -33,4 +33,4 @@ function Slider(props) {
   );
 }
 
-export default Slider;
+export default SliderComp;

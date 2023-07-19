@@ -1,0 +1,17 @@
+.dataContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.dataContent p{
+    padding: 6px;
+    font-family: var(--montserrat);
+    
+}
+
+.dataNumber{
+    font-size: 24px;
+
+}
+
+

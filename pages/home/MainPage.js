@@ -17,8 +17,9 @@ import finguruLogo from "../../public/assets/logos/finguruLogo.png"
 import tokenIcon from "../../public/assets/logos/logoQToken.png"
 import logoTokenOM from "../../public/assets/logos/logoTokenOM.png";
 import logoTokenOC from "../../public/assets/logos/logoTokenOC.png";
-import Slider from "@/app/components/Slider";
+import SliderComp from "@/app/components/SliderComp";
 import ReactPlayer from "react-player";
+import DataContent from "@/app/components/DataContent";
 
 
 const MainPage = () => {
@@ -74,6 +75,21 @@ const tokensEmitidos = [
       text: "Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbone absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono",
     },
   ];
+
+  const dataObject = [
+    {
+      number: "133.150",
+      text: "hectareas de bosque",
+    },
+    {
+      number: "190.214",
+      text: "estadios de fútbol",
+    },
+    {
+      number: "27.548",
+      text: "tn CO2 compensadas",
+    },
+  ]
   
   /*Para detectar cuando el usuario llega al video de presentación*/
   const videoSectionRef = useRef(null);
@@ -106,9 +122,19 @@ const tokensEmitidos = [
         <section className="layoutHome">
             <h1>Invertí a favor del ambiente</h1>
             <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
-            <button><a href="#servicios"> Comenzá </a></button>
+            <button className="buttonHome"><a href="#servicios"> Comenzá </a></button>
 
             <div className="dataBoard">
+              {isMobileView ? (
+              <SliderComp estilo="2" proyectos={dataObject.map((data, index) => (
+              <DataContent
+              key={index}
+              number={data.number}
+              text={data.text}
+              />
+              ))} />
+              ) : (
+                <>
                 <div className="dataContent">
                 <p className="dataNumber"><strong>133.150</strong></p>
                 <p>hectareas <br/> de bosque</p>
@@ -123,8 +149,11 @@ const tokensEmitidos = [
                 <p className="dataNumber"><strong>27.548</strong></p>
                 <p>tn CO2 <br/> compensadas</p>
                 </div>
+                </>
                 
-            </div>
+           
+      )}
+    </div>           
         </section>
         
         <section className="servicesHome" id="servicios">
@@ -165,7 +194,7 @@ const tokensEmitidos = [
             <h1>LOS ÁRBOLES SON LA MEJOR TECNOLOGÍA <br/> PARA DETENER EL CAMBIO CLIMÁTICO</h1>
             <div className="tokenContainer">
       {isMobileView ? (
-        <Slider proyectos={tokensEmitidos.map((token, index) => (
+        <SliderComp proyectos={tokensEmitidos.map((token, index) => (
           <TokenEmitido
             key={index}
             logo={token.logo}
