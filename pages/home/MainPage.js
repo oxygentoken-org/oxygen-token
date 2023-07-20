@@ -126,11 +126,12 @@ const tokensEmitidos = [
 
             <div className="dataBoard">
               {isMobileView ? (
-              <SliderComp estilo="2" proyectos={dataObject.map((data, index) => (
+              <SliderComp automatico = {true} estilo="2" proyectos={dataObject.map((data, index) => (
               <DataContent
               key={index}
               number={data.number}
               text={data.text}
+              
               />
               ))} />
               ) : (
