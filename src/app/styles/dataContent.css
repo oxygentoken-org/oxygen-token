@@ -8,6 +8,7 @@
     font-family: var(--montserrat);
     animation-duration: 2s;
     animation-name: slidein;
+   
     
 }
 
@@ -16,11 +17,16 @@
 
 }
 
+.dataNumberMobile, .dataTextMobile{
+  white-space: nowrap;
+  
+}
+
   
   @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 200%
+      width: 100%
     }
   
     to {

@@ -132,6 +132,7 @@ const tokensEmitidos = [
               number={data.number}
               text={data.text}
               
+              
               />
               ))} />
               ) : (
