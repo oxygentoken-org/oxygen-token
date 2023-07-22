@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-/*import MainPage from "../../pages/home/MainPage"*/
 import Head from 'next/head'
+import MainPage from '../../pages/home/MainPage'
 import "./globals.css"
 
 
@@ -16,10 +16,14 @@ export default function Home() {
       <link rel='icon' href='./favicon.ico'/>
       
       </Head> 
-      <div className='anteSala'>
+
+      <MainPage/>
+
+
+      {/*<div className='anteSala'>
       <h1>Paremos la desforestación</h1>
       <a href='/home'>Parar</a> 
-      </div>
+  </div>*/}
   
      
     </main>

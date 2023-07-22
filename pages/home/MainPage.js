@@ -22,7 +22,7 @@ import DataContent from "@/app/components/DataContent";
 import Head from "next/head";
 
 
-const index = () => {
+const MainPage = () => {
   /*Resize video*/
   useEffect(() => {
     const handleResizeVideo = () => {
@@ -279,4 +279,4 @@ const tokensEmitidos = [
     );
   };
   
-  export default index;
+  export default MainPage;
