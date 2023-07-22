@@ -1,5 +1,4 @@
-"use client"; // This is a client component 👈🏽
-
+"use client"; 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import TokenEmitido from "@/app/components/TokenEmitido";
@@ -20,9 +19,10 @@ import logoTokenOC from "../../public/assets/logos/logoTokenOC.png";
 import SliderComp from "@/app/components/SliderComp";
 import ReactPlayer from "react-player";
 import DataContent from "@/app/components/DataContent";
+import Head from "next/head";
 
 
-const MainPage = () => {
+const index = () => {
   /*Resize video*/
   useEffect(() => {
     const handleResizeVideo = () => {
@@ -118,6 +118,12 @@ const tokensEmitidos = [
   
     return (<>
         
+        <Head>
+      <title>Oxygen Token</title>
+      <meta name='description' content='Reduci tus emisiones de CO2 con Oxygen'/>
+      <link rel='icon' href='./favicon.ico'/>
+      
+      </Head> 
         <Navbar/>
         <section className="layoutHome">
             <h1>Invertí a favor del ambiente</h1>
@@ -131,8 +137,6 @@ const tokensEmitidos = [
               key={index}
               number={data.number}
               text={data.text}
-              
-              
               />
               ))} />
               ) : (
@@ -275,4 +279,4 @@ const tokensEmitidos = [
     );
   };
   
-  export default MainPage;
+  export default index;

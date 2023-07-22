@@ -6,8 +6,8 @@ const DataContent = ({ number, text, mobile }) => {
   return (
     <>
       <div className="dataContent">
-                <p className={mobile ? "dataNumber" : "dataNumberMobile"}><strong>{number}</strong></p>
-                <p className={mobile ? "dataText" : "dataTextMobile"}>{text}</p>
+                <p className= "dataNumber"><strong>{number}</strong></p>
+                <p className="dataText">{text}</p>
                 </div>
     </> 
   );

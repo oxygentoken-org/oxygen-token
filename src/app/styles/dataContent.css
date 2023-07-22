@@ -8,21 +8,19 @@
     font-family: var(--montserrat);
     animation-duration: 2s;
     animation-name: slidein;
-   
-    
+  
 }
 
+.dataNumber, .dataText{
+  white-space: nowrap;
+  
+}
 .dataNumber{
     font-size: 24px;
 
 }
 
-.dataNumberMobile, .dataTextMobile{
-  white-space: nowrap;
-  
-}
 
-  
   @keyframes slidein {
     from {
       margin-left: 100%;
