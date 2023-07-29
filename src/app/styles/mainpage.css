@@ -5,10 +5,27 @@
     padding: 2em;
     justify-content: center;
     flex-direction: column;
-    min-height: 800px;
-    background-image: url("../../../public/assets/images/ImgMainPage.png");
+    
+    /*Comentar las siguientes tres lineas para probar videos*/
+    /*background-image: url("../../../public/assets/images/ImgMainPage.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    
+
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.videoLayout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    min-height: 800px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
 }
 
 
@@ -19,6 +36,7 @@
     font-size: 60px;
     font-weight: 500;
     line-height: 1em;
+    padding-top: 0.6em;
 
 }
 
@@ -75,6 +93,10 @@ flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
+
+    .videoLayout{
+
+    }
     .dataBoardLine{
         display: none;
     }

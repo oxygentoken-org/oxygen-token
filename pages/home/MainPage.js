@@ -22,6 +22,7 @@ import DataContent from "@/app/components/DataContent";
 import Head from "next/head";
 
 
+
 const MainPage = () => {
   /*Resize video*/
   useEffect(() => {
@@ -90,33 +91,11 @@ const tokensEmitidos = [
       text: "tn CO2 compensadas",
     },
   ]
-  
-  /*Para detectar cuando el usuario llega al video de presentación*/
-  const videoSectionRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (
-        videoSectionRef.current &&
-        window.scrollY + window.innerHeight >=
-          videoSectionRef.current.offsetTop
-      ) {
-        const videoPlayer = videoSectionRef.current.querySelector(
-          "video.react-player"
-        );
-        if (videoPlayer && videoPlayer.paused) {
-          videoPlayer.play();
-        }
-      }
-    };
   
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   
-    return (<>
+  
+  return (<>
         
         <Head>
       <title>Oxygen Token</title>
@@ -126,6 +105,19 @@ const tokensEmitidos = [
       </Head> 
         <Navbar/>
         <section className="layoutHome">
+      
+
+            <ReactPlayer
+                url="https://www.youtube.com/watch?v=nqye02H_H6I&ab_channel=RelaxingTree"
+                className="videoLayout"
+                playing= {true}
+                loop ={true}
+                muted
+                height="100vh"
+                width="100%"
+              
+
+              />
             <h1>Invertí a favor del ambiente</h1>
             <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
             <button className="buttonHome"><a href="#servicios"> Comenzá </a></button>
@@ -240,7 +232,7 @@ const tokensEmitidos = [
 
 
 
-        <section className="videoPresentacion" ref={videoSectionRef}>
+        <section className="videoPresentacion" >
             
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=ZLd7lNXcinI"
