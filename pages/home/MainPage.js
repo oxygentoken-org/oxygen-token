@@ -20,6 +20,7 @@ import SliderComp from "@/app/components/SliderComp";
 import ReactPlayer from "react-player";
 import DataContent from "@/app/components/DataContent";
 import Head from "next/head";
+import imgMainPage from "../../public/assets/images/imgMainPage.png"
 
 
 
@@ -105,19 +106,15 @@ const tokensEmitidos = [
       </Head> 
         <Navbar/>
         <section className="layoutHome">
-      
-
-            <ReactPlayer
+          <ReactPlayer
                 url="https://www.youtube.com/watch?v=nqye02H_H6I&ab_channel=RelaxingTree"
                 className="videoLayout"
                 playing= {true}
                 loop ={true}
                 muted
-                height="100vh"
-                width="100%"
-              
+                width= "100%"
 
-              />
+  />
             <h1>Invertí a favor del ambiente</h1>
             <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
             <button className="buttonHome"><a href="#servicios"> Comenzá </a></button>
