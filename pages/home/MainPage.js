@@ -20,7 +20,6 @@ import SliderComp from "@/app/components/SliderComp";
 import ReactPlayer from "react-player";
 import DataContent from "@/app/components/DataContent";
 import Head from "next/head";
-import imgMainPage from "../../public/assets/images/imgMainPage.png"
 
 
 
