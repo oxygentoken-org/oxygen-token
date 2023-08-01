@@ -20,10 +20,19 @@ import SliderComp from "@/app/components/SliderComp";
 import ReactPlayer from "react-player";
 import DataContent from "@/app/components/DataContent";
 import Head from "next/head";
+import logoGeneral from "../../public/assets/images/logo.png";
 
 
 
 const MainPage = () => {
+
+  /*Animacion inicial*/
+    const [isOnHome, setIsOnHome] = useState(false);
+
+    const handleHidePrevHome = () => {
+      setIsOnHome(true);
+    };
+
   /*Resize video*/
   useEffect(() => {
     const handleResizeVideo = () => {
@@ -103,6 +112,16 @@ const tokensEmitidos = [
       <link rel='icon' href='./favicon.ico'/>
       
       </Head> 
+      {!isOnHome && (
+        <section className="prevHome">
+          {/* Resto del contenido de la sección prevHome */}
+          <Image className="prevHomeLogo" src={logoGeneral} alt="logo Oxygen"></Image>
+          <div className="prevHomeContainer">
+            <h1>Paremos la deforestación.</h1>
+            <button onClick={handleHidePrevHome}>Parar</button>
+          </div>
+        </section>
+      )}
         <Navbar/>
         <section className="layoutHome">
           <ReactPlayer
