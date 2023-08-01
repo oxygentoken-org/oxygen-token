@@ -27,11 +27,19 @@ import logoGeneral from "../../public/assets/images/logo.png";
 const MainPage = () => {
 
   /*Animacion inicial*/
+
     const [isOnHome, setIsOnHome] = useState(false);
 
+
     const handleHidePrevHome = () => {
-      setIsOnHome(true);
+      setShowAnimation(true);
+      setTimeout(() => {
+        setIsOnHome(true);
+        setShowAnimation(false);
+      }, 1500); // 2000 ms = 2 segundos
     };
+
+    const [showAnimation, setShowAnimation] = useState(false);
 
   /*Resize video*/
   useEffect(() => {
@@ -112,16 +120,17 @@ const tokensEmitidos = [
       <link rel='icon' href='./favicon.ico'/>
       
       </Head> 
-      {!isOnHome && (
+        {!isOnHome && (
         <section className="prevHome">
-          {/* Resto del contenido de la sección prevHome */}
+          {showAnimation && <div className="expandAnimation" />}
           <Image className="prevHomeLogo" src={logoGeneral} alt="logo Oxygen"></Image>
           <div className="prevHomeContainer">
             <h1>Paremos la deforestación.</h1>
-            <button onClick={handleHidePrevHome}>Parar</button>
+            <button onClick={handleHidePrevHome} >Parar</button>
           </div>
         </section>
       )}
+      {isOnHome && (<>
         <Navbar/>
         <section className="layoutHome">
           <ReactPlayer
@@ -280,6 +289,7 @@ const tokensEmitidos = [
         </section>
 
         <Footer/>
+        </>)}
         
         </>
      

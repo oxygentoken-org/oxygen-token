@@ -49,6 +49,31 @@
     background-position: right; 
     transition: background-position 0.6s ease;   
 }
+.expandAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient( #3be23b , #074907);
+    background-size: 200% 200%;
+    animation: expandGradient 1.5s forwards;
+  }
+  
+@keyframes expandGradient {
+    0% {
+          background-size: 100% 100%;
+        }
+
+    100%{
+        background-size: 200% 200%;
+    }
+      }
+  
+  
+.prevHomeHide{
+    display: none;
+}
 
 
 /*Layout*/

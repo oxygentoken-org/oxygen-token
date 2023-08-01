@@ -4,6 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 200px;
+    background-color: var(--white);
     
     justify-content: center;
 }
