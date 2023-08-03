@@ -21,6 +21,7 @@ import ReactPlayer from "react-player";
 import DataContent from "@/app/components/DataContent";
 import Head from "next/head";
 import logoGeneral from "../../public/assets/images/logo.png";
+import treeLoading from "../../public/assets/logos/treeLogoLoading.png"
 
 
 
@@ -29,17 +30,22 @@ const MainPage = () => {
   /*Animacion inicial*/
 
     const [isOnHome, setIsOnHome] = useState(false);
-
+    const [showAnimation, setShowAnimation] = useState(false);
+    const [showLoading, setShowLoading] = useState(false); 
+   
 
     const handleHidePrevHome = () => {
       setShowAnimation(true);
+      setShowLoading(true); 
       setTimeout(() => {
         setIsOnHome(true);
         setShowAnimation(false);
-      }, 1500); // 2000 ms = 2 segundos
+        setShowLoading(false);
+      }, 2000);
     };
 
-    const [showAnimation, setShowAnimation] = useState(false);
+    
+
 
   /*Resize video*/
   useEffect(() => {
@@ -123,6 +129,10 @@ const tokensEmitidos = [
         {!isOnHome && (
         <section className="prevHome">
           {showAnimation && <div className="expandAnimation" />}
+          {showLoading && (<div className="loadingCircle">
+        
+          <Image src={treeLoading} alt="Loading Tree" className="loadingTree"/>
+          </div>)}
           <Image className="prevHomeLogo" src={logoGeneral} alt="logo Oxygen"></Image>
           <div className="prevHomeContainer">
             <h1>Paremos la deforestación.</h1>

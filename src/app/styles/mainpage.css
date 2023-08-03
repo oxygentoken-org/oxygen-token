@@ -57,7 +57,7 @@
     height: 100%;
     background: radial-gradient( #3be23b , #074907);
     background-size: 200% 200%;
-    animation: expandGradient 1.5s forwards;
+    animation: expandGradient 2s forwards;
   }
   
 @keyframes expandGradient {
@@ -75,6 +75,56 @@
     display: none;
 }
 
+.loadingCircle {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-top: 4px solid #56a49e; 
+    animation: spin 1.5s linear infinite; 
+    z-index: 9999; 
+  }
+
+.loadingTree {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    animation: notspin 1.5s linear infinite; 
+
+    
+    
+  }
+  
+ 
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes notspin {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  
+  
+  
+  
+  
 
 /*Layout*/
 
