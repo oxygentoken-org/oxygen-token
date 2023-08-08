@@ -1,9 +1,7 @@
-"use client"; // This is a client component 👈🏽
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
-import "../../src/app/styles/comprar.css";
-import "../../src/app/globals.css";
-import Image from "next/image";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import "../../../styles/comprar.css"
+import "../../app/globals.css"
 
 
 const Comprar = () =>{

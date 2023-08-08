@@ -1,13 +1,12 @@
-"use client"; // This is a client component 👈🏽
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
-import "../../src/app/styles/nosotros.css";
-import "../../src/app/globals.css";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import "../../../styles/nosotros.css"
+import "../../app/globals.css"
 import Image from "next/image";
-import ejemploTeam from "../../public/assets/images/ejemploTeam.png";
-import logoInstagram from "../../public/assets/logos/logoInstagram.png"
-import logoLinkedin from "../../public/assets/logos/logoLinkedin.png"
-import logoTwitter from "../../public/assets/logos/logoTwitter.png";
+import ejemploTeam from "../../../public/assets/images/ejemploTeam.png";
+import logoInstagram from "../../../public/assets/logos/logoInstagram.png"
+import logoLinkedin from "../../../public/assets/logos/logoLinkedin.png"
+import logoTwitter from "../../../public/assets/logos/logoTwitter.png";
 import Head from "next/head";
 
 const Nosotros = () =>{

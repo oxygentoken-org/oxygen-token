@@ -1,27 +1,27 @@
 "use client"; 
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
-import TokenEmitido from "@/app/components/TokenEmitido";
-import "../../src/app/styles/mainpage.css"
-import imgServicio1 from "../../public/assets/images/imgServicio1.png"
-import imgServicio2 from "../../public/assets/images/imgServicio2.png"
-import imgServicio3 from "../../public/assets/images/imgServicio3.png"
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import TokenEmitido from "./TokenEmitido";
+import "../styles/mainpage.css"
+import imgServicio1 from "../public/assets/images/imgServicio1.png"
+import imgServicio2 from "../public/assets/images/imgServicio2.png"
+import imgServicio3 from "../public/assets/images/imgServicio3.png"
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import "../../src/app/globals.css";
-import CardService from "@/app/components/CardService";
-import bdbLogo from "../../public/assets/logos/BdBLogo.png";
-import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
-import finguruLogo from "../../public/assets/logos/finguruLogo.png"
-import tokenIcon from "../../public/assets/logos/logoQToken.png"
-import logoTokenOM from "../../public/assets/logos/logoTokenOM.png";
-import logoTokenOC from "../../public/assets/logos/logoTokenOC.png";
-import SliderComp from "@/app/components/SliderComp";
+import "../src/app/globals.css"
+import CardService from "./CardService";
+import bdbLogo from "../public/assets/logos/BdBLogo.png";
+import chronosPayLogo from "../public/assets/logos/chronosPayLogo.png"
+import finguruLogo from "../public/assets/logos/finguruLogo.png"
+import tokenIcon from "../public/assets/logos/logoQToken.png"
+import logoTokenOM from "../public/assets/logos/logoTokenOM.png";
+import logoTokenOC from "../public/assets/logos/logoTokenOC.png";
+import SliderComp from "./SliderComp";
 import ReactPlayer from "react-player";
-import DataContent from "@/app/components/DataContent";
+import DataContent from "./DataContent";
 import Head from "next/head";
-import logoGeneral from "../../public/assets/images/logo.png";
-import treeLoading from "../../public/assets/logos/treeLogoLoading.png"
+import logoGeneral from "../public/assets/images/logo.png";
+import treeLoading from "../public/assets/logos/treeLogoLoading.png"
 
 
 

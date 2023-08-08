@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     min-height: 500px;
-    background-image: url('../../../public/assets/images/imgUs.jpg');
+    background-image: url("../public/assets/images/imgUs.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     flex-wrap: wrap;

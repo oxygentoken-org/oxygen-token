@@ -1,7 +1,7 @@
-"use client"; // This is a client component 👈🏽
+"use client";
 import "../styles/navbar.css";
 import { useState } from "react";
-import logoNav from "../../../public/assets/images/logo.png"
+import logoNav from "../public/assets/images/logo.png"
 import Image from 'next/image';
 
 

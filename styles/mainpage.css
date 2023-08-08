@@ -1,7 +1,7 @@
 /*PrevHome*/
 
 .prevHome{   
-    background-image: url("../../../public/assets/images/imgPrevia.png");
+    background-image: url("../public/assets/images/imgPrevia.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -135,7 +135,7 @@
     flex-direction: column;
     
     /*Comentar las siguientes tres lineas para probar videos*/
-    /*background-image: url("../../../public/assets/images/ImgMainPage.png");
+    /*background-image: url("../public/assets/images/ImgMainPage.png");
     background-size: cover;
     background-repeat: no-repeat;*/
 
@@ -239,7 +239,7 @@ flex-wrap: wrap;
         display: none;
     }
     .layoutHome{
-        background-image: url("../../../public/assets/images/ImgMainPage.png");
+        background-image: url("../public/assets/images/ImgMainPage.png");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -501,7 +501,7 @@ flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url('../../../public/assets/images/imgTrees.jpg');
+    background-image: url('../public/assets/images/imgTrees.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color:var(--white);
