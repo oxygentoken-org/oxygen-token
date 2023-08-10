@@ -23,7 +23,7 @@ const CardService = ({ image, title, text, number, link }) => {
       <h1>{number}</h1>
       <h2>{title}</h2>
       <p>{text}</p>
-      <a href={link} target="_blank" rel="noreferrer">Ver más</a>
+      <a href={link} target="_blank" rel="noreferrer" className="see-more-link">Ver más</a>
     </div>
   </div>
 </div>

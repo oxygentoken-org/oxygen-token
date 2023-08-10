@@ -29,7 +29,7 @@ function Footer() {
             <h3>Empresa</h3>
             <ul className="redirects">
                 <li><a href="/nosotros">Nosotros</a></li>
-                <li><a href="/proyectos">Proyectos</a></li>
+                <li><a href="/proyecto">Proyectos</a></li>
                 <li><a href="/contacto">Contacto</a></li>
                 <li><a href="/joinus">Join Us</a></li>
             </ul>
