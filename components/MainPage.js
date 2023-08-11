@@ -144,7 +144,7 @@ const tokensEmitidos = [
         <Navbar/>
         <section className="layoutHome">
           <ReactPlayer
-                url="https://www.youtube.com/watch?v=nqye02H_H6I&ab_channel=RelaxingTree"
+                url="https://www.youtube.com/watch?v=_R8vjDYrg68&ab_channel=OxygenToken"
                 className="videoLayout"
                 playing= {true}
                 loop ={true}
