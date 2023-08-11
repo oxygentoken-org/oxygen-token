@@ -3,6 +3,10 @@ import Footer from "../../../components/Footer";
 import "../../../styles/comprar.css"
 import "../../app/globals.css"
 
+export const metadata = {
+    title: 'Comprar',
+    description: 'Reducí tus emisiones de CO2 con Oxygen',
+  }
 
 const Comprar = () =>{
     return (

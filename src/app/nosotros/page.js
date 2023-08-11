@@ -9,6 +9,10 @@ import logoLinkedin from "../../../public/assets/logos/logoLinkedin.png"
 import logoTwitter from "../../../public/assets/logos/logoTwitter.png";
 import Head from "next/head";
 
+export const metadata = {
+    title: 'Nosotros',
+    description: 'Reducí tus emisiones de CO2 con Oxygen',
+  }
 const Nosotros = () =>{
     return (
         <>

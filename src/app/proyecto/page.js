@@ -3,7 +3,10 @@ import Footer from "../../../components/Footer";
 import "../../../styles/proyecto.css"
 import "../../app/globals.css"
 
-
+export const metadata = {
+    title: 'Proyecto',
+    description: 'Reducí tus emisiones de CO2 con Oxygen',
+  }
 const Proyecto = () =>{
     return (
         <><Navbar/>
