@@ -1,6 +1,6 @@
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../components/Footer";
-import "../../../styles/comprar.css"
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import "../../styles/comprar.css"
 import "../../app/globals.css"
 
 export const metadata = {

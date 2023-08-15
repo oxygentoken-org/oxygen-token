@@ -1,7 +1,5 @@
-import styles from './page.module.css'
-import MainPage from "../../components/MainPage"
+import MainPage from "@/components/MainPage"
 import "./globals.css"
-import Head from 'next/head'
 
 export const metadata = {
   title: 'Oxygen Token',
@@ -13,7 +11,7 @@ export const metadata = {
 export default function Home() {
     return (<>
       
-    <main className={styles.main}>
+    <main>
       <MainPage/>     
     </main>
     </>

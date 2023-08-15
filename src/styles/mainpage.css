@@ -1,7 +1,7 @@
 /*PrevHome*/
 
 .prevHome{   
-    background-image: url("../public/assets/images/imgPrevia.png");
+    background-image: url("../../public/assets/images/imgPrevia.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -232,7 +232,7 @@ flex-wrap: wrap;
         display: none;
     }
     .layoutHome{
-        background-image: url("../public/assets/images/ImgMainPage.png");
+        background-image: url("../../public/assets/images/ImgMainPage.png");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -302,10 +302,9 @@ flex-wrap: wrap;
 }
 
 .token{
-    width: 250px;
-    height: 400px;
+    max-width: 250px;
+    height: auto;
     border-radius: 50px;
-    background-color: var(--grey);
 }
 
 .tokensProgress{
@@ -384,9 +383,6 @@ flex-wrap: wrap;
     margin-top: 20px;
     
 }
-
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -494,7 +490,7 @@ flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url('../public/assets/images/imgTrees.jpg');
+    background-image: url('../../public/assets/images/imgTrees.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color:var(--white);

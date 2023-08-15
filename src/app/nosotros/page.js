@@ -1,6 +1,6 @@
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../components/Footer";
-import "../../../styles/nosotros.css"
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import "../../styles/nosotros.css"
 import "../../app/globals.css"
 import Image from "next/image";
 import ejemploTeam from "../../../public/assets/images/ejemploTeam.png";

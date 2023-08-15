@@ -3,27 +3,27 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TokenEmitido from "./TokenEmitido";
 import "../styles/mainpage.css"
-import imgServicio1 from "../public/assets/images/imgServicio1.png"
-import imgServicio2 from "../public/assets/images/imgServicio2.png"
-import imgServicio3 from "../public/assets/images/imgServicio3.png"
+import imgServicio1 from "../../public/assets/images/imgServicio1.png"
+import imgServicio2 from "../../public/assets/images/imgServicio2.png"
+import imgServicio3 from "../../public/assets/images/imgServicio3.png"
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import "../src/app/globals.css"
+import "../app/globals.css"
 import CardService from "./CardService";
-import bdbLogo from "../public/assets/logos/BdBLogo.png";
-import chronosPayLogo from "../public/assets/logos/chronosPayLogo.png"
-import finguruLogo from "../public/assets/logos/finguruLogo.png"
-import tokenIcon from "../public/assets/logos/logoQToken.png"
-import logoTokenOM from "../public/assets/logos/logoTokenOM.png";
-import logoTokenOC from "../public/assets/logos/logoTokenOC.png";
+import bdbLogo from "../../public/assets/logos/BdBLogo.png";
+import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
+import finguruLogo from "../../public/assets/logos/finguruLogo.png"
+import tokenIcon from "../../public/assets/logos/logoQToken.png"
+import logoTokenOM from "../../public/assets/logos/logoTokenOM.png";
+import logoTokenOC from "../../public/assets/logos/logoTokenOC.png";
 import SliderComp from "./SliderComp";
 import ReactPlayer from "react-player";
 import DataContent from "./DataContent";
 import Head from "next/head";
-import logoGeneral from "../public/assets/images/logo.png";
-import treeLoading from "../public/assets/logos/treeLogoLoading.png"
-
-
+import logoGeneral from "../../public/assets/images/logo.png";
+import treeLoading from "../../public/assets/logos/treeLogoLoading.png"
+import token1 from "../../public/assets/images/tokenv1.png"
+import token2 from "../../public/assets/images/tokenv2.png"
 
 const MainPage = () => {
 
@@ -149,9 +149,7 @@ const tokensEmitidos = [
                 playing= {true}
                 loop ={true}
                 muted
-                width= "100%"
-
-  />
+      width= "100%"/>
             <h1>Invertí a favor del ambiente</h1>
             <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
             <button className="buttonHome"><a href="#servicios"> Comenzá </a></button>
@@ -250,10 +248,11 @@ const tokensEmitidos = [
         <section className="tokensHome">
             <h1> Oxygen Token</h1>
             <div className="tokenContainer">
-                <div className="token"></div>
-                <div className="token"></div>
-                <div className="token"></div>
-                <div className="token"></div>
+               <Image className="token" src={token1} alt ="Token"/>
+               <Image className="token" src={token1} alt ="Token"/>
+               <Image className="token" src={token1} alt ="Token"/>
+               <Image className="token" src={token1} alt ="Token"/>
+               
 
             </div>
             <div className="tokensProgress">

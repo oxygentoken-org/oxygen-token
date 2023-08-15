@@ -1,11 +1,11 @@
 "use client"; // This is a client component 👈🏽
 import "../styles/footer.css"
 import Image from 'next/image';
-import logoFooter from "../public/assets/images/logo.png"
-import logoInstagram from "../public/assets/logos/logoInstagram.png"
-import logoLinkedin from "../public/assets/logos/logoLinkedin.png"
-import logoTwitter from "../public/assets/logos/logoTwitter.png";
-import logoYoutube from "../public/assets/logos/logoYoutube.png"
+import logoFooter from "../../public/assets/images/logo.png"
+import logoInstagram from "../../public/assets/logos/logoInstagram.png"
+import logoLinkedin from "../../public/assets/logos/logoLinkedin.png"
+import logoTwitter from "../../public/assets/logos/logoTwitter.png";
+import logoYoutube from "../../public/assets/logos/logoYoutube.png"
 
 
 
