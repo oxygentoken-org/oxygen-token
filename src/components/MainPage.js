@@ -23,7 +23,7 @@ import Head from "next/head";
 import logoGeneral from "../../public/assets/images/logo.png";
 import treeLoading from "../../public/assets/logos/treeLogoLoading.png"
 import token1 from "../../public/assets/images/tokenv1.png"
-import token2 from "../../public/assets/images/tokenv2.png"
+import TokensNFT from "./TokensNFT";
 
 const MainPage = () => {
 
@@ -100,6 +100,30 @@ const tokensEmitidos = [
     },
   ];
 
+  const serviceCards =[
+    {
+      number: "1.",
+      image: imgServicio1,
+      title:"Medí",
+      text:"Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2",
+      link : "https://www.mihuelladecarbono.app/quiz",
+    },
+    {
+      number: "2.",
+      image: imgServicio2,
+      title:"Compensá",
+      text:"Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada",
+      link : "/",
+    },
+    {
+      number: "3.",
+      image: imgServicio3,
+      title:"Monitoreá",
+      text:"Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año.",
+      link : "/",
+    },
+    
+  ];
   const dataObject = [
     {
       number: "133.150",
@@ -191,28 +215,30 @@ const tokensEmitidos = [
             <h1>CONSERVÁ LOS <br/>TERRITORIOS NATIVOS</h1>
             <p>Los bosques nativos son uno de los principales  <br/> productores de oxígeno, son esenciales para nosotros y <br/> todos los seres vivos del planeta. Por esto, debemos <br/>proteger los territorios nativos de ser deforestados.</p></div>
             <div className="servicesContainer" >
-            <CardService 
-                number= "1."
-                image={imgServicio1} 
-                title="Medí"
-                text="Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2"
-                link = "https://www.mihuelladecarbono.app/quiz"
-                />
-                
-            <CardService 
-                number="2."
-                image={imgServicio2} 
-                title="Compensá"
-                text="Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada"
-                link= "/"/>
-            <CardService 
-                number="3."
-                image={imgServicio3}
-                title="Monitoreá"
-                text="Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año."
-                link = ""/>
-               
-            </div>
+            {isMobileView ? (
+        <SliderComp automatico = {true} estilo="2" proyectos={serviceCards.map((card, index) => (
+          <CardService
+            key={index}
+            number={card.number}
+            image={card.image}
+            title={card.title}
+            text={card.text}
+            link={card.link}
+          />
+        ))} />
+      ) : (
+        serviceCards.map((card, index) => (
+          <CardService
+            key={index}
+            number={card.number}
+            image={card.image}
+            title={card.title}
+            text={card.text}
+            link={card.link}
+          />
+        ))
+      )}    
+      </div>
 
 
             
@@ -247,14 +273,18 @@ const tokensEmitidos = [
         </section>
         <section className="tokensHome">
             <h1> Oxygen Token</h1>
-            <div className="tokenContainer">
-               <Image className="token" src={token1} alt ="Token"/>
-               <Image className="token" src={token1} alt ="Token"/>
-               <Image className="token" src={token1} alt ="Token"/>
-               <Image className="token" src={token1} alt ="Token"/>
-               
-
-            </div>
+            
+            {isMobileView ? (
+        <SliderComp proyectos={[<TokensNFT/>, <TokensNFT/>, <TokensNFT/>, <TokensNFT/>]} />
+      ) : (
+        <div className="tokenContainer">
+        <TokensNFT/>
+        <TokensNFT/>
+        <TokensNFT/>
+        <TokensNFT/>
+        </div>
+      )}
+    
             <div className="tokensProgress">
                 <div className="progressLine"></div>
                 <p> Objetivo final: <br/> 000 hectareas</p>
