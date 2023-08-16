@@ -96,7 +96,7 @@ const tokensEmitidos = [
     {
       logo: logoTokenOC,
       title: "Token OC",
-      text: "Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbone absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono",
+      text: "Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbono absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono",
     },
   ];
 

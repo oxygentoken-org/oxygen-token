@@ -3,6 +3,8 @@
     width: 200px;
     height: 300px;
     perspective: 1000px; 
+    -webkit-transform: translateZ(0); 
+    transform: translateZ(0);
    
   }
   
@@ -14,6 +16,7 @@
     transition: transform 0.8s;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    
 
 
   }
@@ -31,6 +34,8 @@
     backface-visibility: hidden;
     border-radius: 20px;
     border: 0;
+    -webkit-transform: translateZ(0); 
+    transform: translateZ(0);
     
 
 
