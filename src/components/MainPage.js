@@ -67,21 +67,23 @@ const MainPage = () => {
   /*Mobile control para sliders*/
     const [isMobileView, setIsMobileView] = useState(false);
 
-    useEffect(() => {
-      const handleResize = () => {
-        const screenWidth = window.innerWidth;
-        const mobileThreshold = 650; // Valor de ancho para considerar la vista como móvil
-  
-        setIsMobileView(screenWidth < mobileThreshold);
+    useEffect(()=> {
+      const mobileMediaQuery = window.matchMedia("(max-width: 650px)");
+
+      //Actualiza el estado
+      const handleMediaQueryChange = (event) =>{
+        setIsMobileView(event.matches);
       };
-  
-      handleResize(); // Verificar inicialmente el tamaño de la ventana
-  
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize); // Limpiar el listener al desmontar el componente
+
+      handleMediaQueryChange(mobileMediaQuery); //Inicialmente
+      mobileMediaQuery.addEventListener('change', handleMediaQueryChange);
+
+      return() =>{
+        mobileMediaQuery.removeEventListener('change', handleMediaQueryChange);
       };
-    }, []);
+    },[]);
+
+
 const tokensEmitidos = [
     {
       logo: tokenIcon,
