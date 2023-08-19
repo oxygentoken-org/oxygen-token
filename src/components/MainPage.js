@@ -22,7 +22,6 @@ import DataContent from "./DataContent";
 import Head from "next/head";
 import logoGeneral from "../../public/assets/images/logo.png";
 import treeLoading from "../../public/assets/logos/treeLogoLoading.png"
-import token1 from "../../public/assets/images/tokenv1.png"
 import TokensNFT from "./TokensNFT";
 
 const MainPage = () => {
@@ -174,8 +173,8 @@ const tokensEmitidos = [
                 className="videoLayout"
                 playing= {true}
                 loop ={true}
-                muted
-      width= "100%"/>
+                muted/>
+
             <h1>Invertí a favor del ambiente</h1>
             <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
             <button className="buttonHome"><a href="#servicios"> Comenzá </a></button>
