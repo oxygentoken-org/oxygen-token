@@ -1,9 +1,6 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import TagManager, {TagManagerArgs} from 'react-gtm-module';
-//import { useEffect } from 'react';
 import Head from 'next/head';
-import RootLayout from './layout-ga';
+//import RootLayout from './layout-ga';
 
 const { NextIntlClientProvider } = require('next-intl');
 const { notFound } = require('next/navigation');
@@ -28,7 +25,7 @@ async function LocaleLayout({ children, params: { locale } }) {
     </Head>
     <html lang={locale}>
       <body>
-        <RootLayout/>
+        {/*<RootLayout/>*/}
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
