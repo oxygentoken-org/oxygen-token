@@ -14,6 +14,6 @@ export default function RootLayout() {
   }, []);
 
 
-  return (console.log("Anda" + gtmId)
+  return (console.log("Running")
   )
 }
