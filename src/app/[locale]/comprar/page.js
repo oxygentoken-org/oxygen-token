@@ -1,8 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import "../../styles/comprar.css"
-import "../../app/globals.css"
-
+import "../../../styles/comprar.css"
+import "../../[locale]/globals.css"
 export const metadata = {
     title: 'Comprar',
     description: 'Reducí tus emisiones de CO2 con Oxygen',

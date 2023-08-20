@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import "../../styles/proyecto.css"
-import "../../app/globals.css"
+import "../../../styles/proyecto.css"
+import "../../[locale]/globals.css"
 
 export const metadata = {
     title: 'Proyecto',

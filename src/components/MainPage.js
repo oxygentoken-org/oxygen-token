@@ -8,7 +8,7 @@ import imgServicio2 from "../../public/assets/images/imgServicio2.png"
 import imgServicio3 from "../../public/assets/images/imgServicio3.png"
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import "../app/globals.css"
+import "../app/[locale]/globals.css"
 import CardService from "./CardService";
 import bdbLogo from "../../public/assets/logos/BdBLogo.png";
 import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
@@ -23,9 +23,12 @@ import Head from "next/head";
 import logoGeneral from "../../public/assets/images/logo.png";
 import treeLoading from "../../public/assets/logos/treeLogoLoading.png"
 import TokensNFT from "./TokensNFT";
+import { useTranslations } from "next-intl";
 
 const MainPage = () => {
 
+  /*Traducciones*/
+  const t = useTranslations('MainPage');
   /*Animacion inicial*/
 
     const [isOnHome, setIsOnHome] = useState(false);
@@ -174,7 +177,7 @@ const tokensEmitidos = [
                 playing= {true}
                 loop ={true}
                 muted/>
-
+            <h1>{t('title')}</h1>
             <h1>Invertí a favor del ambiente</h1>
             <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
             <button className="buttonHome"><a href="#servicios"> Comenzá </a></button>
