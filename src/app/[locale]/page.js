@@ -1,3 +1,4 @@
+"use client"
 import MainPage from "@/components/MainPage"
 import "./globals.css"
 

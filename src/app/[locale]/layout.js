@@ -19,19 +19,14 @@ async function LocaleLayout({ children, params: { locale } }) {
     notFound();
   }
 
-  return (<>
-    <Head>
-       <title>Oxygen Token</title> 
-    </Head>
+  return (
     <html lang={locale}>
       <body>
-        {/*<RootLayout/>*/}
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
     </html>
-    </>
   );
 }
 
