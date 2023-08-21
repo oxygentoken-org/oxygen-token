@@ -1,5 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../../../styles/nosotros.css"
 import "../../[locale]/globals.css"
 import Image from "next/image";
@@ -8,12 +9,12 @@ import logoInstagram from "../../../../public/assets/logos/logoInstagram.png"
 import logoLinkedin from "../../../../public/assets/logos/logoLinkedin.png"
 import logoTwitter from "../../../../public/assets/logos/logoTwitter.png";
 import Head from "next/head";
+import { useTranslations } from "next-intl";
 
-export const metadata = {
-    title: 'Nosotros',
-    description: 'Reducí tus emisiones de CO2 con Oxygen',
-  }
+
 const Nosotros = () =>{
+    const usIdioms = useTranslations('AboutUs');
+
     return (
         <>
         <Head>
@@ -22,15 +23,15 @@ const Nosotros = () =>{
       </Head>
         <Navbar/>
         <section className="thisIsOxygen">
-            <h1>Esto es Oxygen</h1>
+            <h1>{usIdioms('title')}</h1>
             <div className="misionVision">
                 <div className="mision">
-                    <h2>Mision</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.</p>
+                    <h2>{usIdioms('mision-title')}</h2>
+                    <p>{usIdioms('mision-text')}</p>
                 </div>
                 <div className="vision">
-                    <h2>Vision</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.</p>
+                    <h2>{usIdioms('vision-title')}</h2>
+                    <p>{usIdioms('vision-text')}</p>
                 </div>
             </div>
         </section>
@@ -81,13 +82,13 @@ const Nosotros = () =>{
                 </div>
             </div>
             <div className="joinUs">
-                <h3>¡UNITE A OXYGEN PARA SER PARTE DEL CAMBIO!</h3>
+                <h3>{usIdioms('joinus-title')}</h3>
             </div>
             <div className="line"></div>
         </section>
 
         <section className="tokenomics">
-            <h2>Distribución de ingresos</h2>
+            <h2>{usIdioms('tokenomics-title')}</h2>
         </section>
         <Footer/>
         

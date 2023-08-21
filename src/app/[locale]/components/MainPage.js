@@ -2,33 +2,40 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TokenEmitido from "./TokenEmitido";
-import "../styles/mainpage.css"
-import imgServicio1 from "../../public/assets/images/imgServicio1.png"
-import imgServicio2 from "../../public/assets/images/imgServicio2.png"
-import imgServicio3 from "../../public/assets/images/imgServicio3.png"
-import { useState, useEffect, useRef } from "react";
+import "../../../styles/mainpage.css"
+import imgServicio1 from "../../../../public/assets/images/imgServicio1.png"
+import imgServicio2 from "../../../../public/assets/images/imgServicio2.png"
+import imgServicio3 from "../../../../public/assets/images/imgServicio3.png"
+import { useState, useEffect} from "react";
 import Image from "next/image";
-import "../app/[locale]/globals.css"
+import "../../[locale]/globals.css"
 import CardService from "./CardService";
-import bdbLogo from "../../public/assets/logos/BdBLogo.png";
-import chronosPayLogo from "../../public/assets/logos/chronosPayLogo.png"
-import finguruLogo from "../../public/assets/logos/finguruLogo.png"
-import tokenIcon from "../../public/assets/logos/logoQToken.png"
-import logoTokenOM from "../../public/assets/logos/logoTokenOM.png";
-import logoTokenOC from "../../public/assets/logos/logoTokenOC.png";
+import bdbLogo from "../../../../public/assets/logos/BdBLogo.png";
+import chronosPayLogo from "../../../../public/assets/logos/chronosPayLogo.png"
+import finguruLogo from "../../../../public/assets/logos/finguruLogo.png"
+import tokenIcon from "../../../../public/assets/logos/logoQToken.png"
+import logoTokenOM from "../../../../public/assets/logos/logoTokenOM.png";
+import logoTokenOC from "../../../../public/assets/logos/logoTokenOC.png";
 import SliderComp from "./SliderComp";
 import ReactPlayer from "react-player";
 import DataContent from "./DataContent";
 import Head from "next/head";
-import logoGeneral from "../../public/assets/images/logo.png";
-import treeLoading from "../../public/assets/logos/treeLogoLoading.png"
+import logoGeneral from "../../../../public/assets/images/logo.png";
+import treeLoading from "../../../../public/assets/logos/treeLogoLoading.png"
 import TokensNFT from "./TokensNFT";
 import { useTranslations } from "next-intl";
 
 const MainPage = () => {
 
   /*Traducciones*/
-  const t = useTranslations('MainPage');
+  const layout = useTranslations('Layout');
+  const services = useTranslations('Services');
+  const issuedtokens= useTranslations('issuedTokens');
+  const hometokens = useTranslations('homeTokens');
+  const videointro = useTranslations('videoIntro');
+  const partnerships = useTranslations('partnerships');
+  const phrase = useTranslations('phrase');
+
   /*Animacion inicial*/
 
     const [isOnHome, setIsOnHome] = useState(false);
@@ -89,18 +96,18 @@ const MainPage = () => {
 const tokensEmitidos = [
     {
       logo: tokenIcon,
-      title: "¿Qué es un token?",
-      text: "Es una moneda virtual que representa un activo o una utilidad comercializable. Se almacena en una billetera digital y permite al titular usarlo para fines de inversión o económicos",
+      title: issuedtokens('issued-token-1-title'),
+      text: issuedtokens('issued-token-1-text'),
     },
     {
       logo: logoTokenOM,
-      title: "Token OM",
-      text: "Éste token es una certificación digital de 1 m2 de bosque nativo. Con tu compra, estás protegiendo el bosque para siempre",
+      title: issuedtokens('issued-token-2-title'),
+      text: issuedtokens('issued-token-2-text'),
     },
     {
       logo: logoTokenOC,
-      title: "Token OC",
-      text: "Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbono absorbe tu (OM) y te entregamos este token (C) como certificación digital de Bonos de Carbono",
+      title: issuedtokens('issued-token-3-title'),
+      text: issuedtokens('issued-token-3-text'),
     },
   ];
 
@@ -108,22 +115,22 @@ const tokensEmitidos = [
     {
       number: "1.",
       image: imgServicio1,
-      title:"Medí",
-      text:"Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2",
+      title:services('service-card-1-title'),
+      text:services('service-card-1-text'),
       link : "https://www.mihuelladecarbono.app/quiz",
     },
     {
       number: "2.",
       image: imgServicio2,
-      title:"Compensá",
-      text:"Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada",
+      title:services('service-card-2-title'),
+      text:services('service-card-2-text'),
       link : "/",
     },
     {
       number: "3.",
       image: imgServicio3,
-      title:"Monitoreá",
-      text:"Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año.",
+      title:services('service-card-3-title'),
+      text:services('service-card-3-text'),
       link : "/",
     },
     
@@ -131,15 +138,15 @@ const tokensEmitidos = [
   const dataObject = [
     {
       number: "133.150",
-      text: "hectareas de bosque",
+      text: layout('data-content-1-mobile'),
     },
     {
       number: "190.214",
-      text: "estadios de fútbol",
+      text: layout('data-content-2-mobile'),
     },
     {
       number: "27.548",
-      text: "tn CO2 compensadas",
+      text: layout('data-content-3-mobile'),
     },
   ]
 
@@ -163,8 +170,8 @@ const tokensEmitidos = [
           </div>)}
           <Image className="prevHomeLogo" src={logoGeneral} alt="logo Oxygen"></Image>
           <div className="prevHomeContainer">
-            <h1>Paremos la deforestación.</h1>
-            <button onClick={handleHidePrevHome} >Parar</button>
+            <h1>{layout('prevTitle')}</h1>
+            <button onClick={handleHidePrevHome} >{layout('prevButton')}</button>
           </div>
         </section>
       )}
@@ -177,10 +184,9 @@ const tokensEmitidos = [
                 playing= {true}
                 loop ={true}
                 muted/>
-            <h1>{t('title')}</h1>
-            <h1>Invertí a favor del ambiente</h1>
-            <h3>Protegemos árboles de ser talados y conservamos  <br/> territorios nativos</h3>
-            <button className="buttonHome"><a href="#servicios"> Comenzá </a></button>
+            <h1>{layout('title')}</h1>
+            <h3>{layout('subtitle-1')}  <br/> {layout('subtitle-2')}</h3>
+            <button className="buttonHome"><a href="#servicios">{layout('button')}</a></button>
 
             <div className="dataBoard">
               {isMobileView ? (
@@ -195,17 +201,17 @@ const tokensEmitidos = [
                 <>
                 <div className="dataContent">
                 <p className="dataNumber"><strong>133.150</strong></p>
-                <p>hectareas <br/> de bosque</p>
+                <p>{layout('data-content-1')} <br/>{layout('data-content-11')}</p>
                 </div>
                 <div className="dataBoardLine"></div>
                 <div className="dataContent">
                 <p className="dataNumber"><strong>190.214</strong></p>
-                <p>estadios <br/> de fútbol</p>
+                <p>{layout('data-content-2')} <br/>{layout('data-content-21')} </p>
                 </div>
                 <div className="dataBoardLine"></div>
                 <div className="dataContent">
                 <p className="dataNumber"><strong>27.548</strong></p>
-                <p>tn CO2 <br/> compensadas</p>
+                <p>tn CO2 <br/> {layout('data-content-3')}</p>
                 </div>
                 </>
                 
@@ -215,9 +221,9 @@ const tokensEmitidos = [
         </section>
         
         <section className="servicesHome" id="servicios">
-            <div className="servicesText"><h3>SERVICIOS</h3>
-            <h1>CONSERVÁ LOS <br/>TERRITORIOS NATIVOS</h1>
-            <p>Los bosques nativos son uno de los principales  <br/> productores de oxígeno, son esenciales para nosotros y <br/> todos los seres vivos del planeta. Por esto, debemos <br/>proteger los territorios nativos de ser deforestados.</p></div>
+            <div className="servicesText"><h3>{services('title')}</h3>
+            <h1>{services('subtitle-1')}<br/>{services('subtitle-2')}</h1>
+            <p>{services('text-1')}  <br/> {services('text-2')} <br/> {services('text-3')} <br/>{services('text-4')}</p></div>
             <div className="servicesContainer" >
             {isMobileView ? (
         <SliderComp automatico = {true} estilo="2" proyectos={serviceCards.map((card, index) => (
@@ -250,8 +256,8 @@ const tokensEmitidos = [
         </section>
 
         <section className="tokensEmitidos">
-            <h2>TOKENS EMITIDOS</h2>
-            <h1>LOS ÁRBOLES SON LA MEJOR TECNOLOGÍA <br/> PARA DETENER EL CAMBIO CLIMÁTICO</h1>
+            <h2>{issuedtokens('title')}</h2>
+            <h1>{issuedtokens('subtitle-1')} <br/> {issuedtokens('subtitle-2')}</h1>
             <div className="tokenContainer">
       {isMobileView ? (
         <SliderComp proyectos={tokensEmitidos.map((token, index) => (
@@ -291,7 +297,7 @@ const tokensEmitidos = [
     
             <div className="tokensProgress">
                 <div className="progressLine"></div>
-                <p> Objetivo final: <br/> 000 hectareas</p>
+                <p> {hometokens('text-progress-1')} <br/> {hometokens('text-progress-2')}</p>
             </div>
             <div className="line"></div>
 
@@ -310,25 +316,25 @@ const tokensEmitidos = [
 
 
             <div className="videoText">
-                <h3>NUESTRO MANIFIESTO</h3>
-                <h1>CONVERTITE EN CARBONO <br/> NEUTRAL, USA OXYGEN</h1>
-                <p>Queremos cambiar el esquema de donaciones convencional <br/>y así, poder salvar los bosques nativos. ¡Abrimos el mercado <br/> para una valoración internacional de terrenos de bosque nativo!</p>
+                <h3>{videointro('title')}</h3>
+                <h1>{videointro('subtitle-1')} <br/> {videointro('subtitle-2')}</h1>
+                <p>{videointro('text-1')}<br/>{videointro('text-2')}<br/>{videointro('text-3')}</p>
             </div>
         </section>
 
         <section className="alianzasSeccion">
-            <h3>ALIANZAS</h3>
+            <h3>{partnerships('title')}</h3>
             <div className="alianzasContainer">
                 <Image className = "alianza" src={bdbLogo} alt = "Banco de Bosques"/>
                 <Image className = "alianza" src={chronosPayLogo} alt = "Chronos Pay"/>
-                <Image className = "alianza" src={finguruLogo} alt = "Finguro"/>
+                <Image className = "alianza" src={finguruLogo} alt = "Finguru"/>
                 
             </div>
         </section>
 
         <section className="phrase">
-            <h2>"La crisis climática esta causada por nosotros y las soluciones deben venir <br/> de nosotros. Tenemos las herramientas:la tecnología está de nuestro <br/> lado"</h2> <p>- Antonio Guterres, Secretario General de la ONU</p>
-            <button>Comenzar</button>
+            <h2>"{phrase('text-1')}<br/> {phrase('text-2')} <br/> {phrase('text-3')}"</h2> <p>{phrase('comment')}</p>
+            <button>{phrase('button')}</button>
         </section>
 
         <Footer/>

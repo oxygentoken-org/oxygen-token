@@ -1,12 +1,14 @@
 "use client";
-import "../styles/navbar.css";
+import "../../../styles/navbar.css";
 import { useState } from "react";
-import logoNav from "../../public/assets/images/logo.png"
+import logoNav from "../../../../public/assets/images/logo.png"
 import Image from 'next/image';
+import { useTranslations } from "next-intl";
 
 
 function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const navIdioms = useTranslations('Navbar');
 
   return (
     <nav className="navigation">
@@ -42,14 +44,14 @@ function Navbar() {
           </li>
           
           <li>
-            <a href="/nosotros">Nosotros</a>
+            <a href="/nosotros">{navIdioms('us')}</a>
           </li>
           <li>
-            <a href="/proyecto"> Proyecto </a>
+            <a href="/proyecto"> {navIdioms('project')} </a>
           </li>
           
           <li>
-            <a href="/comprar" style={{color: "var(--strong--green"}} >Comprar</a>
+            <a href="/comprar" style={{color: "var(--strong--green"}} >{navIdioms('buy')}</a>
           </li>
         </ul>
       </div>

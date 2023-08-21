@@ -1,6 +1,112 @@
 {
-    "MainPage":{
-        "title": "Hello"
+    "Layout":{
+        "prevTitle": "Let's stop deforestation",
+        "prevButton":"Stop",
+        "title": "Invest for the environment",
+        "subtitle-1":"We protect trees from being cut down and conserve  ",
+        "subtitle-2":"native territories",
+        "button":"Start",
+        "data-content-1":"hectares",
+        "data-content-11":"of forest",
+        "data-content-2":"soccer",
+        "data-content-21":"stadiums",
+        "data-content-3":"offset",
+        "data-content-1-mobile":"hectares of forest",
+        "data-content-2-mobile":"soccer stadiums",
+        "data-content-3-mobile":"tn CO2 offset"
+    },
 
+    
+    "Services":{
+        "title":"SERVICES",
+        "subtitle-1":"PRESERVE",
+        "subtitle-2":"NATIVE TERRITORIES",
+        "text-1":"Native forests are one of the main producers",
+        "text-2":" of oxygen, they are essential for us and",
+        "text-3": " all living beings on the planet. For this reason, we must",
+        "text-4":"protect native territories from being deforested.",
+        "service-card-1-title":"Measure",
+        "service-card-1-text":"Know your environmental impact. Use the calculator and find out your CO2 emissions.",
+        "service-card-2-title":"Compensate",
+        "service-card-2-text":"Your purchase guarantees the protection of the forest. Save trees from being cut down and wildlife from being displaced.",
+        "service-card-3-title":"Monitor",
+        "service-card-3-text":"Visualize the number of trees and species saved, and how much CO2 your investment absorbed in a year.",
+        "see-more-btn":"See more "
+    },
+    "issuedTokens":{
+        "title": "ISSUED TOKENS",
+        "subtitle-1": "TREES ARE THE BEST TECHNOLOGY",
+        "subtitle-2":"TO STOP CLIMATE CHANGE",
+        "issued-token-1-title": "What is a token?",
+        "issued-token-1-text":"It is a virtual currency that represents a tradable asset or utility. It is stored in a digital wallet and allows the holder to use it for investment or economic purposes.",
+        "issued-token-2-title": "OM Token",
+        "issued-token-2-text": "This token is a digital certification of 1 m2 of native forest. With your purchase, you are protecting the forest forever.",
+        "issued-token-3-title":"OC Token",
+        "issued-token-3-text":"Day by day, trees absorb carbon from the atmosphere that we emit as humans. We measure how much carbon your (OM) absorbs and give you this token (OC) as a digital Carbon Offset certification."
+    },
+
+    "homeTokens":{
+        "text-progress-1": "Final goal:",
+        "text-progress-2": "000 hectares"
+    },
+
+    "videoIntro":{
+        "title":"OUR MANIFESTO",
+        "subtitle-1": "BECOME CARBON",
+        "subtitle-2": "NEUTRAL, USE OXYGEN",
+        "text-1": "We want to change the conventional donation scheme",
+        "text-2": "in order to save native forests and open the market",
+        "text-3":"for an international valuation of native forest land!"
+    },
+
+    "partnerships":{
+        "title":"PARTNERSHIPS"
+    },
+
+    "phrase":{
+        "text-1": "The climate crisis is caused by us and the solutions must come",
+        "text-2":" from us. We have the tools: technology is on our ",
+        "text-3":"side",
+        "comment":"- Antonio Guterres, UN Secretary-General",
+        "button":"Start"
+    },
+
+    
+    "Navbar":{
+        "us": "About Us",
+        "project": "Project",
+        "buy": "Buy"
+    },
+
+    "Footer":{
+        "company":"Company",
+        "us-link":"About Us",
+        "projects-link": "Projects",
+        "contact-link": "Contact",
+        "news": "Subscribe to our newsletter",
+        "news-button": "Send"
+    },
+
+    "AboutUs":{
+        "title": "This is Oxygen",
+        "mision-title": "Mision",
+        "vision-title": "Vision",
+        "mision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
+        "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
+        "joinus-title": "JOIN OXYGEN TO BE PART OF THE CHANGE!",
+        "tokenomics-title":"Income distribution"
+    },
+
+    "Project":{
+        "title-1":"Get to know the forests ",
+        "title-2":"we are saving."
+     },
+
+     "Buy":{
+        "title": "START TO MAKE THE CHANGE"
     }
+
+
+
+
 }

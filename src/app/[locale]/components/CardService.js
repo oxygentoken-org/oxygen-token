@@ -1,9 +1,11 @@
-import "../styles/cardservice.css";
-import "../styles/mainpage.css"
+import "../../../styles/cardservice.css";
+import "../../../styles/mainpage.css"
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const CardService = ({ image, title, text, number, link }) => {
+  const services = useTranslations('Services');
   const [flipped, setFlipped] = useState(false);
 
   const handleClick = () => {
@@ -23,7 +25,7 @@ const CardService = ({ image, title, text, number, link }) => {
       <h1>{number}</h1>
       <h2>{title}</h2>
       <p>{text}</p>
-      <a href={link} target="_blank" rel="noreferrer" className="see-more-link">Ver más</a>
+      <a href={link} target="_blank" rel="noreferrer" className="see-more-link">{services('see-more-btn')}</a>
     </div>
   </div>
 </div>

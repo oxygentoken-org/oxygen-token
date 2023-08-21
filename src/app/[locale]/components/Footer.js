@@ -1,15 +1,17 @@
-"use client"; // This is a client component 👈🏽
-import "../styles/footer.css"
+"use client"; 
+import "../../../styles/footer.css"
 import Image from 'next/image';
-import logoFooter from "../../public/assets/images/logo.png"
-import logoInstagram from "../../public/assets/logos/logoInstagram.png"
-import logoLinkedin from "../../public/assets/logos/logoLinkedin.png"
-import logoTwitter from "../../public/assets/logos/logoTwitter.png";
-import logoYoutube from "../../public/assets/logos/logoYoutube.png"
-
+import logoFooter from "../../../../public/assets/images/logo.png"
+import logoInstagram from "../../../../public/assets/logos/logoInstagram.png"
+import logoLinkedin from "../../../../public/assets/logos/logoLinkedin.png"
+import logoTwitter from "../../../../public/assets/logos/logoTwitter.png";
+import logoYoutube from "../../../../public/assets/logos/logoYoutube.png"
+import { useTranslations } from "next-intl";
 
 
 function Footer() {
+
+    const footIdioms = useTranslations('Footer');
 
   return (
     <section className="footer">
@@ -26,18 +28,18 @@ function Footer() {
             </div>
         </div>
         <div className="footerRedirects">
-            <h3>Empresa</h3>
+            <h3>{footIdioms('company')}</h3>
             <ul className="redirects">
-                <li><a href="/nosotros">Nosotros</a></li>
-                <li><a href="/proyecto">Proyectos</a></li>
-                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/nosotros">{footIdioms('us-link')}</a></li>
+                <li><a href="/proyecto">{footIdioms('projects-link')}</a></li>
+                <li><a href="/contacto">{footIdioms('contact-link')}</a></li>
                 <li><a href="/joinus">Join Us</a></li>
             </ul>
         </div>
         <div className="footerNewsletter">
-            <h3>Suscribite a nuestro newsletter</h3>
-            <input type="text" placeholder="Correo electrónico"></input>
-            <button>Enviar</button>
+            <h3>{footIdioms('news')}</h3>
+            <input type="text" placeholder="Mail"></input>
+            <button>{footIdioms('news-button')}</button>
         </div>
 
 

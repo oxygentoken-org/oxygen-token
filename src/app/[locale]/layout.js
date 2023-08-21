@@ -31,22 +31,3 @@ async function LocaleLayout({ children, params: { locale } }) {
 }
 
 export default LocaleLayout;
-
-/*
-export default function RootLayout({ children }) {
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID || "";
-  const tagManagerArgs = {
-    gtmId: gtmId,
-  };
-  useEffect(() => {
-    TagManager.initialize(tagManagerArgs);
-  }, []);
-  return (<>
-    
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-    </>
-  )
-}
-*/

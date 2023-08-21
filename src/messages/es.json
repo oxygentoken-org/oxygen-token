@@ -1,6 +1,113 @@
 {
-    "MainPage":{
-        "title": "Hola"
+    "Layout":{
+        "prevTitle": "Paremos la deforestación",
+        "prevButton":"Parar",
+        "title": "Invertí a favor del ambiente",
+        "subtitle-1":"Protegemos árboles de ser talados y conservamos ",
+        "subtitle-2":"territorios nativos",
+        "button":"Comenzá",
+        "data-content-1":"hectareas",
+        "data-content-11":"de bosque",
+        "data-content-2":"estadios",
+        "data-content-21":"de fútbol",
+        "data-content-3":"compensadas",
+        "data-content-1-mobile":"hectareas de bosque",
+        "data-content-2-mobile":"estadios de fútbol",
+        "data-content-3-mobile":"tn CO2 compensadas"
+    },
 
+    "Services":{
+        "title":"SERVICIOS",
+        "subtitle-1":"CONSERVÁ LOS",
+        "subtitle-2":"TERRITORIOS NATIVOS",
+        "text-1":"Los bosques nativos son uno de los principales",
+        "text-2":"productores de oxígeno, son esenciales para nosotros y",
+        "text-3": "todos los seres vivos del planeta. Por esto, debemos",
+        "text-4":"proteger los territorios nativos de ser deforestados.",
+        "service-card-1-title":"Medí",
+        "service-card-1-text":"Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2",
+        "service-card-2-title":"Compensá",
+        "service-card-2-text":"Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada",
+        "service-card-3-title":"Monitoreá",
+        "service-card-3-text":"Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año.",
+        "see-more-btn":"Ver más "
+
+    },
+
+    "issuedTokens":{
+        "title": "TOKENS EMITIDOS",
+        "subtitle-1": "LOS ÁRBOLES SON LA MEJOR TECNOLOGÍA",
+        "subtitle-2":"PARA DETENER EL CAMBIO CLIMÁTICO",
+        "issued-token-1-title": "¿Qué es un token?",
+        "issued-token-1-text":"Es una moneda virtual que representa un activo o una utilidad comercializable. Se almacena en una billetera digital y permite al titular usarlo para fines de inversión o económicos",
+        "issued-token-2-title": "Token OM",
+        "issued-token-2-text": "Éste token es una certificación digital de 1 m2 de bosque nativo. Con tu compra, estás protegiendo el bosque para siempre",
+        "issued-token-3-title":"Token OC",
+        "issued-token-3-text":"Día a día, los árboles absorbe el carbono de la atmósfera que emitimos como humanos. Medimos cuánto carbono absorbe tu (OM) y te entregamos este token (OC) como certificación digital de Bonos de Carbono"
+    },
+
+    "homeTokens":{
+        "text-progress-1": "Objetivo final:",
+        "text-progress-2": "000 hectareas"
+    },
+
+    "videoIntro":{
+        "title":"NUESTRO MANIFIESTO",
+        "subtitle-1": "CONVERTITE EN CARBONO",
+        "subtitle-2": "NEUTRAL, USA OXYGEN",
+        "text-1": "Queremos cambiar el esquema de donaciones convencional",
+        "text-2": "y así, poder salvar los bosques nativos. ¡Abrimos el mercado",
+        "text-3":" para una valoración internacional de terrenos de bosque nativo!"
+    },
+
+    "partnerships":{
+        "title":"ALIANZAS"
+    },
+
+    "phrase":{
+        "text-1":  "La crisis climática esta causada por nosotros y las soluciones deben venir",
+        "text-2":" de nosotros. Tenemos las herramientas: la tecnología está de nuestro",
+        "text-3":"lado",
+        "comment":"- Antonio Guterres, Secretario General de la ONU",
+        "button":"Comenzar"
+    },
+
+    "Navbar":{
+        "us": "Nosotros",
+        "project": "Proyecto",
+        "buy": "Comprar"
+    },
+
+    "Footer":{
+        "company":"Empresa",
+        "us-link":"Nosotros",
+        "projects-link": "Proyectos",
+        "contact-link": "Contacto",
+        "news": "Suscribite a nuestro newsletter",
+        "news-button": "Enviar"
+    },
+
+    "AboutUs":{
+        "title": "Esto es Oxygen",
+        "mision-title": "Misión",
+        "vision-title": "Visión",
+        "mision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
+        "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
+        "joinus-title": "¡UNITE A OXYGEN PARA SER PARTE DEL CAMBIO!",
+        "tokenomics-title":"Distribución de ingresos"
+    },
+
+    "Project":{
+       "title-1":"Conocé los bosques",
+       "title-2":"que estamos salvando"
+    },
+
+    "Buy":{
+        "title": "COMENZÁ A HACER EL CAMBIO"
     }
+
+
+
+
+
 }

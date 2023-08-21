@@ -1,17 +1,17 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../../../styles/proyecto.css"
-import "../../[locale]/globals.css"
+import "../../[locale]/globals.css";
+import { useTranslations } from "next-intl";
 
-export const metadata = {
-    title: 'Proyecto',
-    description: 'Reducí tus emisiones de CO2 con Oxygen',
-  }
+
 const Proyecto = () =>{
+    const projectIdioms = useTranslations('Project')
     return (
         <><Navbar/>
         <section className="proyectoMapa">
-            <h1>Conocé los bosques <br/>que estamos salvando</h1>
+            <h1>{projectIdioms('title-1')} <br/>{projectIdioms('title-2')}</h1>
         </section>
         <Footer/>
         </>)

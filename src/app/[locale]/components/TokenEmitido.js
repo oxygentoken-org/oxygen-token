@@ -1,8 +1,12 @@
-import "../styles/tokenemitido.css";
-import "../styles/mainpage.css";
+import "../../../styles/tokenemitido.css";
+import "../../../styles/mainpage.css";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 
 const TokenEmitido = ({ title, text, logo, link }) => {
+  const services = useTranslations('Services');
+
   return (
     <>
       <div className="tokenCard">
@@ -10,7 +14,7 @@ const TokenEmitido = ({ title, text, logo, link }) => {
         <h3>{title}</h3>
         <p>{text}</p>
         <div className="tokenCard-link">
-          <a href={link} target="_blank" rel="noreferrer">Ver más&gt;</a>
+          <a href={link} target="_blank" rel="noreferrer">{services('see-more-btn')} &gt;</a>
         </div>
       </div>
     </>
