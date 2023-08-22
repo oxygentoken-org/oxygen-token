@@ -103,7 +103,7 @@
       padding: 1.5rem 0;
     }
     .navigation-menu li:hover {
-      background-color: var(--strong-green);
+      background-color: #6f8b8b;
     }
 
     .brand-name{
@@ -113,4 +113,56 @@
       
 
     }
+
+    .dropdown{
+      left: 45%;
+    }
+
+    
+}
+
+.dropbtn{
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1rem;
+  padding: 0.9em;
+  
+}
+
+.globoImg{
+  max-height: 20px;
+  width: auto;
+}
+
+.flagImg{
+  max-width: 30px;
+  height: auto;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: rgba(11, 39, 58, 0.7);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  display: block;
+  width: 100%;
+}
+
+.dropdown-content a:hover{
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
 }

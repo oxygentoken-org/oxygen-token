@@ -4,6 +4,9 @@ import { useState } from "react";
 import logoNav from "../../../../public/assets/images/logo.png"
 import Image from 'next/image';
 import { useTranslations } from "next-intl";
+import globeLogo from "../../../../public/assets/logos/globeLogo.png";
+import logoArg from "../../../../public/assets/logos/logoArg.png";
+import logoUs from "../../../../public/assets/logos/logoUs.png";
 
 
 function Navbar() {
@@ -19,7 +22,6 @@ function Navbar() {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        {/* icon from heroicons.com */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -39,6 +41,7 @@ function Navbar() {
         }
       >
         <ul>
+          
         <li>
             <a href="/">Home</a>
           </li>
@@ -52,6 +55,19 @@ function Navbar() {
           
           <li>
             <a href="/comprar" style={{color: "var(--strong--green"}} >{navIdioms('buy')}</a>
+          </li>
+
+          <li className="dropdown">
+            <button className="dropbtn">
+              <Image src={globeLogo} alt="logoMundo" className="globoImg"/>
+
+              
+            </button>
+            <div className="dropdown-content">
+              <a href="/es"><Image src={logoArg} alt="bandera argentina" className="flagImg"/></a>
+              <a href="/en"><Image src={logoUs} alt="bandera usa" className="flagImg"/></a>
+            </div>
+
           </li>
         </ul>
       </div>
