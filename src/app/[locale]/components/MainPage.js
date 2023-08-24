@@ -1,5 +1,5 @@
 "use client"; 
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar.js";
 import Footer from "./Footer";
 import TokenEmitido from "./TokenEmitido";
 import "../../../styles/mainpage.css"
@@ -155,12 +155,7 @@ const tokensEmitidos = [
   
   return (<>
         
-        <Head>
-      <title>Oxygen Token</title>
-      <meta name='description' content='Reduci tus emisiones de CO2 con Oxygen'/>
-      <link rel='icon' href='./favicon.ico'/>
-      
-      </Head> 
+        
         {!isOnHome && (
         <section className="prevHome">
           {showAnimation && <div className="expandAnimation" />}

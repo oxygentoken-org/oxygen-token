@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar.js";
 import Footer from "../components/Footer";
 import "../../../styles/proyecto.css"
 import "../../[locale]/globals.css";

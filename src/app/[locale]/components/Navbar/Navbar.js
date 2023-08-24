@@ -1,12 +1,12 @@
 "use client";
-import "../../../styles/navbar.css";
+import "./navbar.css";
 import { useState } from "react";
-import logoNav from "../../../../public/assets/images/logo.png"
+import logoNav from "../../../../../public/assets/images/logo.png"
 import Image from 'next/image';
 import { useTranslations } from "next-intl";
-import globeLogo from "../../../../public/assets/logos/globeLogo.png";
-import logoArg from "../../../../public/assets/logos/logoArg.png";
-import logoUs from "../../../../public/assets/logos/logoUs.png";
+import globeLogo from "../../../../../public/assets/logos/globeLogo.png";
+import logoArg from "../../../../../public/assets/logos/logoArg.png";
+import logoUs from "../../../../../public/assets/logos/logoUs.png";
 
 
 function Navbar() {
