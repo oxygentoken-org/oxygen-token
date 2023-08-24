@@ -5,7 +5,7 @@
     align-items: center;
     position: fixed;
     padding: 0.5rem 0rem;
-    background-color: rgba(11, 39, 58, 0.7);
+    background-color: rgba(11, 39, 58, 0.3);
     color: var(--strong-green);
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
     font-family: var(--montserrat);
@@ -72,7 +72,7 @@
     }
 
     .navigation{
-      background-color: rgba(11, 39, 58, 0.9);
+      background-color: rgba(11, 39, 58, 0.3);
       position: absolute;
       z-index: 1;
     }
