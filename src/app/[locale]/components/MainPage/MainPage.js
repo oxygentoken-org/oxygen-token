@@ -1,33 +1,41 @@
 "use client"; 
-import Navbar from "./Navbar/Navbar.js";
-import Footer from "./Footer";
-import TokenEmitido from "./TokenEmitido";
-import "../../../styles/mainpage.css"
-import imgServicio1 from "../../../../public/assets/images/imgServicio1.png"
-import imgServicio2 from "../../../../public/assets/images/imgServicio2.png"
-import imgServicio3 from "../../../../public/assets/images/imgServicio3.png"
+
 import { useState, useEffect} from "react";
 import Image from "next/image";
-import "../../[locale]/globals.css"
-import CardService from "./CardService";
-import bdbLogo from "../../../../public/assets/logos/BdBLogo.png";
-import chronosPayLogo from "../../../../public/assets/logos/chronosPayLogo.png"
-import finguruLogo from "../../../../public/assets/logos/finguruLogo.png"
-import tokenIcon from "../../../../public/assets/logos/logoQToken.png"
-import logoTokenOM from "../../../../public/assets/logos/logoTokenOM.png";
-import logoTokenOC from "../../../../public/assets/logos/logoTokenOC.png";
-import SliderComp from "./SliderComp";
 import ReactPlayer from "react-player";
-import DataContent from "./DataContent";
-import Head from "next/head";
-import logoGeneral from "../../../../public/assets/images/logo.png";
-import treeLoading from "../../../../public/assets/logos/treeLogoLoading.png"
-import TokensNFT from "./TokensNFT";
 import { useTranslations } from "next-intl";
+
+//Components
+import Navbar from "../Navbar/Navbar.js";
+import Footer from "../Footer/Footer.js";
+import TokenEmitido from "../TokenEmitido/TokenEmitido.js";
+import CardService from "../CardService/CardService.js";
+import SliderComp from "../SliderComp/SliderComp.js";
+import DataContent from "../DataContent/DataContent.js";
+import TokensNFT from "../TokensNFT/TokensNFT.js";
+
+//Styles
+import "./mainpage.css"
+import "../../../[locale]/globals.css"
+
+//Assets
+import imgServicio1 from "../../../../../public/assets/images/imgServicio1.png"
+import imgServicio2 from "../../../../../public/assets/images/imgServicio2.png"
+import imgServicio3 from "../../../../../public/assets/images/imgServicio3.png"
+import bdbLogo from "../../../../../public/assets/logos/BdBLogo.png";
+import chronosPayLogo from "../../../../../public/assets/logos/chronosPayLogo.png"
+import finguruLogo from "../../../../../public/assets/logos/finguruLogo.png"
+import tokenIcon from "../../../../../public/assets/logos/logoQToken.png"
+import logoTokenOM from "../../../../../public/assets/logos/logoTokenOM.png";
+import logoTokenOC from "../../../../../public/assets/logos/logoTokenOC.png";
+import logoGeneral from "../../../../../public/assets/images/logo.png";
+import treeLoading from "../../../../../public/assets/logos/treeLogoLoading.png"
+
+
 
 const MainPage = () => {
 
-  /*Traducciones*/
+  /*Translations*/
   const layout = useTranslations('Layout');
   const services = useTranslations('Services');
   const issuedtokens= useTranslations('issuedTokens');

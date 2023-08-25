@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../../styles/sliderComp.css"
+import "./sliderComp.css"
 
 function SliderComp(props) {
   const [currentIndex, setCurrentIndex] = useState(0);

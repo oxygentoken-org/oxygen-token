@@ -1,5 +1,5 @@
-import "../../../styles/cardservice.css";
-import "../../../styles/mainpage.css"
+import "./cardservice.css";
+import "../MainPage/mainpage.css"
 import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";

@@ -1,5 +1,5 @@
-import "../../../styles/dataContent.css";
-import "../../../styles/mainpage.css";
+import "./dataContent.css";
+import "../MainPage/mainpage.css"
 
 
 const DataContent = ({ number, text, mobile }) => {

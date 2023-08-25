@@ -1,6 +1,6 @@
 import Image from "next/image";
-import "../../../styles/mainpage.css"
-import tokenv1 from "../../../../public/assets/images/tokenv1.png"
+import "../MainPage/mainpage.css"
+import tokenv1 from "../../../../../public/assets/images/tokenv1.png"
 
 const TokensNFT = () => {
   return (

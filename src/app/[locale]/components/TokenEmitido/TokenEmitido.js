@@ -1,5 +1,5 @@
-import "../../../styles/tokenemitido.css";
-import "../../../styles/mainpage.css";
+import "./tokenemitido.css";
+import "../MainPage/mainpage.css"
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
