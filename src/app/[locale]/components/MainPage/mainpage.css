@@ -214,16 +214,7 @@
     padding-top: 1em;
 }
 
-/*@media (max-width: 767px) {
-    .videoLayout{
-        display: none;
-    }
-    .layoutHome{
-        background-image: url("../../public/assets/images/ImgMainPage.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}*/
+
 
 @media screen and (max-width: 768px) {
     .dataBoardLine{
@@ -382,8 +373,7 @@
 
 
 /*Video*/
-.videoPresentacion , .alianzasSeccion{
-    
+.videoPresentacion {
     display: flex;
     flex-direction: row;
     background-color: #276D70;
@@ -436,37 +426,6 @@
     }
     
 }
-
-
-
-/*Alianzas*/
- .alianzasSeccion h3{
-    font-size: 22px;
-    font-family: var(--dm-sans);
-    color: var(--white);
-
-}
-
-.alianzasContainer{
-    display: flex;
-    flex-direction: row;
-    gap: 4em;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-
-.alianzasSeccion{
-    flex-direction: column;
-
-}
-.alianza{
-    width: auto;
-    max-height: 50px;
-}
-
 
 /*Phrase*/
 

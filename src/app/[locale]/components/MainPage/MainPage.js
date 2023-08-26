@@ -13,6 +13,7 @@ import CardService from "../CardService/CardService.js";
 import SliderComp from "../SliderComp/SliderComp.js";
 import DataContent from "../DataContent/DataContent.js";
 import TokensNFT from "../TokensNFT/TokensNFT.js";
+import Partnerships from "../Partnerships/Partnerships.js";
 
 //Styles
 import "./mainpage.css"
@@ -22,9 +23,6 @@ import "../../../[locale]/globals.css"
 import imgServicio1 from "../../../../../public/assets/images/imgServicio1.png"
 import imgServicio2 from "../../../../../public/assets/images/imgServicio2.png"
 import imgServicio3 from "../../../../../public/assets/images/imgServicio3.png"
-import bdbLogo from "../../../../../public/assets/logos/BdBLogo.png";
-import chronosPayLogo from "../../../../../public/assets/logos/chronosPayLogo.png"
-import finguruLogo from "../../../../../public/assets/logos/finguruLogo.png"
 import tokenIcon from "../../../../../public/assets/logos/logoQToken.png"
 import logoTokenOM from "../../../../../public/assets/logos/logoTokenOM.png";
 import logoTokenOC from "../../../../../public/assets/logos/logoTokenOC.png";
@@ -41,7 +39,6 @@ const MainPage = () => {
   const issuedtokens= useTranslations('issuedTokens');
   const hometokens = useTranslations('homeTokens');
   const videointro = useTranslations('videoIntro');
-  const partnerships = useTranslations('partnerships');
   const phrase = useTranslations('phrase');
 
   /*Animacion inicial*/
@@ -325,15 +322,7 @@ const tokensEmitidos = [
             </div>
         </section>
 
-        <section className="alianzasSeccion">
-            <h3>{partnerships('title')}</h3>
-            <div className="alianzasContainer">
-                <Image className = "alianza" src={bdbLogo} alt = "Banco de Bosques"/>
-                <Image className = "alianza" src={chronosPayLogo} alt = "Chronos Pay"/>
-                <Image className = "alianza" src={finguruLogo} alt = "Finguru"/>
-                
-            </div>
-        </section>
+        <Partnerships/>
 
         <section className="phrase">
             <h2>"{phrase('text-1')}<br/> {phrase('text-2')} <br/> {phrase('text-3')}"</h2> <p>{phrase('comment')}</p>
