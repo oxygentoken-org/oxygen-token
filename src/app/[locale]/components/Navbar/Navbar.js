@@ -34,7 +34,7 @@ function Navbar() {
     <nav className="navigation">
       <Image src={logoNav} alt="Oxygen" className="brand-name" />
 
-      {isMobileView?  <li className="dropdown-mob">
+      {isMobileView?  <li className="dropdown">
             <button className="dropbtn">
               <Image src={globeLogo} alt="logoMundo" className="globoImg"/>
 
