@@ -1,6 +1,6 @@
 "use client";
 import "./navbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logoNav from "../../../../../public/assets/images/logo.png"
 import Image from 'next/image';
 import { useTranslations } from "next-intl";
@@ -12,10 +12,40 @@ import logoUs from "../../../../../public/assets/logos/logoUs.png";
 function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const navIdioms = useTranslations('Navbar');
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(()=> {
+    const mobileMediaQuery = window.matchMedia("(max-width: 650px)");
+
+    //Actualiza el estado
+    const handleMediaQueryChange = (event) =>{
+      setIsMobileView(event.matches);
+    };
+
+    handleMediaQueryChange(mobileMediaQuery); //Inicialmente
+    mobileMediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    return() =>{
+      mobileMediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  },[]);
 
   return (
     <nav className="navigation">
       <Image src={logoNav} alt="Oxygen" className="brand-name" />
+
+      {isMobileView?  <li className="dropdown-mob">
+            <button className="dropbtn">
+              <Image src={globeLogo} alt="logoMundo" className="globoImg"/>
+
+              
+            </button>
+            <div className="dropdown-content">
+              <a href="/es"><Image src={logoArg} alt="bandera argentina" className="flagImg"/></a>
+              <a href="/en"><Image src={logoUs} alt="bandera usa" className="flagImg"/></a>
+            </div>
+
+          </li>: <></> }
       <button
         className="hamburger"
         onClick={() => {
@@ -35,6 +65,8 @@ function Navbar() {
           />
         </svg>
       </button>
+
+
       <div
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
@@ -56,7 +88,7 @@ function Navbar() {
           <li>
             <a href="/comprar" style={{color: "var(--strong--green"}} >{navIdioms('buy')}</a>
           </li>
-
+          {!isNavExpanded ?
           <li className="dropdown">
             <button className="dropbtn">
               <Image src={globeLogo} alt="logoMundo" className="globoImg"/>
@@ -68,7 +100,8 @@ function Navbar() {
               <a href="/en"><Image src={logoUs} alt="bandera usa" className="flagImg"/></a>
             </div>
 
-          </li>
+          </li>: <div></div>}
+          
         </ul>
       </div>
     </nav>

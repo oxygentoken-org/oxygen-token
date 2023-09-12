@@ -114,12 +114,22 @@
 
     }
 
-    .dropdown{
-      left: 45%;
-    }
+    
 
     
 }
+
+.dropdown{
+  
+  
+}
+
+.dropdown-mob{
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 5.8rem;
+  padding: 0.9em;}
 
 .dropbtn{
   background-color: transparent;
@@ -129,14 +139,7 @@
   width: 100%
 }
 
-.dropdown{
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 1rem;
-  padding: 0.9em;
-  
-}
+
 
 .globoImg{
   max-height: 20px;
