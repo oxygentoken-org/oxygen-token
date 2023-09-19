@@ -91,8 +91,8 @@
         "title": "Esto es Oxygen",
         "mision-title": "Misión",
         "vision-title": "Visión",
-        "mision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
-        "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
+        "mision-text": " Preservar ecosistemas y sus especies en peligro de extinción, ayudar al desarrollo económico de comunidades locales y lograr una valoración internacional de los bosques nativos.",
+        "vision-text": " Guiados por los ejes de sustentabilidad de la ONU queremos convertir a las empresas e individuos del mundo en verdes. El cambio es posible pero hay que actuar ahora. Acompañanos en este camino!",
         "joinus-title": "¡UNITE A OXYGEN PARA SER PARTE DEL CAMBIO!",
         "tokenomics-title":"Distribución de ingresos"
     },
@@ -104,6 +104,17 @@
 
     "Buy":{
         "title": "COMENZÁ A HACER EL CAMBIO"
+    },
+
+    "Team":{
+        "text-dante": "Economista de empresas especializado en gestión de blockchain. Experiencia en cripto desde 2015",
+        "text-matteo": "Ambientalista apasionado con +10 años de experiencia en ONG de gestión forestal",
+        "text-franco": "Fundador de BlackBeaver, agencia de Marketing y Software. Fundador de Finguru, medio digital",
+        "text-emiliano":"Ex Presidente del Servicio de Parques Nacionales de Argentina. Director General del Banco de Bosques: ONG con más de 150.000 hectáreas salvadas. Asesor de Greenpeace.",
+        "text-gustavo": "Asesor de BID bank tokenomics y cambio climático. Director estratégico de Chronos: Criptobilletera B2B",
+        "text-guido": "Desarrollador Fullstack +10 años de experiencia. Fundador de la agencia de software Edeon Labs",
+        "text-constanza": "Desarrolladora Frontend +2 años de experiencia. Background académico en ingeniería química y biotecnología"
+
     }
 
 

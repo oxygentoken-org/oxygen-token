@@ -91,8 +91,8 @@
         "title": "This is Oxygen",
         "mision-title": "Mision",
         "vision-title": "Vision",
-        "mision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
-        "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales lectus quis quam venenatis pharetra. Phasellus semper fermentum ornare. Fusce vel sollicitudin dui.",
+        "mision-text": "Preserve the nature & endangered species that live between it, Help in the economic development of local communities and achieve and international valuation of native forest.",
+        "vision-text": " Following ONU's sustainability goals we want every company & person in the world to shout out loud: Go Green. The change is possible but we need to act now! Follow us in this adventure.",
         "joinus-title": "JOIN OXYGEN TO BE PART OF THE CHANGE!",
         "tokenomics-title":"Income distribution"
     },
@@ -104,6 +104,17 @@
 
      "Buy":{
         "title": "START TO MAKE THE CHANGE"
+    },
+
+    "Team":{
+        "text-dante": "Business economist specialized in blockchain management. In crypto since 2015.",
+        "text-matteo": "Passionate ambientalist with 10+ years on experience with NGOs managing forestry.",
+        "text-franco": "Founder of Software & Marketing agency BlackBeaver. Founder of Digital Media Finguru.",
+        "text-emiliano":"Ex-President of Argentine National park service. CEO of Banco de Bosques: NGO with more than 150.000 hectareas saved. Greenpeace advisor.",
+        "text-gustavo": "BID bank tokenomics & climate change advisor. Strategic director of Chronos: B2B crypto wallet.",
+        "text-guido": "Full stack Dev +10 years exp. Founder of Edeon Labs (sofware factory)",
+        "text-constanza": "Frontend Dev +2 years exp. Background in Chemical Engineering and Biotech."
+
     }
 
 

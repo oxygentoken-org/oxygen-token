@@ -1,19 +1,32 @@
 "use client";
+
+//Componentes
 import Navbar from "../components/Navbar/Navbar.js";
 import Footer from "../components/Footer/Footer.js";
+import TeamMember from "../components/TeamMember/TeamMember.js";
+
+//Estilos
 import "../../../styles/nosotros.css"
 import "../../[locale]/globals.css"
-import Image from "next/image";
-import ejemploTeam from "../../../../public/assets/images/ejemploTeam.png";
-import logoInstagram from "../../../../public/assets/logos/logoInstagram.png"
-import logoLinkedin from "../../../../public/assets/logos/logoLinkedin.png"
-import logoTwitter from "../../../../public/assets/logos/logoTwitter.png";
+
+//Assets
+import picDante from "../../../../public/assets/images/dante.png"
+import picMatteo from "../../../../public/assets/images/matteo.png"
+import picFranco from "../../../../public/assets/images/franco.png"
+import picEmiliano from "../../../../public/assets/images/emiliano.png"
+import picGustavo from "../../../../public/assets/images/gustavo.png"
+import picGuido from "../../../../public/assets/images/guido.png"
+import picConstanza from "../../../../public/assets/images/constanza.png"
+import picMalena from "../../../../public/assets/images/malena.png"
+
+
 import Head from "next/head";
 import { useTranslations } from "next-intl";
 
 
 const Nosotros = () =>{
     const usIdioms = useTranslations('AboutUs');
+    const teamIdioms = useTranslations('Team');
 
     return (
         <>
@@ -39,47 +52,56 @@ const Nosotros = () =>{
         <section className="team">
             <h2>Oxygen Team</h2>
             <div className="teamCards">
-                <div className="teamMember">
-                    <Image className="teamMemberPicture" src={ejemploTeam} alt="imagen miembro del equipo"></Image>
-                    <div className="teamMemberDescription">
-                        <h3>Nombre Apellido</h3>
-                        <h4>Rol</h4>
-                        <p>Descripción cortita</p>
-                        <div className="teamMemberContact">
-                        <Image className="logoContact" src={logoLinkedin} alt="Linkedin"></Image>
-                            <Image className="logoContact" src={logoInstagram} alt="Instagram"></Image>
-                            <Image className="logoContact" src={logoTwitter} alt="Twitter"></Image>
-                            
-                           
-                        </div>
-                    </div>
-                </div>
-                <div className="teamMember">
-                    <Image className="teamMemberPicture" src={ejemploTeam} alt="imagen miembro del equipo"></Image>
-                    <div className="teamMemberDescription">
-                        <h3>Nombre Apellido</h3>
-                        <h4>Rol</h4>
-                        <p>Descripción cortita</p>
-                        <div className="teamMemberContact">
-                        <Image className="logoContact" src={logoLinkedin} alt="Linkedin"></Image>
-                            <Image className="logoContact" src={logoInstagram} alt="Instagram"></Image>
-                            <Image className="logoContact" src={logoTwitter} alt="Twitter"></Image>
-                        </div>
-                    </div>
-                </div>
-                <div className="teamMember">
-                    <Image className="teamMemberPicture" src={ejemploTeam} alt="imagen miembro del equipo"></Image>
-                    <div className="teamMemberDescription">
-                        <h3>Nombre Apellido</h3>
-                        <h4>Rol</h4>
-                        <p>Descripción cortita</p>
-                        <div className="teamMemberContact">
-                        <Image className="logoContact" src={logoLinkedin} alt="Linkedin"></Image>
-                            <Image className="logoContact" src={logoInstagram} alt="Instagram"></Image>
-                            <Image className="logoContact" src={logoTwitter} alt="Twitter"></Image>
-                        </div>
-                    </div>
-                </div>
+                <TeamMember
+                    name= "Dante Arola"
+                    picture={picDante}
+                    rol="Project Manager"
+                    description={teamIdioms('text-dante')}
+                    linkLin= "https://www.linkedin.com/in/dante-arola-81456712a" />
+                <TeamMember
+                    name= "Matteo Paladino"
+                    picture={picMatteo}
+                    rol="Conservation"
+                    description={teamIdioms('text-matteo')}
+                    linkLin=""/>
+                <TeamMember
+                    name= "Franco Ammaturo"
+                    picture={picFranco}
+                    rol="Head of Growth"
+                    description={teamIdioms('text-franco')} 
+                    linkLin="https://www.linkedin.com/in/franco-ammaturo-208712192"/>
+                 <TeamMember
+                    name= "Emiliano Ezcurra"
+                    picture={picEmiliano}
+                    rol="Conservation Advisor"
+                    description={teamIdioms('text-emiliano')} 
+                    linkLin="https://www.linkedin.com/in/emiliano-ezcurra-3a26b720"/>
+                 <TeamMember
+                    name= "Gustavo Ammaturo"
+                    picture={picGustavo}
+                    rol="Angel + Advisor"
+                    description={teamIdioms('text-gustavo')} 
+                    linkLin="  https://www.linkedin.com/in/gustavo-ammaturo-63561450"/>
+                <TeamMember
+                    name= "Guido Pino"
+                    picture={picGuido}
+                    rol="Fullstack Engineer"
+                    description={teamIdioms('text-guido')} 
+                    linkLin="  https://www.linkedin.com/in/guidopino"/>
+                <TeamMember
+                    name= "Constanza Guimaraez"
+                    picture={picConstanza}
+                    rol="Frontend Engineer"
+                    description={teamIdioms('text-constanza')} 
+                    linkLin="  https://www.linkedin.com/in/constanza-guimaraez"/>
+                <TeamMember
+                    name= "Malena Brun"
+                    picture={picMalena}
+                    rol="Design"
+                    description= " "
+                    linkLin="https://www.linkedin.com/in/malena-brun-313a8b266"/>
+               
+                
             </div>
             <div className="joinUs">
                 <h3>{usIdioms('joinus-title')}</h3>

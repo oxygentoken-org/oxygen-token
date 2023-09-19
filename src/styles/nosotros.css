@@ -86,56 +86,6 @@
     
 }
 
-.teamMember {
-    max-width: 200px;
-    background-color: #0B273A;
-    border-radius: 20px;
-  }
-  
-  .teamMemberPicture {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .teamMemberDescription {
-    padding: 1em;
-    color:var(--white);
-  }
-
-  .teamMemberDescription h3{
-    font-family: var(--montserrat);
-    text-align: center;
-  }
-
-  .teamMemberDescription h4{
-    font-family: var(--dm-sans);
-    text-align: center;
-  }
-
-  .teamMemberDescription p{
-    font-family: var(--montserrat);
-    font-size: 13px;
-  }
-
-  .teamMemberContact{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logoContact{
-    height: 25px;
-    width: 25px;
-  }
-
-  .logoContact:hover{
-    cursor: pointer;
-    transform: translateY(-8px);
-  }
-
   .joinUs{
     background-color: var(--strong-green);
     color:var(--white);
