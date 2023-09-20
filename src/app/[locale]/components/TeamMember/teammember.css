@@ -5,23 +5,27 @@
     height: 530px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    position: relative;
   }
   
   .teamMemberPicture {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 40%;
     border-radius: 100px;
+    object-fit: cover;
   }
   
   .teamMemberDescription {
     padding: 0em 1em;
     color:var(--white);
+    
   }
 
-  .teamMemberDescription h3{
+  .teamMemberDescription h3 {
     font-family: var(--montserrat);
     text-align: center;
+    font-size: 1.1rem;
   }
 
   .teamMemberDescription h4{
@@ -29,22 +33,23 @@
     text-align: center;
   }
 
-  .teamMemberDescription p{
+  .teamMemberDescription p {
     font-family: var(--montserrat);
     font-size: 13px;
+    text-align: center;
   }
 
-  .teamMemberContact{
+  .teamMemberContact {
     display: flex;
     flex-direction: row;
     gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
     padding: 1em;
-    
-   
-    
-    
+    position: absolute;
+    bottom: 1rem;
+    align-content: center;
+    translate: 25% 25%;
   }
 
   .logoContact{

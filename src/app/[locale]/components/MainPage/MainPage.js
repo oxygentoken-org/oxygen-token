@@ -226,7 +226,7 @@ const tokensEmitidos = [
             <p>{services('text-1')}  <br/> {services('text-2')} <br/> {services('text-3')} <br/>{services('text-4')}</p></div>
             <div className="servicesContainer" >
             {isMobileView ? (
-        <SliderComp automatico = {true} estilo="2" proyectos={serviceCards.map((card, index) => (
+        <SliderComp  proyectos={serviceCards.map((card, index) => (
           <CardService
             key={index}
             number={card.number}
