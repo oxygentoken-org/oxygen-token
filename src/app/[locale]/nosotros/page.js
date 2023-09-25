@@ -82,12 +82,7 @@ const Nosotros = () =>{
                     rol="Angel + Advisor"
                     description={teamIdioms('text-gustavo')} 
                     linkLin="  https://www.linkedin.com/in/gustavo-ammaturo-63561450"/>
-                <TeamMember
-                    name= "Guido Pino"
-                    picture={picGuido}
-                    rol="Fullstack Engineer"
-                    description={teamIdioms('text-guido')} 
-                    linkLin="  https://www.linkedin.com/in/guidopino"/>
+            
                 <TeamMember
                     name= "Constanza Guimaraez"
                     picture={picConstanza}
