@@ -18,6 +18,7 @@ import picGustavo from "../../../../public/assets/images/gustavo.png"
 import picGuido from "../../../../public/assets/images/guido.png"
 import picConstanza from "../../../../public/assets/images/constanza.png"
 import picMalena from "../../../../public/assets/images/malena.png"
+import picDelfina from "../../../../public/assets/images/picDelfina.jpeg"
 
 
 import Head from "next/head";
@@ -53,11 +54,11 @@ const Nosotros = () =>{
             <h2>Oxygen Team</h2>
             <div className="teamCards">
                 <TeamMember
-                    name= "Dante Arola"
-                    picture={picDante}
-                    rol="Project Manager"
-                    description={teamIdioms('text-dante')}
-                    linkLin= "https://www.linkedin.com/in/dante-arola-81456712a" />
+                    name= "Emiliano Ezcurra"
+                    picture={picEmiliano}
+                    rol="Conservation Advisor"
+                    description={teamIdioms('text-emiliano')} 
+                    linkLin="https://www.linkedin.com/in/emiliano-ezcurra-3a26b720"/>
                 <TeamMember
                     name= "Matteo Paladino"
                     picture={picMatteo}
@@ -70,12 +71,14 @@ const Nosotros = () =>{
                     rol="Head of Growth"
                     description={teamIdioms('text-franco')} 
                     linkLin="https://www.linkedin.com/in/franco-ammaturo-208712192"/>
-                 <TeamMember
-                    name= "Emiliano Ezcurra"
-                    picture={picEmiliano}
-                    rol="Conservation Advisor"
-                    description={teamIdioms('text-emiliano')} 
-                    linkLin="https://www.linkedin.com/in/emiliano-ezcurra-3a26b720"/>
+                <TeamMember
+                    name= "Dante Arola"
+                    picture={picDante}
+                    rol="Project Manager"
+                    description={teamIdioms('text-dante')}
+                    linkLin= "https://www.linkedin.com/in/dante-arola-81456712a" />
+                
+                 
                  <TeamMember
                     name= "Gustavo Ammaturo"
                     picture={picGustavo}
@@ -95,6 +98,12 @@ const Nosotros = () =>{
                     rol="Design"
                     description= " "
                     linkLin="https://www.linkedin.com/in/malena-brun-313a8b266"/>
+                <TeamMember
+                    name= "Delfina Schiano"
+                    picture={picDelfina}
+                    rol="Rol"
+                    description=""
+                    linkLin="  https://www.linkedin.com/in/delfina-schiano-650384189"/>
                
                 
             </div>
