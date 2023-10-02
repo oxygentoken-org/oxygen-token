@@ -28,8 +28,10 @@
         "service-card-1-text":"Conocé tu impacto ambiental. Utilizá la calculadora y descubrí tus emisiones de CO2",
         "service-card-2-title":"Compensá",
         "service-card-2-text":"Tu compra garantiza la protección del bosque. Salvá a los árboles de ser talados y a la fauna de ser desplazada",
+        "service-card-2-link": "/",
         "service-card-3-title":"Monitoreá",
         "service-card-3-text":"Visualizá la cantidad de árboles y especies salvadas, y cuánto CO2 absorbió tu inversión en un año.",
+        "service-card-3-link": "/",
         "see-more-btn":"Ver más "
 
     },
@@ -113,8 +115,9 @@
         "text-emiliano":"Ex Presidente del Servicio de Parques Nacionales de Argentina. Director General del Banco de Bosques: ONG con más de 150.000 hectáreas salvadas. Asesor de Greenpeace.",
         "text-gustavo": "Asesor de BID bank tokenomics y cambio climático. Director estratégico de Chronos: Criptobilletera B2B",
         "text-guido": "Desarrollador Fullstack +10 años de experiencia. Fundador de la agencia de software Edeon Labs",
-        "text-constanza": "Desarrolladora Frontend +2 años de experiencia. Background académico en ingeniería química y biotecnología"
-
+        "text-constanza": "Desarrolladora Frontend +2 años de experiencia. Background académico en ingeniería química y biotecnología",
+        "rol-delfina": "Directora de Biodiversidad",
+        "text-delfina": "Estudiante de Ciencias Ambientales. Coordinadora en Seamos Bosques"
     }
 
 

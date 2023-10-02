@@ -129,14 +129,14 @@ const tokensEmitidos = [
       image: imgServicio2,
       title:services('service-card-2-title'),
       text:services('service-card-2-text'),
-      link : "/",
+      link : services('service-card-2-link'),
     },
     {
       number: "3.",
       image: imgServicio3,
       title:services('service-card-3-title'),
       text:services('service-card-3-text'),
-      link : "/",
+      link : services('service-card-3-link'),
     },
     
   ];

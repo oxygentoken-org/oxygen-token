@@ -101,8 +101,8 @@ const Nosotros = () =>{
                 <TeamMember
                     name= "Delfina Schiano"
                     picture={picDelfina}
-                    rol="Rol"
-                    description=""
+                    rol={teamIdioms('rol-delfina')}
+                    description={teamIdioms('text-delfina')}
                     linkLin="  https://www.linkedin.com/in/delfina-schiano-650384189"/>
                
                 

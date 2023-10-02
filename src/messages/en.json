@@ -29,8 +29,10 @@
         "service-card-1-text":"Know your environmental impact. Use the calculator and find out your CO2 emissions.",
         "service-card-2-title":"Compensate",
         "service-card-2-text":"Your purchase guarantees the protection of the forest. Save trees from being cut down and wildlife from being displaced.",
+        "service-card-2-link": "https://opensea.io/collection/theguardiansoftheforest",
         "service-card-3-title":"Monitor",
         "service-card-3-text":"Visualize the number of trees and species saved, and how much CO2 your investment absorbed in a year.",
+        "service-card-3-link": "https://opensea.io/collection/theguardiansoftheforest",
         "see-more-btn":"See more "
     },
     "issuedTokens":{
@@ -113,7 +115,9 @@
         "text-emiliano":"Ex-President of Argentine National park service. CEO of Banco de Bosques: NGO with more than 150.000 hectareas saved. Greenpeace advisor.",
         "text-gustavo": "BID bank tokenomics & climate change advisor. Strategic director of Chronos: B2B crypto wallet.",
         "text-guido": "Full stack Dev +10 years exp. Founder of Edeon Labs (sofware factory)",
-        "text-constanza": "Frontend Dev +2 years exp. Background in Chemical Engineering and Biotech."
+        "text-constanza": "Frontend Dev +2 years exp. Background in Chemical Engineering and Biotech.",
+        "rol-delfina": "Director of biodiversity",
+        "text-delfina": "Environmental Science student. Coordinator at Seamos Bosques"
 
     }
 
