@@ -1,7 +1,7 @@
 /*PrevHome*/
 
 .prevHome{   
-    background-image: url("../../../../../public/assets/images/imgPrevia2.jpeg");
+    background-image: url("../../../../../public/assets/images/imgPrevia3.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -121,7 +121,25 @@
   }
 
   
-  
+  @media screen and (max-width: 768px) {
+    .prevHome{   
+        background-image: url("../../../../../public/assets/images/imgPrevia3.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:flex-start;
+        
+        
+    }
+
+    .prevHome h1{
+        margin-top: 4em;
+    }
+    
+}
   
   
   
