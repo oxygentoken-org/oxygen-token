@@ -10,8 +10,14 @@ const Proyecto = () =>{
     const projectIdioms = useTranslations('Project')
     return (
         <><Navbar/>
-        <section className="proyectoMapa">
-            <h1>{projectIdioms('title-1')} <br/>{projectIdioms('title-2')}</h1>
+        <section className="project">
+            <div className="projectHeader">
+                <h1>{projectIdioms('title-1')} <br/>{projectIdioms('title-2')}</h1>
+                <button className>{projectIdioms('button-projects')}</button>
+            </div>
+            <div className="projectMap">
+
+            </div>
         </section>
         <Footer/>
         </>)

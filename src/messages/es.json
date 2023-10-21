@@ -100,8 +100,9 @@
     },
 
     "Project":{
-       "title-1":"Conocé los bosques",
-       "title-2":"que estamos salvando"
+       "title-1":"Descubrí los bosques",
+       "title-2":"que estamos salvando",
+       "button-projects": "Explorar"
     },
 
     "Buy":{
