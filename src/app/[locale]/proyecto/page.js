@@ -3,6 +3,7 @@
 //Components
 import Navbar from "../components/Navbar/Navbar.js";
 import Footer from "../components/Footer/Footer.js";
+import Project from "../components/Project/Project.js";
 
 //Styles
 import "../../../styles/proyecto.css"
@@ -10,12 +11,13 @@ import "../../[locale]/globals.css";
 
 //Files
 import mapArg from "../../../../public/assets/images/mapaArg.png"
+import laFlorenciaPic from  "../../../../public/assets/images/laFlorencia.jpg"
 
 import { useTranslations } from "next-intl";
 import Image from "next/image.js";
 
 
-const Proyecto = () =>{
+const Proyectos = () =>{
     const projectIdioms = useTranslations('Project')
     return (
         <><Navbar/>
@@ -26,7 +28,21 @@ const Proyecto = () =>{
             </div>
             <div className="projectMap" id="map">
                 <Image src={mapArg} alt="map of argentina" className="mapArg"/>
-                <div className="laFlorencia"></div>
+                <div className="projectList">
+                <Project 
+                name="La Florencia"
+                picture={laFlorenciaPic}
+                description={projectIdioms('laFlorencia-text')}
+                seeMap={projectIdioms('see-map')}
+                mapLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"/>
+                <Project 
+                name="La Florencia"
+                picture={laFlorenciaPic}
+                description={projectIdioms('laFlorencia-text')}
+                seeMap={projectIdioms('see-map')}
+                mapLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"/>
+                </div>
+                
 
             </div>
         </section>
@@ -35,4 +51,4 @@ const Proyecto = () =>{
     
 }
 
-export default Proyecto;
+export default Proyectos;

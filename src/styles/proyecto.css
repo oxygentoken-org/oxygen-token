@@ -38,27 +38,25 @@
 }
 
 .projectMap{
-    height: 100vh;
     background-color: #006A6A;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 2em;
 }
 
 .mapArg{
-    position: relative;
     height: 600px;
     width: auto;
     
 }
 
-.laFlorencia{
-    position: absolute;
-    background-color: red;
-    width: 15px;
-    height: 15px;
-    border-radius: 100px;
-    z-index: 1000;
-    left: 100px;
-    top: 200px;
+.projectList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em;
 }

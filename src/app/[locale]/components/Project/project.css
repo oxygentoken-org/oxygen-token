@@ -1,0 +1,30 @@
+.projectCard{
+    height: auto;
+    width: 350px;
+    background-color: var(--strong-green);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.projectText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--white);
+    font-family: var(--montserrat);
+    padding: 1em;
+}
+
+.projectDescription{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.projectImage{
+    width: 350px;
+    height: auto;
+}
