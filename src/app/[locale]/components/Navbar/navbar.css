@@ -19,6 +19,7 @@
     font-size: 2rem;
     margin-left: 1.3rem;
     max-width: 350px;
+    height: auto;
   
   }
   .navigation-menu {
@@ -47,7 +48,7 @@
     display: block;
     width: 100%;
   }
-  .hamburger {
+  .navBarButton {
     border: 0;
     height: 40px;
     width: 40px;
@@ -62,12 +63,12 @@
     transform: translateY(-50%);
     display: none;
   }
-  .hamburger:hover {
+  .navBarButton:hover {
     background-color: var(--strong-green);
   }
   
   @media screen and (max-width: 768px) {
-    .hamburger {
+    .navBarButton {
       display: block;
     }
 

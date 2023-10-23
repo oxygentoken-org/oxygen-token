@@ -47,7 +47,7 @@ function Navbar() {
 
           </li>: <></> }
       <button
-        className="hamburger"
+        className="navBarButton"
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}

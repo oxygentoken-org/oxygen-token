@@ -16,12 +16,12 @@ function Footer() {
   return (
     <section className="footer">
         <div className="footerSocials">
-            <Image src={logoFooter} className="logoFooter"></Image>
+            <Image src={logoFooter} className="logoFooter" alt="logo Oxygen Footer"></Image>
             <div className="socialsContainer">
-                <div className="social"><a href="https://instagram.com/oxygen.token" target="_blank" rel="noreferrer"><Image src={logoInstagram} className="socialLogo"></Image></a></div>
-                <div className="social"><a href="http://www.linkedin.com/company/oxygentoken" target="_blank" rel="noreferrer"><Image src={logoLinkedin} className="socialLogo"></Image></a></div>
-                <div className="social"><a href="/" target="_blank" rel="noreferrer"><Image src={logoTwitter} className="socialLogo"></Image></a></div>
-                <div className="social"><a href="https://www.youtube.com/channel/UCKO07x_sPDCw8eXy34uwcgA" target="_blank" rel="noreferrer"><Image src={logoYoutube} className="socialLogo"></Image></a></div>
+                <div className="social"><a href="https://instagram.com/oxygen.token" target="_blank" rel="noreferrer"><Image src={logoInstagram} className="socialLogo" alt="logo Instagram"></Image></a></div>
+                <div className="social"><a href="http://www.linkedin.com/company/oxygentoken" target="_blank" rel="noreferrer"><Image src={logoLinkedin} className="socialLogo" alt="logo Linkedin"></Image></a></div>
+                <div className="social"><a href="/" target="_blank" rel="noreferrer"><Image src={logoTwitter} className="socialLogo" alt="Logo Twitter"></Image></a></div>
+                <div className="social"><a href="https://www.youtube.com/channel/UCKO07x_sPDCw8eXy34uwcgA" target="_blank" rel="noreferrer"><Image src={logoYoutube} className="socialLogo" alt="Logo Youtube"></Image></a></div>
 
 
 
