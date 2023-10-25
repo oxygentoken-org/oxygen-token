@@ -82,7 +82,7 @@ function Navbar() {
             <a href="/nosotros">{navIdioms('us')}</a>
           </li>
           <li>
-            <a href="/proyecto"> {navIdioms('project')} </a>
+            <a href="/proyectos"> {navIdioms('project')} </a>
           </li>
           
           <li>

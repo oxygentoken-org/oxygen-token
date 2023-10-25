@@ -6,7 +6,7 @@
 .project h1{
     font-family: var(--montserrat);
     font-size: 40px;
-    color: var(--white);
+    color: black;
 }
 
 .project a{
@@ -15,6 +15,7 @@
     border-radius: 20px;
     border:0;
     color:var(--white);
+    font-weight: 700;
     font-size: 14px;
     text-decoration: none;
     font-family: var(--montserrat);
@@ -32,7 +33,7 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-image: url("../../public/assets/images/bosqueSano.jpg");
+    background-image: url("../../public/assets/images/imgProjects.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
