@@ -61,3 +61,14 @@
     flex-wrap: wrap;
     padding: 2em;
 }
+
+@media screen and (max-width: 768px) {
+
+    
+    .projectHeader{
+    
+        background-image: url("../../public/assets/images/imgProjects2.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
