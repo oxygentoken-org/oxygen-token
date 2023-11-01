@@ -26,7 +26,7 @@ import imgServicio3 from "../../../../../public/assets/images/imgServicio3.png"
 import tokenIcon from "../../../../../public/assets/logos/logoQToken.png"
 import logoTokenOM from "../../../../../public/assets/logos/logoTokenOM.png";
 import logoTokenOC from "../../../../../public/assets/logos/logoTokenOC.png";
-import logoGeneral from "../../../../../public/assets/images/logo.png";
+import logoGeneral from "../../../../../public/assets/images/logo_slogan.png";
 import treeLoading from "../../../../../public/assets/logos/treeLogoLoading.png"
 
 

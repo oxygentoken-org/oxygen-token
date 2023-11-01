@@ -1,7 +1,7 @@
 "use client";
 import "./navbar.css";
 import { useState, useEffect } from "react";
-import logoNav from "../../../../../public/assets/images/logo.png"
+import logoNav from "../../../../../public/assets/images/logo_slogan.png"
 import Image from 'next/image';
 import { useTranslations } from "next-intl";
 import globeLogo from "../../../../../public/assets/logos/globeLogo.png";
