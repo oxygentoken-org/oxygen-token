@@ -86,7 +86,7 @@ function Navbar() {
           </li>
           
           <li>
-            <a href="/comprar" style={{color: "var(--strong--green"}} >{navIdioms('buy')}</a>
+            <a href="/comprar" className={isMobileView? "" : "linkComprar"} >{navIdioms('buy')}</a>
           </li>
           {!isNavExpanded ?
           <li className="dropdown">
