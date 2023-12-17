@@ -18,12 +18,12 @@
   .tokenCard h3 {
     font-size: 20px;
     text-align: center;
-    color: var(--white);
+    color: black;
     font-family: var(--dm-sans);
   }
   
   .tokenCard p {
-    color: var(--white);
+    color: black;
     font-size: 15px;
     font-family: var(--montserrat);
   }
@@ -33,7 +33,8 @@
   }
   
   .tokenCard a {
-    color: var(--white);
+    color: #006A6A;
+    font-weight: 700;
   }
   
   .tokenCard a:hover {

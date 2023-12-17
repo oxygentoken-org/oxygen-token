@@ -37,10 +37,16 @@ function Footer() {
             </ul>
         </div>
         <div className="footerNewsletter">
+            <div>
             <h3>{footIdioms('news')}</h3>
             <input type="text" placeholder="Mail"></input>
             <button>{footIdioms('news-button')}</button>
+            </div>
+            <div className="upbutton">
+            <a href="#home">Up ^</a></div>
         </div>
+
+     
 
 
     </section>

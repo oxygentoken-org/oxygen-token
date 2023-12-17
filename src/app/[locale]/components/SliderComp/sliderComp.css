@@ -26,7 +26,7 @@
     border-radius: 0.25rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--white);
+    color: black;
   }
   .prev1:hover,
   .next1:hover {

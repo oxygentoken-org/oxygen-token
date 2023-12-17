@@ -177,7 +177,7 @@ const tokensEmitidos = [
       )}
       {isOnHome && (<>
         <Navbar/>
-        <section className="layoutHome">
+        <section className="layoutHome" id="home">
           <ReactPlayer
                 url="https://www.youtube.com/watch?v=rmxCvK6rMYU"
                 className="videoLayout"
@@ -281,7 +281,7 @@ const tokensEmitidos = [
     </div>
  
         </section>
-        <section className="tokensHome">
+       {/* <section className="tokensHome">
             <h1> Oxygen Token</h1>
             
             {isMobileView ? (
@@ -294,14 +294,17 @@ const tokensEmitidos = [
         <TokensNFT/>
         </div>
       )}
-    
-            <div className="tokensProgress">
-                <div className="progressLine"></div>
-                <p> {hometokens('text-progress-1')} <br/> {hometokens('text-progress-2')}</p>
-            </div>
-            <div className="line"></div>
+      </section>*/}
+      
+      <section className="tokensProgress">
+        <div className="progressLine"></div>
+        <p> {hometokens('text-progress-1')} <br/> {hometokens('text-progress-2')}</p>
+        
+      <div className="line"></div>
 
-        </section>
+      </section>
+
+       
 
 
 
