@@ -13,6 +13,10 @@
     
 }
 
+.hidePrevHome{
+    display: none;
+}
+
 .prevHomeLogo{
     max-width: 240px;
     height: auto;

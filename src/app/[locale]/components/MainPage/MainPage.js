@@ -4,6 +4,8 @@ import { useState, useEffect} from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 import { useTranslations } from "next-intl";
+import { PrePageContext } from "../../context/prePageContext.js";
+import { useContext } from "react";
 
 //Components
 import Navbar from "../Navbar/Navbar.js";
@@ -12,7 +14,6 @@ import TokenEmitido from "../TokenEmitido/TokenEmitido.js";
 import CardService from "../CardService/CardService.js";
 import SliderComp from "../SliderComp/SliderComp.js";
 import DataContent from "../DataContent/DataContent.js";
-import TokensNFT from "../TokensNFT/TokensNFT.js";
 import Partnerships from "../Partnerships/Partnerships.js";
 
 //Styles
@@ -45,8 +46,9 @@ const MainPage = () => {
 
     const [isOnHome, setIsOnHome] = useState(false);
     const [showAnimation, setShowAnimation] = useState(false);
-    const [showLoading, setShowLoading] = useState(false); 
-   
+    const [showLoading, setShowLoading] = useState(false);
+    const {visit, toggleVisit} = useContext(PrePageContext); 
+
 
     const handleHidePrevHome = () => {
       setShowAnimation(true);
@@ -55,6 +57,7 @@ const MainPage = () => {
         setIsOnHome(true);
         setShowAnimation(false);
         setShowLoading(false);
+        toggleVisit();
       }, 2000);
     };
 
@@ -161,8 +164,8 @@ const tokensEmitidos = [
   return (<>
         
         
-        {!isOnHome && (
-        <section className="prevHome">
+        {!isOnHome &&  (
+        <section className={visit === "firstVisit" ? "prevHome" : "hidePrevHome"}>
           {showAnimation && <div className="expandAnimation" />}
           {showLoading && (<div className="loadingCircle">
         
@@ -281,20 +284,6 @@ const tokensEmitidos = [
     </div>
  
         </section>
-       {/* <section className="tokensHome">
-            <h1> Oxygen Token</h1>
-            
-            {isMobileView ? (
-        <SliderComp proyectos={[<TokensNFT/>, <TokensNFT/>, <TokensNFT/>, <TokensNFT/>]} />
-      ) : (
-        <div className="tokenContainer">
-        <TokensNFT/>
-        <TokensNFT/>
-        <TokensNFT/>
-        <TokensNFT/>
-        </div>
-      )}
-      </section>*/}
       
       <section className="tokensProgress">
         <div className="progressLine"></div>

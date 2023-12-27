@@ -7,16 +7,18 @@ import { useTranslations } from "next-intl";
 import globeLogo from "../../../../../public/assets/logos/globeLogo.png";
 import logoArg from "../../../../../public/assets/logos/logoArg.png";
 import logoUs from "../../../../../public/assets/logos/logoUs.png";
+import { PrePageContext } from "../../context/prePageContext.js";
+import { useContext } from "react";
 
-
-function Navbar() {
+function Navbar(setFirstLoad) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const navIdioms = useTranslations('Navbar');
   const [isMobileView, setIsMobileView] = useState(false);
+  const {visit, toggleVisit} = useContext(PrePageContext); 
 
   useEffect(()=> {
     const mobileMediaQuery = window.matchMedia("(max-width: 650px)");
-
+    
     //Actualiza el estado
     const handleMediaQueryChange = (event) =>{
       setIsMobileView(event.matches);
@@ -29,6 +31,7 @@ function Navbar() {
       mobileMediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
   },[]);
+
 
   return (
     <nav className="navigation">
@@ -75,7 +78,7 @@ function Navbar() {
         <ul>
           
         <li>
-            <a href="/">Home</a>
+            <a onClick={toggleVisit} href="/">Home</a>
           </li>
           
           <li>

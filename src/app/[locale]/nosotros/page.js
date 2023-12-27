@@ -59,7 +59,7 @@ const Nosotros = () =>{
                     description={teamIdioms('text-emiliano')} 
                     linkLin="https://www.linkedin.com/in/emiliano-ezcurra-3a26b720"/>
                 <TeamMember
-                    name= "Matteo Paladino"
+                    name= "Matteo Palladino"
                     picture={picMatteo}
                     rol="Conservation"
                     description={teamIdioms('text-matteo')}
