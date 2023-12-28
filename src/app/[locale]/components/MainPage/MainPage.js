@@ -4,8 +4,7 @@ import { useState, useEffect} from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 import { useTranslations } from "next-intl";
-import { PrePageContext } from "../../context/prePageContext.js";
-import { useContext } from "react";
+
 
 //Components
 import Navbar from "../Navbar/Navbar.js";
@@ -47,17 +46,23 @@ const MainPage = () => {
     const [isOnHome, setIsOnHome] = useState(false);
     const [showAnimation, setShowAnimation] = useState(false);
     const [showLoading, setShowLoading] = useState(false);
-    const {visit, toggleVisit} = useContext(PrePageContext); 
+    const [firstLoad, setFirstLoad] = useState(true);
 
+    useEffect(() => {
+      const hasEnteredBefore = sessionStorage.getItem('hasEnteredBefore');
+      if (hasEnteredBefore) {
+        setIsOnHome(true);
+      }
+    }, []);
 
     const handleHidePrevHome = () => {
       setShowAnimation(true);
-      setShowLoading(true); 
+      setShowLoading(true);
+      sessionStorage.setItem('hasEnteredBefore', 'true'); 
       setTimeout(() => {
         setIsOnHome(true);
         setShowAnimation(false);
         setShowLoading(false);
-        toggleVisit();
       }, 2000);
     };
 
@@ -165,7 +170,7 @@ const tokensEmitidos = [
         
         
         {!isOnHome &&  (
-        <section className={visit === "firstVisit" ? "prevHome" : "hidePrevHome"}>
+        <section className="prevHome">
           {showAnimation && <div className="expandAnimation" />}
           {showLoading && (<div className="loadingCircle">
         
