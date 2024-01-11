@@ -48,8 +48,12 @@
     },
 
     "homeTokens":{
-        "text-progress-1": "Final goal:",
-        "text-progress-2": "000 hectares"
+        "progress-subtitle": "CARBON CREDITS",
+        "progress-title": "LET'S BE PART OF THE CHANGE",
+        "progress-circle": "Hectares protected",
+        "progress-text": "Being transparent is one of the aspects we value most in our company. Through this counter we can see our progress towards a better planet!",
+        "progress-span": "OUR GOAL",
+        "progress-span-2": "hectares"
     },
 
     "videoIntro":{

@@ -98,20 +98,25 @@
       flex-direction: column;
       width: 100%;
       height: calc(100vh - 77px);
-      background-color: rgba(11, 39, 58);
+      background-color: white;
     }
     .navigation-menu li {
-      text-align: center;
-      margin: 0;
+      text-align: right;
+      margin: 2vh 5vh;
+      font-weight: 700;
     }
     .navigation-menu li a {
-      color: var(--white);
+      color: #006A6A;
       font-family: var(--montserrat);
       width: 100%;
       padding: 1.5rem 0;
     }
     .navigation-menu li:hover {
       background-color: #6f8b8b;
+    }
+
+    .linkComprar{
+      border: 0;
     }
 
     .brand-name{

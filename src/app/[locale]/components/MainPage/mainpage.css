@@ -251,96 +251,8 @@
     
 }
 
-/*Tokens*/
+/*Services*/
 
-.tokensEmitidos h2{
-    font-size: 20px;
-    color:#0B273A;
-    font-family: var(--dm-sans);
-    font-weight: 700;
-}
-
-.tokensEmitidos h1{
-    font-size: 30px;
-    color: #006A6A;
-    text-align: center;
-    margin-bottom: 60px;
-    font-family: var(--montserrat);
-    
-}
-
-.tokensHome, .tokensEmitidos{
-    background-color: white;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tokensHome h1{
-    font-size: 48px;
-    color: #006A6A;
-    text-align: center;
-}
-
-.tokenContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 4em;
-}
-
-.token{
-    max-width: 250px;
-    height: auto;
-    border-radius: 50px;
-}
-
-.tokensProgress{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-}
-
-.progressLine{
-    height: 40px;
-    border-radius: 50px;
-    background-color: var(--grey);
-    margin: 2em;
-    min-width: 300px;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.tokensProgress p{
-    font-size: 20px;
-    font-family: var(--montserrat);
-    color: black
-}
-
-.line{
-    
-    min-width: 600px;
-    border: 2px solid white;
-    color: var(--white);
-    
-    
-    
-}
-
-
-@media screen and (max-width: 768px) {
-    .line{
-        min-width: 300px;
-    }
-}
 
 .servicesHome{
     background-color:white;
@@ -390,6 +302,137 @@
     }
 }
 
+
+/*Tokens*/
+
+.tokensEmitidos h2{
+    font-size: 20px;
+    color:#0B273A;
+    font-family: var(--dm-sans);
+    font-weight: 700;
+}
+
+.tokensEmitidos h1{
+    font-size: 30px;
+    color: #006A6A;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: var(--montserrat);
+    
+}
+
+.tokensHome, .tokensEmitidos{
+    background-color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokensHome h1{
+    font-size: 48px;
+    color: #006A6A;
+    text-align: center;
+}
+
+.tokenContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+.token{
+    max-width: 250px;
+    height: auto;
+    border-radius: 50px;
+}
+
+/*token progress*/
+
+.tokensProgress{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--montserrat);
+    padding: 20vh 0;
+
+}
+
+.tokensProgress h3{
+    margin:0;
+    font-size:clamp(16px, 1.5vw, 24px)
+}
+
+.tokensProgress h1{
+    margin:0.3em;
+    font-size: clamp(27px, 2.8vw, 34px);
+    color: #006A6A;
+    text-align: center;
+}
+.progressContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    width: 80%;
+}
+
+
+.progressCircle{
+    max-width: 350px;
+    height: auto;
+    background-color: none;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    border: solid #D9D9D9 2vh;
+
+}
+
+.progressCircleText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    height: auto;
+    padding: 2em;
+}
+
+.progressCircleText span{
+    font-size: clamp(30px, 4.44vw, 65px);
+    font-weight: 900;
+}
+
+.progressCircleText p{
+    font-size: clamp(18px, 1.4vw, 22px);
+}
+
+.progressText{
+    font-size: clamp(14px, 1.3vw, 19px);
+    width: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .progressText{
+        width: 80%;
+    }
+
+
+
+
+}    
 
 /*Video*/
 .videoPresentacion {

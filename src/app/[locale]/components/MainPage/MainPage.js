@@ -291,10 +291,22 @@ const tokensEmitidos = [
         </section>
       
       <section className="tokensProgress">
-        <div className="progressLine"></div>
-        <p> {hometokens('text-progress-1')} <br/> {hometokens('text-progress-2')}</p>
+        <h3>{hometokens('progress-subtitle')}</h3>
+        <h1>{hometokens('progress-title')}</h1>
+        <div className="progressContainer">
+          <div className="progressCircle">
+            <div className="progressCircleText">
+              <span>0%</span> 
+              <p>{hometokens('progress-circle')}</p>
+            </div>
+          </div>
+          <div className="progressText">
+            <p>{hometokens('progress-text')}</p>
+            <span>{hometokens('progress-span')}:<b> 000 {hometokens('progress-span-2')}</b></span>
+          </div>
+        </div>
         
-      <div className="line"></div>
+ 
 
       </section>
 

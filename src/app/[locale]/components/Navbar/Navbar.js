@@ -68,7 +68,7 @@ function Navbar(setFirstLoad) {
         </svg>
       </button>
 
-
+ 
       <div
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
@@ -88,7 +88,7 @@ function Navbar(setFirstLoad) {
           </li>
           
           <li>
-            <a href="/comprar" className={isMobileView? "" : "linkComprar"} >{navIdioms('buy')}</a>
+            <a href="/comprar" className="linkComprar" >{navIdioms('buy')}</a>
           </li>
           {!isNavExpanded ?
           <li className="dropdown">

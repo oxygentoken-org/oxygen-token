@@ -49,8 +49,12 @@
     },
 
     "homeTokens":{
-        "text-progress-1": "Objetivo final:",
-        "text-progress-2": "000 hectareas"
+        "progress-subtitle": "BONOS DE CARBONO",
+        "progress-title": "SEAMOS PARTÍCIPES DEL CAMBIO",
+        "progress-circle": "Hectáreas protegidas",
+        "progress-text": "Ser transparentes es uno de los aspectos que más valoramos en nuestra compañía. A través de este contador podemos ver nuestro progreso hacia un planeta mejor!",
+        "progress-span": "NUESTRO OBJETIVO",
+        "progress-span-2": "hectareas"
     },
 
     "videoIntro":{

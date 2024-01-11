@@ -35,6 +35,7 @@
   .tokenCard a {
     color: #006A6A;
     font-weight: 700;
+    font-family: var(--montserrat);
   }
   
   .tokenCard a:hover {
