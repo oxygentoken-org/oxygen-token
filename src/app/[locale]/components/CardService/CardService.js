@@ -25,7 +25,7 @@ const CardService = ({ image, title, text, number, link }) => {
       <h1>{number}</h1>
       <h2>{title}</h2>
       <p>{text}</p>
-      <a href={link} target="_blank" rel="noreferrer" className="see-more-link">{services('see-more-btn')}</a>
+      <a href={link} target="_blank" rel="noreferrer" className="see-more-link"><b>{services('see-more-btn')}</b></a>
     </div>
   </div>
 </div>

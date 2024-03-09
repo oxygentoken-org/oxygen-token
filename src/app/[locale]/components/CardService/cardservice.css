@@ -54,11 +54,11 @@
     right: 0;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: right;
     color: white;
     font-size: 13px;
     font-family: var(--montserrat);
-    padding: 0.2em;
+    padding: 0.3em;
     
     
   }
@@ -93,14 +93,16 @@
   }
 
   .flip-card-back a{
+    
     text-decoration: none;
     font-size: 14px;
     color: var(--white);
     padding: 10px;
     padding-right: 80px;
-    background: linear-gradient(to right,#0b273a, #ffffff00);   
+    background: linear-gradient(to right,#FFFFFF, transparent);   
     border-radius: 20px;
     font-family: var(--montserrat);
+    border: solid .71px #67D168;
     
     
 
@@ -110,5 +112,6 @@
     cursor:pointer;
     text-decoration: underline;
   }
+
 
 

@@ -6,7 +6,7 @@
 .project h1{
     font-family: var(--montserrat);
     font-size: 40px;
-    color: black;
+    color: var(--white)
 }
 
 .project a{
@@ -17,6 +17,8 @@
     color:var(--white);
     font-weight: 700;
     font-size: 14px;
+    text-align: center;
+    max-width: 100px;
     text-decoration: none;
     font-family: var(--montserrat);
 }
@@ -28,28 +30,47 @@
 
 .projectHeader{
     display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    min-height: 100vh;
+    padding: 10em 2em;
     flex-direction: column;
-    background-image: url("../../public/assets/images/imgProjects.jpeg");
+    background-image: url("../../public/assets/images/imgProjects.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.projectHeader h1{
+    font-size: clamp(30px, 4vw, 64px);
+    font-weight: 600;
+}
+
 .projectMap{
-    background-color: #006A6A;
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2em;
+    padding: 4em 1em;
+    font-family: var(--montserrat);
 }
 
+.projectMap h3{
+    font-size:clamp(14px,1.1vw,18px);
+    color: #012138;
+    margin-bottom: 0;
+}
+
+.projectMap h2{
+    color: #006A6A;
+    font-size: clamp(28px, 2.2vw, 34px);
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+
+
 .mapArg{
-    height: 600px;
-    width: auto;
+    max-width: 550px;
+    height: auto;
     
 }
 
@@ -63,12 +84,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
-    
-    .projectHeader{
-    
-        background-image: url("../../public/assets/images/imgProjects2.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
+    .mapArg{
+        max-width: 300px;
+    }}

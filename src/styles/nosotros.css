@@ -2,78 +2,81 @@
     display: flex;
     padding: 4em;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     min-height: 500px;
-    background-image: url("../../public/assets/images/imgUs.jpg");
+    background-image: url("../../public/assets/images/imgUs.png");
     background-size: cover;
     background-repeat: no-repeat;
     flex-wrap: wrap;
-
 }
 
 .thisIsOxygen h1{
-    font-size: 48px;
+    font-size: clamp(30px, 3.8vw, 58px);
     font-family: var(--montserrat);
     color: var(--white);
-    align-self: left;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-   
-    
 }
 
 .misionVision{
     display: flex;
     flex-direction: row;
     gap: 2em;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 
 }
 
 .mision, .vision{
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #EBE0E0;
-    max-width: 300px;
+    background-color: #fff;
+    opacity: 0.8;
+    max-width: 350px;
+    min-height: 250px;
     border-radius: 30px;
-    padding: 0.5em;
+    padding: 0em 1.5em;
     font-family: var(--montserrat);
 
 }
 
 .mision h2, .vision h2{
-    color: var(--strong-green);
-    text-align: center;
-    font-size: 30px;
-    font-family: var(--montserrat);
+    color: #006A6A;
+    font-size: clamp(20px, 2vw, 32px);
+    font-weight:800;
+    margin: 0;
 
 }
 
 .mision p, .vision p{
-    font-size: 16px;
-    padding: 0.5em;
-    
+    font-size: clamp(14px, 1.1vw, 18px);
+    font-weight: 500;
 }
 
 .team{
     display: flex;
     flex-direction: column;
-    padding: 4em;
-    background-color: #56A49E;
+    padding: 8em 0em;
+    gap: 1em;
+    background-color: #fff;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2em;
+    font-family: var(--montserrat);
 }
 
 .team h2{
-    color: var(--white);
-    font-size: 36px;
-    font-family: var(--dm-sans);
+    color: #006A6A;
+    font-size: clamp(30px, 2.22vw, 36px);
+    font-weight: 700;
+    margin-top:0;
+}
+
+.team h4{
+    color: #012138;
+    font-weight: 800;
+    font-size: clamp(14px, 11.1vw, 18px);
+    margin-bottom: 0;
 }
 
 .teamCards{
@@ -93,42 +96,10 @@
     font-size: 18px;
     font-family: var(--dm-sans);
     border-radius: 40px;
+    max-width: 500px;
   }
 
   .joinUs:hover{
     cursor: pointer;
     transform: translateY(-8px);
   }
-
-  .line{
-    
-    min-width: 600px;
-    border: 2px solid white;
-    color: var(--white);
-        
-}
-
-
-@media screen and (max-width: 768px) {
-    .line{
-        min-width: 300px;
-    }
-}
-
-.tokenomics{
-    display: flex;
-    flex-direction: column;
-    padding: 4em;
-    background-color: #56A49E;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
-}
-
-.tokenomics h2{
-    font-size: 36px;
-    font-family: var(--dm-sans);
-    color: var(--white);
-    text-align: center;
-}
