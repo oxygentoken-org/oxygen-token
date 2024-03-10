@@ -11,7 +11,8 @@ import "../../[locale]/globals.css";
 
 //Files
 import mapArg from "../../../../public/assets/images/mapaArg.png";
-import laFlorenciaPic from "../../../../public/assets/images/laFlorencia.jpg";
+import laFlorenciaPic from "../../../../public/assets/images/laFlorencia.png";
+import araucariasPic from "../../../../public/assets/images/proyectoSalta.png";
 
 import { useTranslations } from "next-intl";
 import Image from "next/image.js";
@@ -27,7 +28,9 @@ const Proyectos = () => {
             {projectIdioms("title-1")} <br />
             {projectIdioms("title-2")}
           </h1>
-          <a href="#map">{projectIdioms("button-projects")}</a>
+          <a href="#map" className="projectMainBtn">
+            {projectIdioms("button-projects")}
+          </a>
         </div>
         <div className="projectMap" id="map">
           <h3>{projectIdioms("map-title-1")}</h3>
@@ -35,18 +38,18 @@ const Proyectos = () => {
           <Image src={mapArg} alt="map of argentina" className="mapArg" />
           <div className="projectList">
             <Project
-              name="La Florencia"
+              name="LA FLORENCIA"
               picture={laFlorenciaPic}
               description={projectIdioms("laFlorencia-text")}
-              seeMap={projectIdioms("see-map")}
-              mapLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"
+              btnText={projectIdioms("see-map")}
+              btnLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"
             />
             <Project
-              name="La Florencia"
-              picture={laFlorenciaPic}
+              name="LAS ARAUCARIAS"
+              picture={araucariasPic}
               description={projectIdioms("laFlorencia-text")}
-              seeMap={projectIdioms("see-map")}
-              mapLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"
+              btnText={projectIdioms("see-map")}
+              btnLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"
             />
           </div>
         </div>

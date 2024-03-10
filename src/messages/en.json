@@ -82,7 +82,8 @@
     "Navbar":{
         "us": "About Us",
         "project": "Projects",
-        "buy": "Buy"
+        "buy": "Buy",
+        "login": "Log in"
     },
 
     "Footer":{
@@ -117,7 +118,12 @@
      },
 
      "Buy":{
-        "title": "START TO MAKE THE CHANGE"
+        "title": "Start to make the change",
+        "btn": "Buy",
+        "buy-now-title-1": "BUY A TOKEN",
+        "buy-now-title-2": "INVEST IN THE FUTURE OF THE PLANET",
+        "token-alert-title":"A TOKEN = A BETTER FUTURE",
+        "token-alert-text": "By purchasing a token you protect an area of the forest with all the flora and fauna that live in it."
     },
 
     "Team":{

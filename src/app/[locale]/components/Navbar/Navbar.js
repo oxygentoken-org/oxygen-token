@@ -1,53 +1,59 @@
 "use client";
 import "./navbar.css";
 import { useState, useEffect } from "react";
-import logoNav from "../../../../../public/assets/images/logo_slogan.png"
-import Image from 'next/image';
+import logoNav from "../../../../../public/assets/images/logo_slogan.png";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import globeLogo from "../../../../../public/assets/logos/globeLogo.png";
 import logoArg from "../../../../../public/assets/logos/logoArg.png";
 import logoUs from "../../../../../public/assets/logos/logoUs.png";
 
-
 function Navbar(setFirstLoad) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const navIdioms = useTranslations('Navbar');
+  const navIdioms = useTranslations("Navbar");
   const [isMobileView, setIsMobileView] = useState(false);
 
-
-  useEffect(()=> {
+  useEffect(() => {
     const mobileMediaQuery = window.matchMedia("(max-width: 650px)");
-    
+
     //Actualiza el estado
-    const handleMediaQueryChange = (event) =>{
+    const handleMediaQueryChange = (event) => {
       setIsMobileView(event.matches);
     };
 
     handleMediaQueryChange(mobileMediaQuery); //Inicialmente
-    mobileMediaQuery.addEventListener('change', handleMediaQueryChange);
+    mobileMediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    return() =>{
-      mobileMediaQuery.removeEventListener('change', handleMediaQueryChange);
+    return () => {
+      mobileMediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
-  },[]);
-
+  }, []);
 
   return (
     <nav className="navigation">
       <Image src={logoNav} alt="Oxygen" className="brand-name" />
 
-      {isMobileView?  <li className="dropdown">
-            <button className="dropbtn">
-              <Image src={globeLogo} alt="logoMundo" className="globoImg"/>
-
-              
-            </button>
-            <div className="dropdown-content">
-              <a href="/es"><Image src={logoArg} alt="bandera argentina" className="flagImg"/></a>
-              <a href="/en"><Image src={logoUs} alt="bandera usa" className="flagImg"/></a>
-            </div>
-
-          </li>: <></> }
+      {isMobileView ? (
+        <li className="dropdown">
+          <button className="dropbtn">
+            <Image src={globeLogo} alt="logoMundo" className="globoImg" />
+          </button>
+          <div className="dropdown-content">
+            <a href="/es">
+              <Image
+                src={logoArg}
+                alt="bandera argentina"
+                className="flagImg"
+              />
+            </a>
+            <a href="/en">
+              <Image src={logoUs} alt="bandera usa" className="flagImg" />
+            </a>
+          </div>
+        </li>
+      ) : (
+        <></>
+      )}
       <button
         className="navBarButton"
         onClick={() => {
@@ -68,42 +74,51 @@ function Navbar(setFirstLoad) {
         </svg>
       </button>
 
- 
       <div
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }
       >
         <ul>
-          
-        <li>
+          <li>
             <a href="/">Home</a>
           </li>
-          
-          <li>
-            <a href="/nosotros">{navIdioms('us')}</a>
-          </li>
-          <li>
-            <a href="/proyectos"> {navIdioms('project')} </a>
-          </li>
-          
-          <li>
-            <a href="/comprar" className="linkComprar" >{navIdioms('buy')}</a>
-          </li>
-          {!isNavExpanded ?
-          <li className="dropdown">
-            <button className="dropbtn">
-              <Image src={globeLogo} alt="logoMundo" className="globoImg"/>
 
-              
-            </button>
-            <div className="dropdown-content">
-              <a href="/es"><Image src={logoArg} alt="bandera argentina" className="flagImg"/></a>
-              <a href="/en"><Image src={logoUs} alt="bandera usa" className="flagImg"/></a>
-            </div>
-
-          </li>: <div></div>}
-          
+          <li>
+            <a href="/nosotros">{navIdioms("us")}</a>
+          </li>
+          <li>
+            <a href="/proyectos"> {navIdioms("project")} </a>
+          </li>
+          <li>
+            <a href="/login">{navIdioms("login")}</a>
+          </li>
+          <li>
+            <a href="/comprar" className="linkComprar">
+              {navIdioms("buy")}
+            </a>
+          </li>
+          {!isNavExpanded ? (
+            <li className="dropdown">
+              <button className="dropbtn">
+                <Image src={globeLogo} alt="logoMundo" className="globoImg" />
+              </button>
+              <div className="dropdown-content">
+                <a href="/es">
+                  <Image
+                    src={logoArg}
+                    alt="bandera argentina"
+                    className="flagImg"
+                  />
+                </a>
+                <a href="/en">
+                  <Image src={logoUs} alt="bandera usa" className="flagImg" />
+                </a>
+              </div>
+            </li>
+          ) : (
+            <div></div>
+          )}
         </ul>
       </div>
     </nav>

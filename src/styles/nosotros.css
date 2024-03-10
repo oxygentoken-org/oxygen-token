@@ -75,7 +75,7 @@
 .team h4{
     color: #012138;
     font-weight: 800;
-    font-size: clamp(14px, 11.1vw, 18px);
+    font-size: clamp(14px, 1.1vw, 18px);
     margin-bottom: 0;
 }
 

@@ -9,7 +9,7 @@
     color: var(--white)
 }
 
-.project a{
+.projectMainBtn{
     padding: 0.5em 3em;
     background-color: var(--strong-green);
     border-radius: 20px;
@@ -23,7 +23,7 @@
     font-family: var(--montserrat);
 }
 
-.project a:hover{
+.projectMainBtn:hover{
     cursor: pointer;
     background-color: var(--dark-blue);
 }
@@ -69,7 +69,7 @@
 
 
 .mapArg{
-    max-width: 550px;
+    max-width: 500px;
     height: auto;
     
 }
@@ -80,7 +80,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 2em;
+    padding: 2em 0em;
+    gap: 1em;
 }
 
 @media screen and (max-width: 768px) {

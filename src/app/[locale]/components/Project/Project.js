@@ -1,20 +1,27 @@
-import "./project.css"
+import "./project.css";
 import Image from "next/image";
 
-const Project = ({ name, picture, description, mapLink, seeMap }) => {
-    return (
-      <>
-        <div className="projectCard">
-            <Image src={picture} alt={name} className="projectImage"/>
-            <div className="projectText">
-                <h2>{name}</h2>
-                <div className="projectDescription"><p>{description}</p></div>
-                <a  target= "_blank" className="projectButton" href={mapLink}>{seeMap}</a>
-            </div>
-
+const Project = ({ name, picture, description, buyCard, btnLink, btnText }) => {
+  return (
+    <>
+      <div className={buyCard ? "projectCardBuy" : "projectCard"}>
+        <Image src={picture} alt={name} className="projectImage" />
+        <div className={buyCard ? "projectTextBuy" : "projectText"}>
+          <h5 className="projectTitle">{name}</h5>
+          <div className="projectDescription">
+            <p>{description}</p>
+          </div>
+          <a
+            target="_blank"
+            className={buyCard ? "buyTokensBtn" : "projectButton"}
+            href={btnLink}
+          >
+            {btnText}
+          </a>
         </div>
-      </> 
-    );
-  };
-  
-  export default Project;
+      </div>
+    </>
+  );
+};
+
+export default Project;

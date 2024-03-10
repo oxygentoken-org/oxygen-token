@@ -97,7 +97,7 @@
       left: 0;
       flex-direction: column;
       width: 100%;
-      height: calc(100vh - 77px);
+      height: calc(100vh - 20px);
       background-color: white;
     }
     .navigation-menu li {
