@@ -137,6 +137,11 @@
         "text-delfina": "Environmental Science student. Coordinator at Seamos Bosques",
         "text-malena":"Graphic, industrial and audio-visual designer. 2+ years exp."
 
+    },
+
+    "Login":{
+        "login-title":"Take action and preserve the enviroment",
+        "login-form-title": "Log In"
     }
 
 

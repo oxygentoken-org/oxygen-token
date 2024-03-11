@@ -136,7 +136,13 @@
         "text-constanza": "Desarrolladora Frontend +2 años de experiencia. Background académico en ingeniería química y biotecnología",
         "text-delfina": "Estudiante de Ciencias Ambientales. Coordinadora en Seamos Bosques",
         "text-malena": "Diseño gráfico, industrial y audio-visual. +2 años de experiencia"
+    },
+
+    "Login":{
+        "login-title":"Tomá acción y preservá el medio ambiente",
+        "login-form-title": "Inicia sesión"
     }
+
 
 
 

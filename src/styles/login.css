@@ -1,0 +1,37 @@
+.login{
+    min-height: 100vh;
+    background-image: url(../../public/assets/images/imgLogin.png);
+    font-family: var(--montserrat);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+}
+
+.login h1{
+    color: var(--white);
+    font-size: clamp(30px, 2.7vw, 46px);
+    text-wrap: wrap;
+    padding: 1em;
+
+}
+
+.loginFormContainer{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+.loginFormImage{
+    max-width: 200px;
+    height: auto;
+}
