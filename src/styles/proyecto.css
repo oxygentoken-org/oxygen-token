@@ -64,7 +64,7 @@
     font-size: clamp(28px, 2.2vw, 34px);
     margin-top: 0.5em;
     text-align: center;
-}
+} 
 
 
 
@@ -87,4 +87,9 @@
 @media screen and (max-width: 768px) {
     .mapArg{
         max-width: 300px;
-    }}
+    }
+
+    .projectHeader{
+        background-image: url("../../public/assets/images/imgProjectsMobile.png");
+    }
+}
