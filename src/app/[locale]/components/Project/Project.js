@@ -11,13 +11,15 @@ const Project = ({ name, picture, description, buyCard, btnLink, btnText }) => {
           <div className="projectDescription">
             <p>{description}</p>
           </div>
-          <a
-            target="_blank"
-            className={buyCard ? "buyTokensBtn" : "projectButton"}
-            href={btnLink}
-          >
-            {btnText}
-          </a>
+          <div className={buyCard ? "buyTokensBtnContainer" : ""}>
+            <a
+              target="_blank"
+              className={buyCard ? "buyTokensBtn" : "projectButton"}
+              href={btnLink}
+            >
+              {btnText}
+            </a>
+          </div>
         </div>
       </div>
     </>

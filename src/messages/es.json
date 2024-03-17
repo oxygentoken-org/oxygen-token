@@ -140,7 +140,11 @@
 
     "Login":{
         "login-title":"Tomá acción y preservá el medio ambiente",
-        "login-form-title": "Inicia sesión"
+        "login-form-title": "Inicia sesión",
+        "email-field": "Correo Electrónico",
+        "password-field": "Contraseña",
+        "login-btn": "Iniciar sesión",
+        "forgot-password": "¿Olvidaste tu contraseña?"
     }
 
 

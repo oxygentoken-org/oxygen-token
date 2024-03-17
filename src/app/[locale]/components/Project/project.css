@@ -53,7 +53,7 @@
 }
 
 .projectDescription p{
-    font-size: clamp(12px, 1.1vw, 18px);
+    font-size: clamp(10px, 1.1vw, 18px);
     line-height: 1.2em;
 }
 
@@ -66,6 +66,15 @@
     font-size: clamp(12px, 1.1vw, 18px);
 }
 
+
+.buyTokensBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
 .projectButton:hover{
     text-decoration: underline;
 }
@@ -75,4 +84,8 @@
     .projectCard{
         max-width: 350px;
     min-height: 450px;
-    }}
+    }
+
+    
+
+}

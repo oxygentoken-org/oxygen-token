@@ -1,16 +1,13 @@
 "use client";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 //Components
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import LoginForm from "../components/Login/LoginForm";
 
 //Styles
 import "../../../styles/login.css";
-
-//Assets
-import logoOxygen from "../../../../public/assets/images/logo.png";
 
 const Login = () => {
   const loginIdioms = useTranslations("Login");
@@ -21,8 +18,7 @@ const Login = () => {
         <h1>{loginIdioms("login-title")}</h1>
 
         <div className="loginFormContainer">
-          <Image src={logoOxygen} alt="logo" className="loginFormImg" />
-          <h3>{loginIdioms("login-form-title")}</h3>
+          <LoginForm />
         </div>
       </section>
       <Footer />

@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 3em;
     flex-wrap: wrap;
-    gap: 2em;
 
 }
 
@@ -17,21 +17,29 @@
     color: var(--white);
     font-size: clamp(30px, 2.7vw, 46px);
     text-wrap: wrap;
-    padding: 1em;
+    max-width: 40%;
 
 }
 
 .loginFormContainer{
+    max-width: 50%;
     background-color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
-    max-width: 70%;
+    padding: 1em 3em;
     border-radius: 10px;
 }
 
-.loginFormImage{
-    max-width: 200px;
-    height: auto;
+
+
+@media screen and (max-width: 768px) {
+    .login h1{
+        max-width: 100%;
+    }
+
+    .loginFormContainer{
+        max-width: 100%;
+    }
+
 }

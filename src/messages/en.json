@@ -141,7 +141,11 @@
 
     "Login":{
         "login-title":"Take action and preserve the enviroment",
-        "login-form-title": "Log In"
+        "login-form-title": "Log In",
+        "email-field": "Email",
+        "password-field": "Password",
+        "login-btn": "Log In",
+        "forgot-password": "Forgot your Password?"
     }
 
 
