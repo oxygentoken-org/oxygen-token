@@ -134,17 +134,19 @@
         "text-gustavo": "Asesor de BID bank tokenomics y cambio climático. Director estratégico de Chronos: Criptobilletera B2B",
         "text-guido": "Desarrollador Fullstack +10 años de experiencia. Fundador de la agencia de software Edeon Labs",
         "text-constanza": "Desarrolladora Frontend +2 años de experiencia. Background académico en ingeniería química y biotecnología",
-        "text-delfina": "Estudiante de Ciencias Ambientales. Coordinadora en Seamos Bosques",
+        "text-nicolas": "+3 años de experiencia. FullStack Web Developer. Estudios en Lic. en Sistemas. Proyectos personales y open source",
         "text-malena": "Diseño gráfico, industrial y audio-visual. +2 años de experiencia"
     },
 
     "Login":{
-        "login-title":"Tomá acción y preservá el medio ambiente",
+        "login-title":"Tomá acción y salvá bosques de ser talados",
         "login-form-title": "Inicia sesión",
         "email-field": "Correo Electrónico",
         "password-field": "Contraseña",
         "login-btn": "Iniciar sesión",
-        "forgot-password": "¿Olvidaste tu contraseña?"
+        "forgot-password": "¿Olvidaste tu contraseña?",
+        "login-no-account": "¿No tenés una cuenta?",
+        "login-cta": "Registrate"
     }
 
 

@@ -41,6 +41,11 @@
     font-size: clamp(10px, 0.8vw, 14px);
 }
 
+.formField a:hover{
+    text-decoration: solid underline black;
+    cursor:pointer;
+}
+
 .submitBtn{
     background-color: var(--strong-green);
     width: 100%;
@@ -59,6 +64,26 @@
     background-color: white;
     color: var(--strong-green)
 
+}
+
+.signUpCTA{
+    display: flex;
+    font-family: var(--dm-sans);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: black
+}
+
+.signUpCTA a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.signUpCTA a:hover{
+    cursor: pointer;
+    text-decoration: solid underline black;
 }
 
 @media screen and (max-width: 768px) {

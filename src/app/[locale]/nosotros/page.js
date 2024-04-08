@@ -17,7 +17,7 @@ import picEmiliano from "../../../../public/assets/images/emiliano.png";
 import picGustavo from "../../../../public/assets/images/gustavo.png";
 import picConstanza from "../../../../public/assets/images/constanza.png";
 import picMalena from "../../../../public/assets/images/malena.png";
-import picDelfina from "../../../../public/assets/images/picDelfina.jpeg";
+import picNicolas from "../../../../public/assets/images/picNicolas.jpeg";
 
 import Head from "next/head";
 import { useTranslations } from "next-intl";
@@ -103,11 +103,11 @@ const Nosotros = () => {
             linkLin="https://www.linkedin.com/in/malena-brun-313a8b266"
           />
           <TeamMember
-            name="Delfina Schiano"
-            picture={picDelfina}
-            rol="Biodiversity Director"
-            description={teamIdioms("text-delfina")}
-            linkLin="  https://www.linkedin.com/in/delfina-schiano-650384189"
+            name="Nicolas Lopez"
+            picture={picNicolas}
+            rol="Backend Developer"
+            description={teamIdioms("text-nicolas")}
+            linkLin=" https://www.linkedin.com/in/nicolas-lopez36920532/"
           />
         </div>
         <div className="joinUs">

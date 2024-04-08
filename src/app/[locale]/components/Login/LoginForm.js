@@ -56,6 +56,10 @@ const LoginForm = () => {
           <button className="submitBtn" type="submit">
             {loginIdioms("login-btn")}
           </button>
+          <div className="signUpCTA">
+            <p>{loginIdioms("login-no-account")}</p>{" "}
+            <a href="/register">{loginIdioms("login-cta")}</a>
+          </div>
         </form>
       </div>
     </>
