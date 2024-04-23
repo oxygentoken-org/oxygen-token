@@ -1,18 +1,25 @@
-import Image from "next/image";
+"use client";
+import { useTranslations } from "next-intl";
+
+//Components
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
-import picConstruction from "../../../../public/assets/images/onConstruction.jpg";
+import RegisterForm from "../components/Register/RegisterForm";
+
+import "../../../styles/login.css";
 
 const Register = () => {
+  const loginIdioms = useTranslations("Login");
   return (
     <>
       <Navbar />
-      <div
-        className="registerSection"
-        style={{ display: "flex", justifyContent: "center" }}
-      >
-        <Image src={picConstruction} width={500} height={400} />
-      </div>
+      <section className="login">
+        <h1>{loginIdioms("login-title")}</h1>
+
+        <div className="loginFormContainer">
+          <RegisterForm />
+        </div>
+      </section>
       <Footer />
     </>
   );
