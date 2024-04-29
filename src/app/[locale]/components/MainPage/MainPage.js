@@ -6,13 +6,13 @@ import ReactPlayer from "react-player";
 import { useTranslations } from "next-intl";
 
 //Components
-import Navbar from "../Navbar/Navbar.js";
-import Footer from "../Footer/Footer.js";
-import TokenEmitido from "../TokenEmitido/TokenEmitido.js";
-import CardService from "../CardService/CardService.js";
-import SliderComp from "../SliderComp/SliderComp.js";
-import DataContent from "../DataContent/DataContent.js";
-import Partnerships from "../Partnerships/Partnerships.js";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import TokenEmitido from "../TokenEmitido/TokenEmitido";
+import CardService from "../CardService/CardService";
+import SliderComp from "../SliderComp/SliderComp";
+import DataContent from "../DataContent/DataContent";
+import Partnerships from "../Partnerships/Partnerships";
 
 //Styles
 import "./mainpage.css";

@@ -29,6 +29,9 @@ module.exports = {
       },
       teal: {
         DEFAULT: "#0bb899",
+        light: "#276d70",
+        medium: "#006a6a",
+        dark: "#012138",
       },
     },
     extend: {},

@@ -1,7 +1,7 @@
 "use client";
 
 //Componentes
-import Navbar from "../components/Navbar/Navbar.js";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer.js";
 import TeamMember from "../components/TeamMember/TeamMember.js";
 

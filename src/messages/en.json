@@ -79,6 +79,7 @@
   },
 
   "Navbar": {
+    "home": "Home",
     "us": "About Us",
     "project": "Projects",
     "buy": "Buy",

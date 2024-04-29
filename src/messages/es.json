@@ -79,6 +79,7 @@
   },
 
   "Navbar": {
+    "home": "Home",
     "us": "Nosotros",
     "project": "Proyectos",
     "buy": "Comprar",
