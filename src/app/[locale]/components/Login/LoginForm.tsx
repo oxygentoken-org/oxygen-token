@@ -1,12 +1,12 @@
-//Assets
 "use client";
-import logoOxygen from "../../../../../public/assets/images/logo.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import "./login.css";
-import { ChangeEvent, useState } from "react";
+
 import { InputWithLabel } from "../ui/input-with-label";
 import { Button } from "../ui/button";
+
+import logoOxygen from "../../../../../public/assets/images/logo.png";
+import Link from "next/link";
 
 const LoginForm = () => {
   const t = useTranslations("Login");
@@ -18,7 +18,8 @@ const LoginForm = () => {
   return (
     <>
       <div className="flex flex-col items-center w-full">
-        <Image src={logoOxygen} alt="logo" className="loginFormImg" />
+        <Image src={logoOxygen} alt="logo" className="w-full max-w-[200px]" />
+
         <h2 className="text-center text-3xl/10 font-bold">
           {t("login-form-title")}
         </h2>
@@ -48,10 +49,15 @@ const LoginForm = () => {
 
           <Button type="submit">{t("login-btn")}</Button>
 
-          <div className="signUpCTA">
-            <p>{t("login-no-account")}</p>{" "}
-            <a href="/register">{t("login-cta")}</a>
-          </div>
+          <p className="text-sm/5 text-center">
+            {t("login-no-account")}{" "}
+            <Link
+              href="/register"
+              className="font-bold hover:underline decoration-2"
+            >
+              {t("login-cta")}
+            </Link>
+          </p>
         </form>
       </div>
     </>

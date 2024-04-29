@@ -1,10 +1,15 @@
 "use client";
 import { useForm } from "react-hook-form";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
+import { PiArrowLeftBold } from "react-icons/pi";
 
 import { InputWithLabel } from "../ui/input-with-label";
 import { Button } from "../ui/button";
 import { CheckboxWithLabel } from "../ui/checkbox-with-label";
-import { useTranslations } from "next-intl";
+
+import logoOxygen from "../../../../../public/assets/images/logo.png";
 
 const RegisterForm = () => {
   const t = useTranslations("Register");
@@ -18,10 +23,18 @@ const RegisterForm = () => {
   const terms = watch("terms");
 
   return (
-    <div className="flex flex-col">
-      <div className="registerNav">
-        <a href="/login">{t("register-back")}</a>
+    <div className="flex flex-col items-center relative">
+      <div className="absolute top-0 -left-4">
+        <Link
+          href="/login"
+          className="text-sm hover:underline flex flex-row items-center gap-1"
+        >
+          <PiArrowLeftBold />
+          {t("register-back")}
+        </Link>
       </div>
+
+      <Image src={logoOxygen} alt="logo" className="w-full max-w-[200px]" />
 
       <h2 className="text-center text-3xl/10 font-bold">
         {t("register-form-title")}
@@ -29,7 +42,7 @@ const RegisterForm = () => {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="grid grid-cols-2 gap-x-16 gap-y-8 mt-10 mb-4"
+        className="grid grid-cols-2 gap-x-8 gap-y-8 mt-10 mb-4 max-w-lg"
       >
         <InputWithLabel
           id="firstName"
