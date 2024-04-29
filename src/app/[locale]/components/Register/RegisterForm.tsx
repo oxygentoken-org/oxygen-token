@@ -24,7 +24,7 @@ const RegisterForm = () => {
 
   return (
     <div className="flex flex-col items-center relative">
-      <div className="absolute top-0 -left-4">
+      <div className="absolute top-0 left-0 lg:-left-4">
         <Link
           href="/login"
           className="text-sm hover:underline flex flex-row items-center gap-1"
@@ -34,7 +34,11 @@ const RegisterForm = () => {
         </Link>
       </div>
 
-      <Image src={logoOxygen} alt="logo" className="w-full max-w-[200px]" />
+      <Image
+        src={logoOxygen}
+        alt="logo"
+        className="w-full max-w-[200px] mt-6 lg:mt-0"
+      />
 
       <h2 className="text-center text-3xl/10 font-bold">
         {t("register-form-title")}
@@ -42,7 +46,7 @@ const RegisterForm = () => {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="grid grid-cols-2 gap-x-8 gap-y-8 mt-10 mb-4 max-w-lg"
+        className="grid lg:grid-cols-2 gap-x-8 gap-y-8 mt-10 mb-4 max-w-lg"
       >
         <InputWithLabel
           id="firstName"
@@ -81,7 +85,7 @@ const RegisterForm = () => {
         </InputWithLabel>
 
         <InputWithLabel
-          className="col-span-2"
+          className="lg:col-span-2"
           id="email"
           label={t("email-field")}
           placeholder={t("email-placeholder")}
@@ -119,7 +123,7 @@ const RegisterForm = () => {
           )} */}
         </InputWithLabel>
 
-        <div className="col-span-2 flex flex-col items-center">
+        <div className="lg:col-span-2 flex flex-col items-center">
           <Button
             className="w-full max-w-80 my-5"
             type="submit"

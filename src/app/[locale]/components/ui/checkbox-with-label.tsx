@@ -16,7 +16,7 @@ export const CheckboxWithLabel = forwardRef<HTMLInputElement, Props>(
         )}
         htmlFor={id}
       >
-        <div className="w-5 h-5 border-neutral-400 border-2 rounded-xs relative">
+        <div className="w-5 h-5 min-w-5 border-neutral-400 border-2 rounded-xs relative">
           <input
             type="checkbox"
             ref={forwardedRef}
