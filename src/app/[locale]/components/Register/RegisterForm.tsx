@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { PiArrowLeftBold } from "react-icons/pi";
 
 import { InputWithLabel } from "../ui/InputWithLabel";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/Button2";
 import { CheckboxWithLabel } from "../ui/CheckboxWithLabel";
 
 import logoOxygen from "../../../../../public/assets/images/logo.png";

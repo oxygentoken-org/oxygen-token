@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { useTranslations } from "next-intl";
-import { LinkButton } from "../ui/Button";
+import { LinkButton } from "../ui/Button2";
 
 type Props = {
   image: StaticImageData;

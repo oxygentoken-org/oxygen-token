@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { LinkButton } from "../ui/Button";
+import { LinkButton } from "../ui/Button2";
 
 export function Quote() {
   const phrase = useTranslations("phrase");

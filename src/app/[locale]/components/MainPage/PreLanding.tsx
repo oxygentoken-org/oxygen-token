@@ -5,7 +5,7 @@ import Image from "next/image";
 
 // Assets
 import logoGeneral from "../../../../../public/assets/images/logo_slogan.png";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/Button2";
 
 const ANIM_TIMEOUT = 1000;
 
