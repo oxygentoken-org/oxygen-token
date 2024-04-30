@@ -1,12 +1,10 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+import { LogoBDB } from "./logos";
+
 import chronosPayLogo from "../../../../../public/assets/logos/chronosPayLogo.png";
 import finguruLogo from "../../../../../public/assets/logos/finguruLogo.png";
-
-//Styles
-import "./partnerships.css";
-import { LogoBDB } from "./logos";
 
 function Partnerships() {
   const partnerships = useTranslations("partnerships");

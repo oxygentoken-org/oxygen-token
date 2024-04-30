@@ -1,5 +1,7 @@
+"use client";
 import { useTranslations } from "next-intl";
 import ReactPlayer from "react-player";
+import { ClientOnly } from "../ClientOnly/ClientOnly";
 
 export function Video() {
   const videointro = useTranslations("videoIntro");
@@ -18,12 +20,14 @@ export function Video() {
       </div>
 
       <div className="aspect-video grow max-w-3xl overflow-hidden rounded-xl">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=ZLd7lNXcinI"
-          width="100%"
-          height="100%"
-          controls
-        />
+        <ClientOnly>
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=ZLd7lNXcinI"
+            width="100%"
+            height="100%"
+            controls
+          />
+        </ClientOnly>
       </div>
     </section>
   );
