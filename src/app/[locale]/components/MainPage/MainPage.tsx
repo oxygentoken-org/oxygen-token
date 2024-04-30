@@ -23,12 +23,12 @@ import { Hero } from "./Hero";
 import { Services } from "./Services";
 import { Tokens } from "./Tokens";
 import { Progress } from "./Progress";
+import { Video } from "./Video";
+import { Quote } from "./Quote";
 
 const MainPage = () => {
   /*Translations*/
   const layout = useTranslations("Layout");
-  const videointro = useTranslations("videoIntro");
-  const phrase = useTranslations("phrase");
 
   /*Animacion inicial*/
 
@@ -79,52 +79,26 @@ const MainPage = () => {
   return (
     <>
       <Navbar />
-      <ReactPlayer
-        url="https://www.youtube.com/watch?v=rmxCvK6rMYU"
-        className="fixed -z-50 inset-0 !h-screen !w-[178vh] !min-w-[100vw] pointer-events-none"
-        playing={true}
-        loop={true}
-        muted
-      />
+      <div className="fixed -z-50 inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 min-h-full min-w-full aspect-video">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=rmxCvK6rMYU"
+            width="100%"
+            height="100%"
+            playing={true}
+            loop={true}
+            muted
+          />
+        </div>
+      </div>
 
       <Hero />
       <Services />
       <Tokens />
       <Progress />
-
-      <section className="videoPresentacion">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=ZLd7lNXcinI"
-          className="videoHome"
-          controls
-        />
-
-        <div className="videoText">
-          <h3>{videointro("title")}</h3>
-          <h1>
-            {videointro("subtitle-1")} <br /> {videointro("subtitle-2")}{" "}
-            <span style={{ color: "#00CAA6" }}>{videointro("subtitle-3")}</span>
-          </h1>
-          <p>
-            {videointro("text-1")}
-            <br />
-            {videointro("text-2")}
-            <br />
-            {videointro("text-3")}
-          </p>
-        </div>
-      </section>
-
+      <Video />
       <Partnerships />
-
-      <section className="phrase">
-        <h2>
-          "{phrase("text-1")}
-          <br /> {phrase("text-2")} <br /> {phrase("text-3")}"
-        </h2>{" "}
-        <p>{phrase("comment")}</p>
-        <button>{phrase("button")}</button>
-      </section>
+      <Quote />
 
       <Footer />
     </>

@@ -24,7 +24,7 @@ export const CheckboxWithLabel = forwardRef<HTMLInputElement, Props>(
             {...props}
             className="invisible opacity-0 absolute -translate-x-full peer"
           />
-          <div className="absolute hidden peer-checked:grid place-items-center -inset-0.5 rounded-xs bg-teal text-white">
+          <div className="absolute hidden peer-checked:grid place-items-center -inset-0.5 rounded-xs bg-teal-light text-white">
             <svg
               width="10"
               height="9"
