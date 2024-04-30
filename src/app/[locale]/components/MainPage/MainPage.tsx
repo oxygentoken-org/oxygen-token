@@ -20,7 +20,7 @@ import { BackgroundVideo } from "./BackgroundVideo";
 const MainPage = () => {
   return (
     <>
-      {/* <PreLanding /> */}
+      <PreLanding />
 
       <Navbar />
       <BackgroundVideo />

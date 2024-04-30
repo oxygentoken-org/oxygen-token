@@ -7,5 +7,5 @@ export function ClientOnly({ children }: { children: ReactNode }) {
   }, []);
 
   if (!isClient) return null;
-  return children;
+  return <>{children}</>;
 }

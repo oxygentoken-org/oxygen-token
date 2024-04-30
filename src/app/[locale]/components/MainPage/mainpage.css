@@ -1,64 +1,23 @@
-/*PrevHome*/
-
-.prevHome {
-  background-image: url("../../../../../public/assets/images/imgPrevia4.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.prelanding-anim-root {
+  animation: fadeOut 400ms ease-in calc(var(--anim-length) - 400ms) 1 normal
+    both;
 }
 
-.hidePrevHome {
-  display: none;
+@keyframes fadeOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
-.prevHomeLogo {
-  max-width: 240px;
-  height: auto;
-  padding: 1em;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.prevHomeContainer {
-  text-align: center;
-}
-
-.prevHome h1 {
-  color: var(--white);
-  font-size: 40px;
-  font-family: var(--montserrat);
-  margin-top: -2em;
-}
-
-.prevHome button {
-  padding: 0.5em 3em;
-  background-color: var(--strong-green);
-  border-radius: 20px;
-  border: 0;
-  color: var(--white);
-  font-size: 14px;
-}
-
-.prevHome button:hover {
-  cursor: pointer;
-  background-image: linear-gradient(to right, #3be23b 50%, #30a730 50%);
-  background-size: 200% 100%;
-  background-position: right;
-  transition: background-position 0.6s ease;
-}
-.expandAnimation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.prelanding-bg {
   background: radial-gradient(#3be23b, #074907);
   background-size: 200% 200%;
-  animation: expandGradient 2s forwards;
+  background-position: center center;
+  animation: expandGradient var(--anim-length) forwards;
 }
 
 @keyframes expandGradient {
@@ -71,30 +30,8 @@
   }
 }
 
-.prevHomeHide {
-  display: none;
-}
-
-.loadingCircle {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  border-top: 4px solid #56a49e;
-  animation: spin 1.5s linear infinite;
-  z-index: 9999;
-}
-
-.loadingTree {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  z-index: 9999;
-  animation: notspin 1.5s linear infinite;
+.prelanding-spinner {
+  animation: spin 1500ms linear infinite;
 }
 
 @keyframes spin {
@@ -103,24 +40,5 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes notspin {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .prevHome h1 {
-    margin-top: -3em;
-  }
-
-  .prevHome {
-    background-image: url("../../../../../public/assets/images/imgPrevia4_mob.png");
   }
 }
