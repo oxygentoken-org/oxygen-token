@@ -1,8 +1,9 @@
 "use client";
-import { useForm } from "react-hook-form";
-import { useTranslations } from "next-intl";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useForm } from "react-hook-form";
 import { PiArrowLeftBold } from "react-icons/pi";
 
 import { InputWithLabel } from "../ui/InputWithLabel";
@@ -13,14 +14,21 @@ import logoOxygen from "../../../../../public/assets/images/logo.png";
 
 const RegisterForm = () => {
   const t = useTranslations("Register");
-  const { register, handleSubmit, watch } = useForm();
+  const { register, handleSubmit, watch, formState } = useForm();
 
-  const onSubmit = (data: any) => {
-    console.log("Form Data:", data);
+  const onSubmit = (data: Record<string, string>) => {
+    console.log("Form Data:", data); // TODO register API call
   };
 
   const password = watch("password");
   const terms = watch("terms");
+
+  function error(fieldName: string) {
+    if (!formState.isSubmitted || !formState.errors[fieldName])
+      return undefined;
+
+    return formState.errors[fieldName]?.message?.toString();
+  }
 
   return (
     <div className="flex flex-col items-center relative">
@@ -46,31 +54,29 @@ const RegisterForm = () => {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="grid lg:grid-cols-2 gap-x-8 gap-y-8 mt-10 mb-4 max-w-lg"
+        className="grid lg:grid-cols-2 gap-x-8 gap-y-5 mt-10 mb-4 max-w-lg"
       >
         <InputWithLabel
           id="firstName"
           label={t("firstname-field")}
           placeholder={t("firstname-placeholder")}
-          required
-          {...register("firstName", { required: true })}
-        >
-          {/* {errors?.firstName && <span>Este campo es obligatorio.</span>} */}
-        </InputWithLabel>
+          error={error("firstName")}
+          {...register("firstName", { required: t("required-field") })}
+        />
+
         <InputWithLabel
           id="lastName"
           label={t("lastname-field")}
           placeholder={t("lastname-placeholder")}
-          required
-          {...register("lastName", { required: true })}
-        >
-          {/* {errors?.lastName && <span>Este campo es obligatorio.</span>} */}
-        </InputWithLabel>
+          error={error("lastName")}
+          {...register("lastName", { required: t("required-field") })}
+        />
 
         <InputWithLabel
           id="companyName"
           label={t("company-field")}
           placeholder={t("company-placeholder")}
+          error={error("companyName")}
           {...register("companyName")}
         />
 
@@ -78,56 +84,51 @@ const RegisterForm = () => {
           id="country"
           label={t("country-field")}
           placeholder={t("country-placeholder")}
-          required
-          {...register("country", { required: true })}
-        >
-          {/* {errors?.country && <span>Este campo es obligatorio.</span>} */}
-        </InputWithLabel>
+          error={error("country")}
+          {...register("country", { required: t("required-field") })}
+        />
 
         <InputWithLabel
           className="lg:col-span-2"
           id="email"
           label={t("email-field")}
           placeholder={t("email-placeholder")}
-          required
-          {...register("email", { required: true })}
-        >
-          {/* {errors?.email && <span>Introduce un correo válido.</span>} */}
-        </InputWithLabel>
+          error={error("email")}
+          {...register("email", {
+            required: t("required-field"),
+            pattern: { value: /.+@.+\.[a-zA-Z]+/, message: t("email-invalid") },
+          })}
+        />
 
         <InputWithLabel
           id="password"
           type="password"
           label={t("password-field")}
           placeholder={t("password-placeholder")}
-          required
-          {...register("password", { required: true, minLength: 8 })}
-        >
-          {/* {errors?.password && (
-            <span>La contraseña debe tener al menos 8 caracteres.</span>
-          )} */}
-        </InputWithLabel>
+          error={error("password")}
+          {...register("password", {
+            required: t("required-field"),
+            minLength: { value: 8, message: t("password-length") },
+          })}
+        />
 
         <InputWithLabel
           id="validatePassword"
           type="password"
           label={t("verify-password-field")}
           placeholder={t("verify-password-placeholder")}
-          required
+          error={error("validatePassword")}
           {...register("validatePassword", {
+            required: t("required-field"),
             validate: (value) => value === password || t("password-no-match"),
           })}
-        >
-          {/* {errors?.confirmPassword && (
-            <span>{errors.confirmPassword.message}</span>
-          )} */}
-        </InputWithLabel>
+        />
 
         <div className="lg:col-span-2 flex flex-col items-center">
           <Button
             className="w-full max-w-80 my-5"
             type="submit"
-            disabled={!terms}
+            disabled={!terms || formState.isSubmitting}
           >
             {t("register-btn")}
           </Button>
@@ -135,11 +136,11 @@ const RegisterForm = () => {
           <CheckboxWithLabel
             id="terms"
             label={t("terms-and-conditions")}
-            {...register("terms", { required: true })}
+            {...register("terms", { required: t("must-accept-tc") })}
           />
-          {/* {errors?.terms && (
-            <span>Debes aceptar los términos y condiciones.</span>
-          )} */}
+          <div className="mt-1 text-red-500 text-xs/3 min-h-3">
+            {error("terms")}
+          </div>
         </div>
       </form>
     </div>

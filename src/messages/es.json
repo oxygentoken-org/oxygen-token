@@ -154,7 +154,6 @@
     "email-field": "Correo electrónico",
     "password-field": "Crear contraseña",
     "verify-password-field": "Verificar contraseña",
-    "password-no-match": "Las contraseñas no coinciden",
     "firstname-placeholder": "Ingresá tu nombre",
     "lastname-placeholder": "Ingresá tu apellido",
     "company-placeholder": "Ingresá tu empresa",
@@ -162,6 +161,11 @@
     "email-placeholder": "Ingresá tu correo electrónico",
     "password-placeholder": "Elegí tu contraseña",
     "verify-password-placeholder": "Repetí tu contraseña",
+    "required-field": "Campo obligatorio",
+    "email-invalid": "Debe ingresar una dirección de correo válida",
+    "password-length": "La contraseña es demasiado corta",
+    "password-no-match": "Las contraseñas no coinciden",
+    "must-accept-tc": "Debe aceptar los Términos y Condiciones para registrarse",
     "register-btn": "Registrarse",
     "terms-and-conditions": "Acepto los Términos y Condiciones"
   }

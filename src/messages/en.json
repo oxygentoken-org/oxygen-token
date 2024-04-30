@@ -154,7 +154,6 @@
     "email-field": "Email",
     "password-field": "Create password",
     "verify-password-field": "Verify password",
-    "password-no-match": "Passwords do not match",
     "firstname-placeholder": "Enter your first name",
     "lastname-placeholder": "Enter your last name",
     "company-placeholder": "Enter your company name",
@@ -162,6 +161,11 @@
     "email-placeholder": "Enter your email",
     "password-placeholder": "Choose your password",
     "verify-password-placeholder": "Repeat your password",
+    "required-field": "This field is required",
+    "email-invalid": "Must enter a valid email address",
+    "password-length": "Password is too short",
+    "password-no-match": "Passwords do not match",
+    "must-accept-tc": "You must accept the Terms and Conditions to register",
     "register-btn": "Sign up",
     "terms-and-conditions": "I have read and accept the Terms and Conditions"
   }

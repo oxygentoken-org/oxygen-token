@@ -23,6 +23,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       neutral: colors.neutral,
+      red: colors.red,
 
       green: {
         DEFAULT: "#3ead26",
