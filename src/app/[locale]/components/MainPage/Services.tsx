@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { CardService } from "../CardService/CardService";
+import { ServiceCard } from "../ServiceCard/ServiceCard";
 
 import imgService2 from "../../../../../public/assets/images/service2.webp";
 import imgService3 from "../../../../../public/assets/images/service3.webp";
@@ -39,18 +39,18 @@ export function Services() {
       id="servicios"
     >
       <div className="shrink">
-        <h3 className="text-base/5 uppercase font-bold">{services("title")}</h3>
-        <h1 className="text-3xl/10 uppercase font-bold text-teal-medium my-6 lg:mt-10 lg:mb-9">
+        <p className="text-base/5 uppercase font-bold">{services("title")}</p>
+        <h2 className="text-2xl md:text-3xl/10 uppercase font-bold text-teal-medium my-6 lg:mt-10 lg:mb-9">
           {services("subtitle-1")}
           <br />
           {services("subtitle-2")}
-        </h1>
+        </h2>
         <p className="text-base font-medium text-balance">{services("text")}</p>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-10 min-w-fit">
         {serviceCards.map((card, index) => (
-          <CardService
+          <ServiceCard
             key={index}
             number={card.number}
             image={card.image}

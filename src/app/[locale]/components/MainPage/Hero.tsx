@@ -1,7 +1,7 @@
 import { ReactNode, Fragment, useMemo } from "react";
 import { useFormatter, useTranslations } from "next-intl";
 
-import { LinkButton } from "../ui/button";
+import { LinkButton } from "../ui/Button";
 
 type DataItemProps = {
   number: number;

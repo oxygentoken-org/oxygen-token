@@ -10,7 +10,7 @@ type Props = {
   link: string;
 };
 
-export function CardService({ image, title, text, number, link }: Props) {
+export function ServiceCard({ image, title, text, number, link }: Props) {
   const services = useTranslations("Services");
 
   return (

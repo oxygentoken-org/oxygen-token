@@ -1,37 +1,32 @@
 "use client";
 
-import { useState, useEffect, ReactNode, Fragment } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
-import { useFormatter, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
-//Components
+// Components
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import TokenEmitido from "../TokenEmitido/TokenEmitido";
-import SliderComp from "../SliderComp/SliderComp";
 import Partnerships from "../Partnerships/Partnerships";
 
-//Styles
+// Styles
 import "./mainpage.css";
 import "../../../[locale]/globals.css";
 
-//Assets
-import tokenIcon from "../../../../../public/assets/logos/logoQToken.png";
-import logoTokenOM from "../../../../../public/assets/logos/logoTokenOM.png";
-import logoTokenOC from "../../../../../public/assets/logos/logoTokenOC.png";
+// Assets
 import logoGeneral from "../../../../../public/assets/images/logo_slogan.png";
 import treeLoading from "../../../../../public/assets/logos/treeLogoLoading.png";
 
 // Sections
 import { Hero } from "./Hero";
 import { Services } from "./Services";
+import { Tokens } from "./Tokens";
+import { Progress } from "./Progress";
 
 const MainPage = () => {
   /*Translations*/
   const layout = useTranslations("Layout");
-  const issuedtokens = useTranslations("issuedTokens");
-  const hometokens = useTranslations("homeTokens");
   const videointro = useTranslations("videoIntro");
   const phrase = useTranslations("phrase");
 
@@ -59,26 +54,6 @@ const MainPage = () => {
       setShowLoading(false);
     }, 2000);
   };
-
-  const tokensEmitidos = [
-    {
-      logo: tokenIcon,
-      title: issuedtokens("issued-token-1-title"),
-      text: issuedtokens("issued-token-1-text"),
-    },
-    {
-      logo: logoTokenOM,
-      title: issuedtokens("issued-token-2-title"),
-      text: issuedtokens("issued-token-2-text"),
-    },
-    {
-      logo: logoTokenOC,
-      title: issuedtokens("issued-token-3-title"),
-      text: issuedtokens("issued-token-3-text"),
-    },
-  ];
-
-  const isMobileView = false; // todo
 
   if (!isOnHome)
     return (
@@ -113,58 +88,9 @@ const MainPage = () => {
       />
 
       <Hero />
-
       <Services />
-
-      <section className="tokensEmitidos">
-        <h2>{issuedtokens("title")}</h2>
-        <h1>
-          {issuedtokens("subtitle-1")} <br /> {issuedtokens("subtitle-2")}
-        </h1>
-        <div className="tokenContainer">
-          {isMobileView ? (
-            <SliderComp
-              proyectos={tokensEmitidos.map((token, index) => (
-                <TokenEmitido
-                  key={index}
-                  logo={token.logo}
-                  title={token.title}
-                  text={token.text}
-                />
-              ))}
-            />
-          ) : (
-            tokensEmitidos.map((token, index) => (
-              <TokenEmitido
-                key={index}
-                logo={token.logo}
-                title={token.title}
-                text={token.text}
-              />
-            ))
-          )}
-        </div>
-      </section>
-
-      <section className="tokensProgress">
-        <h3>{hometokens("progress-subtitle")}</h3>
-        <h1>{hometokens("progress-title")}</h1>
-        <div className="progressContainer">
-          <div className="progressCircle">
-            <div className="progressCircleText">
-              <span>0%</span>
-              <p>{hometokens("progress-circle")}</p>
-            </div>
-          </div>
-          <div className="progressText">
-            <p>{hometokens("progress-text")}</p>
-            <span>
-              {hometokens("progress-span")}:
-              <b> 000 {hometokens("progress-span-2")}</b>
-            </span>
-          </div>
-        </div>
-      </section>
+      <Tokens />
+      <Progress />
 
       <section className="videoPresentacion">
         <ReactPlayer

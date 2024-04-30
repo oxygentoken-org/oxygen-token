@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { PiArrowLeftBold } from "react-icons/pi";
 
-import { InputWithLabel } from "../ui/input-with-label";
-import { Button } from "../ui/button";
-import { CheckboxWithLabel } from "../ui/checkbox-with-label";
+import { InputWithLabel } from "../ui/InputWithLabel";
+import { Button } from "../ui/Button";
+import { CheckboxWithLabel } from "../ui/CheckboxWithLabel";
 
 import logoOxygen from "../../../../../public/assets/images/logo.png";
 

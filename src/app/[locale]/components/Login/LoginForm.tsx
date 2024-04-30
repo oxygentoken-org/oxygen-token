@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import { InputWithLabel } from "../ui/input-with-label";
-import { Button } from "../ui/button";
+import { InputWithLabel } from "../ui/InputWithLabel";
+import { Button } from "../ui/Button";
 
 import logoOxygen from "../../../../../public/assets/images/logo.png";
-import Link from "next/link";
 
 const LoginForm = () => {
   const t = useTranslations("Login");
