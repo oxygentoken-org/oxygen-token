@@ -8,6 +8,8 @@ module.exports = {
       xs: "4px",
       DEFAULT: "10px",
       lg: "15px",
+      xl: "20px",
+      "2xl": "32px",
       full: "9999px",
     },
     fontFamily: {
@@ -29,6 +31,7 @@ module.exports = {
       },
       teal: {
         DEFAULT: "#0bb899",
+        lighter: "#94c0c0",
         light: "#276d70",
         medium: "#006a6a",
         dark: "#012138",

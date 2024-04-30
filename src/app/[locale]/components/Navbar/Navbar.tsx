@@ -66,7 +66,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 h-16 lg:h-[100px] w-full px-5 flex flex-row items-center bg-teal-dark/40 text-white backdrop-blur z-50">
+    <nav className="fixed top-0 left-0 h-16 lg:h-[100px] w-full px-5 lg:px-20 flex flex-row items-center bg-teal-dark/40 text-white backdrop-blur z-50">
       <Image
         src={logoNav}
         alt="Oxygen"
