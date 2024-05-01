@@ -10,14 +10,33 @@ import { InputWithLabel } from "../ui/InputWithLabel";
 import { Button } from "../ui/Button2";
 import { CheckboxWithLabel } from "../ui/CheckboxWithLabel";
 
+import { post } from "../../../../utils/request";
+
 import logoOxygen from "../../../../../public/assets/images/logo.png";
+import { useRouter } from "next/navigation";
 
 const RegisterForm = () => {
   const t = useTranslations("Register");
-  const { register, handleSubmit, watch, formState } = useForm();
+  const { register, handleSubmit, watch, formState, setError } = useForm();
+  const router = useRouter();
 
-  const onSubmit = (data: Record<string, string>) => {
-    console.log("Form Data:", data); // TODO register API call
+  const onSubmit = async (data: Record<string, string>) => {
+    try {
+      await post("/register", {
+        Name: data.firstName,
+        Surname: data.lastName,
+        Email: data.email,
+        Company: data.company,
+        Country: data.country,
+        Pass: data.password,
+        Pass2: data.validatePassword,
+      });
+
+      router.push("/post-register");
+    } catch (err) {
+      console.error(err);
+      setError("root.serverError", { type: "400", message: "Register failed" }); // todo error handling
+    }
   };
 
   const password = watch("password");

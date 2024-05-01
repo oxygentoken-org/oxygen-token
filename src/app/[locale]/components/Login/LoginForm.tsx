@@ -7,14 +7,28 @@ import { useForm } from "react-hook-form";
 import { InputWithLabel } from "../ui/InputWithLabel";
 import { Button } from "../ui/Button2";
 
+import { post } from "../../../../utils/request";
+
 import logoOxygen from "../../../../../public/assets/images/logo.png";
+import { useRouter } from "next/navigation";
 
 const LoginForm = () => {
   const t = useTranslations("Login");
-  const { register, handleSubmit, formState } = useForm();
+  const { register, handleSubmit, formState, setError } = useForm();
+  const router = useRouter();
 
-  const onSubmit = (data: Record<string, string>) => {
-    console.log("Form Data:", data); // TODO login API call
+  const onSubmit = async (data: Record<string, string>) => {
+    try {
+      await post("/login", {
+        Email: data.email,
+        Pass: data.password,
+      });
+
+      router.push("/post-register");
+    } catch (err) {
+      console.log(err);
+      setError("root.serverError", { type: "400", message: "Register failed" }); // todo error handling
+    }
   };
 
   return (

@@ -168,5 +168,11 @@
     "must-accept-tc": "Debe aceptar los Términos y Condiciones para registrarse",
     "register-btn": "Registrarse",
     "terms-and-conditions": "Acepto los Términos y Condiciones"
+  },
+
+  "PostRegister": {
+    "title": "¡Gracias por sumarte a la lista de espera!",
+    "message": "Fuiste registrado exitosamente. ¡Estaremos en contacto pronto!",
+    "back-link": "Volver al inicio"
   }
 }
