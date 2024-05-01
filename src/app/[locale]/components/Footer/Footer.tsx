@@ -113,7 +113,7 @@ function Footer() {
           <LinkButton
             variant="large"
             rounded="full"
-            className="px-1 w-8 flex flex-row justify-center"
+            className="!px-1 w-8 flex flex-row justify-center"
             href="#home"
           >
             <PiArrowUpBold />
