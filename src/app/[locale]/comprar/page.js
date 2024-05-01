@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer.js";
+import Footer from "../components/Footer/Footer";
 import "../../../styles/comprar.css";
 import "../../[locale]/globals.css";
 import { useTranslations } from "next-intl";
