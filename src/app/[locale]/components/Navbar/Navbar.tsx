@@ -24,10 +24,10 @@ const links = [
     nameKey: "project",
     href: "/proyectos",
   },
-  {
-    nameKey: "login",
-    href: "/login",
-  },
+  // {
+  //   nameKey: "login",
+  //   href: "/login",
+  // },
 ] as const;
 
 function LanguageSelect({ className }: { className: string }) {
@@ -83,12 +83,21 @@ function Navbar() {
           </li>
         ))}
 
-        <li>
+        {/* <li>
           <Link
             href="/comprar"
-            className="border border-current px-3 py-1 rounded-full hover:bg-current/20 transition-colors duration-200"
+            className="border border-current px-3 py-1 rounded-full hover:bg-white/20 transition-colors duration-200"
           >
             {t("buy")}
+          </Link>
+        </li> */}
+
+        <li>
+          <Link
+            href="/register"
+            className="border border-current px-3 py-1 rounded-full hover:bg-white/20 transition-colors duration-200"
+          >
+            {t("waitlist")}
           </Link>
         </li>
       </ul>
@@ -117,7 +126,7 @@ function Navbar() {
           </div>
           <ul className="flex flex-col items-end p-5 text-teal-medium font-medium gap-16">
             {links
-              .filter((link) => link.nameKey !== "login")
+              // .filter((link) => link.nameKey !== "login")
               .map((link) => (
                 <li key={link.nameKey}>
                   <Link
@@ -129,21 +138,30 @@ function Navbar() {
                 </li>
               ))}
 
-            <li key="login">
+            {/* <li key="login">
               <Link
                 href="/login"
                 className="border-2 border-current px-6 py-1 rounded-full hover:bg-teal-medium/20 transition-colors duration-200"
               >
                 {t("login")}
               </Link>
-            </li>
+            </li> */}
 
-            <li>
+            {/* <li>
               <Link
                 href="/comprar"
                 className="border-2 border-teal-dark bg-teal-dark text-white px-6 py-1 rounded-full hover:bg-teal-dark/80 transition-colors duration-200"
               >
                 {t("buy")}
+              </Link>
+            </li> */}
+
+            <li>
+              <Link
+                href="/register"
+                className="border-2 border-teal-dark bg-teal-dark text-white px-6 py-1 rounded-full hover:bg-teal-dark/80 transition-colors duration-200"
+              >
+                {t("waitlist")}
               </Link>
             </li>
 
