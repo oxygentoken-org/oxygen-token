@@ -5,12 +5,22 @@ type Props = ComponentProps<"input"> & {
   id: string;
   label: ReactNode;
   variant?: "medium" | "large";
+  rounded?: "default" | "full";
   error?: string;
 };
 
 export const InputWithLabel = forwardRef<HTMLInputElement, Props>(
   (
-    { id, label, children, className, variant = "medium", error, ...props },
+    {
+      id,
+      label,
+      children,
+      className,
+      variant = "medium",
+      rounded = "default",
+      error,
+      ...props
+    },
     forwardedRef
   ) => {
     return (
@@ -24,11 +34,13 @@ export const InputWithLabel = forwardRef<HTMLInputElement, Props>(
         <input
           ref={forwardedRef}
           className={cn(
-            "border border-neutral-500 rounded px-4 placeholder:text-neutral-400",
+            "border border-neutral-500 px-4 placeholder:text-neutral-400",
             "outline-2 focus-visible:outline-green",
             {
-              "text-sm/8": variant == "medium",
-              "text-base/9": variant == "large",
+              "text-sm/8": variant === "medium",
+              "text-base/9": variant === "large",
+              rounded: rounded === "default",
+              "rounded-full": rounded === "full",
               "outline-red-500 outline -outline-offset-2": error !== undefined,
             }
           )}
