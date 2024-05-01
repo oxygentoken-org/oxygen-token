@@ -26,8 +26,18 @@ const LoginForm = () => {
 
       router.push("/post-register");
     } catch (err) {
-      console.log(err);
-      setError("root.serverError", { type: "400", message: "Register failed" }); // todo error handling
+      console.error(JSON.stringify(err));
+      if ((err as Response).status === 401) {
+        setError("root", {
+          type: "400",
+          message: t("login-failed"),
+        });
+      } else {
+        setError("root", {
+          type: "500",
+          message: t("server-error"),
+        });
+      }
     }
   };
 
@@ -35,13 +45,13 @@ const LoginForm = () => {
     <div className="flex flex-col items-center w-full">
       <Image src={logoOxygen} alt="logo" className="w-full max-w-[200px]" />
 
-      <h2 className="text-center text-3xl/10 font-bold">
+      <h2 className="text-center text-3xl/10 font-bold mb-4">
         {t("login-form-title")}
       </h2>
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-8 w-full max-w-sm"
+        className="flex flex-col gap-6 w-full max-w-sm"
       >
         <InputWithLabel
           variant="large"
@@ -61,12 +71,17 @@ const LoginForm = () => {
           {/* <a className="text-xs mt-2">{t("forgot-password")}</a> */}
         </div>
 
-        <Button
-          type="submit"
-          disabled={!formState.isValid || formState.isSubmitting}
-        >
-          {t("login-btn")}
-        </Button>
+        <div className="flex flex-col">
+          <div className="mb-2 text-red-500 text-xs/4 min-h-4">
+            {formState.errors.root?.message}
+          </div>
+          <Button
+            type="submit"
+            disabled={!formState.isValid || formState.isSubmitting}
+          >
+            {t("login-btn")}
+          </Button>
+        </div>
 
         <p className="text-sm/5 text-center">
           {t("login-no-account")}{" "}

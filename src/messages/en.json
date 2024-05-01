@@ -142,6 +142,8 @@
     "login-btn": "Log In",
     "forgot-password": "Forgot your Password?",
     "login-no-account": "Don't have an account?",
+    "login-failed": "Incorrect email or password",
+    "server-error": "Something went wrong. Please try again.",
     "login-cta": "Sign up"
   },
 
@@ -165,9 +167,11 @@
     "verify-password-placeholder": "Repeat your password",
     "required-field": "This field is required",
     "email-invalid": "Must enter a valid email address",
+    "email-exists": "This email address is already registered",
     "password-length": "Password is too short",
     "password-no-match": "Passwords do not match",
     "must-accept-tc": "You must accept the Terms and Conditions to register",
+    "server-error": "Something went wrong. Please try again.",
     "register-btn": "Sign up",
     "terms-and-conditions": "I have read and accept the Terms and Conditions"
   },

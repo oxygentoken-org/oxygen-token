@@ -34,8 +34,18 @@ const RegisterForm = () => {
 
       router.push("/post-register");
     } catch (err) {
-      console.error(err);
-      setError("root.serverError", { type: "400", message: "Register failed" }); // todo error handling
+      console.error(JSON.stringify(err));
+      if ((err as Response).status === 400) {
+        setError("email", {
+          type: "400",
+          message: t("email-exists"),
+        });
+      } else {
+        setError("root", {
+          type: "500",
+          message: t("server-error"),
+        });
+      }
     }
   };
 
@@ -144,8 +154,11 @@ const RegisterForm = () => {
         />
 
         <div className="lg:col-span-2 flex flex-col items-center">
+          <div className="w-full max-w-80 text-red-500 text-xs/4 min-h-4">
+            {formState.errors.root?.message}
+          </div>
           <Button
-            className="w-full max-w-80 my-5"
+            className="w-full max-w-80 mb-5 mt-2"
             type="submit"
             disabled={!terms || formState.isSubmitting}
           >

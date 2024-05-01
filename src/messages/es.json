@@ -142,6 +142,8 @@
     "login-btn": "Iniciar sesión",
     "forgot-password": "¿Olvidaste tu contraseña?",
     "login-no-account": "¿No tenés una cuenta?",
+    "login-failed": "Correo o contraseña incorrectos",
+    "server-error": "Ocurrió un error inesperado. Por favor intente de nuevo.",
     "login-cta": "Registrate"
   },
 
@@ -165,9 +167,11 @@
     "verify-password-placeholder": "Repetí tu contraseña",
     "required-field": "Campo obligatorio",
     "email-invalid": "Debe ingresar una dirección de correo válida",
+    "email-exists": "Esta dirección de correo ya está registrada",
     "password-length": "La contraseña es demasiado corta",
     "password-no-match": "Las contraseñas no coinciden",
     "must-accept-tc": "Debe aceptar los Términos y Condiciones para registrarse",
+    "server-error": "Ocurrió un error inesperado. Por favor intente de nuevo.",
     "register-btn": "Registrarse",
     "terms-and-conditions": "Acepto los Términos y Condiciones"
   },
