@@ -1,8 +1,8 @@
 "use client";
 
 //Components
-import Navbar from "../components/Navbar/Navbar.js";
-import Footer from "../components/Footer/Footer.js";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 import Project from "../components/Project/Project.js";
 
 //Styles
@@ -44,13 +44,13 @@ const Proyectos = () => {
               btnText={projectIdioms("see-map")}
               btnLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"
             />
-            <Project
+            {/* <Project
               name="LAS ARAUCARIAS"
               picture={araucariasPic}
               description={projectIdioms("laFlorencia-text")}
               btnText={projectIdioms("see-map")}
               btnLink="https://earth.google.com/web/@-24.20128471,-61.90184657,178.65665461a,50698.09743483d,30y,0h,0t,0r/data=OgMKATA"
-            />
+            /> */}
           </div>
         </div>
       </section>
