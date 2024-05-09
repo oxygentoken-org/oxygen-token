@@ -26,7 +26,7 @@ const RegisterForm = () => {
         Name: data.firstName,
         Surname: data.lastName,
         Email: data.email,
-        Company: data.company,
+        Company: data.companyName,
         Country: data.country,
         Pass: data.password,
         Pass2: data.validatePassword,
