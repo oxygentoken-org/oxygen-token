@@ -1,4 +1,4 @@
-const BASE_URL = "https://backend-render-bdaf.onrender.com/api";
+const BASE_URL = "https://backend-render-main.onrender.com/api";
 
 // Simple thin wrapper around fetch()
 // TODO: use something like axios if/when API use grows more complex
