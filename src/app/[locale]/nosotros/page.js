@@ -18,6 +18,9 @@ import picGustavo from "../../../../public/assets/images/gustavo.png";
 import picConstanza from "../../../../public/assets/images/constanza.png";
 import picMalena from "../../../../public/assets/images/malena.png";
 import picNicolas from "../../../../public/assets/images/picNicolas.jpeg";
+import picLautaro from "../../../../public/assets/images/picLautaro.jpeg";
+import picAgustina from "../../../../public/assets/images/picAgustina.jpeg";
+import picSalvador from "../../../../public/assets/images/picSalvador.jpeg";
 
 import Head from "next/head";
 import { useTranslations } from "next-intl";
@@ -108,6 +111,27 @@ const Nosotros = () => {
             rol="Backend Developer"
             description={teamIdioms("text-nicolas")}
             linkLin=" https://www.linkedin.com/in/nicolas-lopez36920532/"
+          />
+          <TeamMember
+            name="Lautaro Martinez"
+            picture={picLautaro}
+            rol="Relaciones publicas"
+            description={teamIdioms("text-lautaro")}
+            linkLin=""
+          />
+          <TeamMember
+            name="Agustina Dos Santos"
+            picture={picAgustina}
+            rol="Community Manager & Paid media"
+            description={teamIdioms("text-agustina")}
+            linkLin=""
+          />
+          <TeamMember
+            name="Salvador Sallent"
+            picture={picSalvador}
+            rol="Comunicador"
+            description={teamIdioms("text-salvador")}
+            linkLin=""
           />
         </div>
         <div className="joinUs">
