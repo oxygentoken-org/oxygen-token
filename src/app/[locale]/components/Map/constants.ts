@@ -4,14 +4,12 @@
 // Cada punto tiene un videoID que se usa para mostrar el video en el reproductor de video
 // El videoID es el ID de un video de YouTube
 
-export const geojsonData = {
+export const geojsonData : GeoJSON.FeatureCollection = {
   type: "FeatureCollection",
-  name: "Terreno",
-  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
   features: [
     {
       type: "Feature",
-      properties: { Name: "V1" },
+      properties: { Name: "Terreno" },
       geometry: {
         type: "Polygon",
         coordinates: [
