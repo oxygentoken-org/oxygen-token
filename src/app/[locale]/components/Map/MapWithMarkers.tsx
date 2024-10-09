@@ -8,7 +8,12 @@ import { useTranslations } from 'next-intl';
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_API_KEY as string | "";
 
 
-const VideoModal = ({ videoID, onClose }) => {
+interface VideoModalProps {
+  videoID: string | null;
+  onClose: () => void;
+}
+
+const VideoModal = ({ videoID, onClose }: VideoModalProps) => {
   if (!videoID) return null;
 
   return (
@@ -77,15 +82,19 @@ const MapWithMarkers = () => {
         ]; 
   
         
-        const innerPolygon = geojsonData.features[0].geometry.coordinates[0]; 
+        let innerPolygon: number[][] = [];
+        if (geojsonData.features[0].geometry.type === 'Polygon') {
+          innerPolygon = (geojsonData.features[0].geometry as GeoJSON.Polygon).coordinates[0];
+        }
   
         
-        const maskData = {
+        const maskData : GeoJSON.Feature = {
           'type': 'Feature',
           'geometry': {
             'type': 'Polygon',
             'coordinates': [outerBounds, innerPolygon] 
-          }
+          },
+          'properties': {}
         };
   
         map.addSource('mask', {
@@ -106,10 +115,12 @@ const MapWithMarkers = () => {
   
         
         if (geojsonData.features) {
-          geojsonData.features.forEach((feature) => {
+          geojsonData.features.forEach((feature : GeoJSON.Feature) => {
             if (feature.geometry.type === 'Point') {
               const coordinates = feature.geometry.coordinates;
-              const videoID = feature.properties.videoID; 
+              const LnLat = new mapboxgl.LngLat(coordinates[0], coordinates[1]);
+
+              const videoID = feature.properties?.videoID; 
   
               
               const marker = new mapboxgl.Marker({
@@ -117,7 +128,7 @@ const MapWithMarkers = () => {
                 draggable: false, 
                 clickTolerance: 10 
               },)
-                .setLngLat(coordinates)
+                .setLngLat(LnLat)
                 .addTo(map);
               
               marker.getElement().style.cursor = 'pointer'; 
@@ -131,12 +142,12 @@ const MapWithMarkers = () => {
         }
   
         
-        if (geojsonData.features) {
-          const coordinates = geojsonData.features[0].geometry.coordinates[0];
-          const bounds = coordinates.reduce((bounds, coord) => {
-            return bounds.extend(coord);
-          }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));  
-        }
+        // if (geojsonData.features) {
+        //   const coordinates = geojsonData.features[0].geometry.coordinates[0];
+        //   const bounds = coordinates.reduce((bounds, coord) => {
+        //     return bounds.extend(coord);
+        //   }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));  
+        // }
 
         
       });

@@ -6,7 +6,7 @@ mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_API_KEY as string | "";
 
 const MapBackground = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
-  const coordinates = [-61.901847, -24.201291]; 
+  const coordinates: [number, number] = [-61.901847, -24.201291]; 
 
   useEffect(() => {
     
